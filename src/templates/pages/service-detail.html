@@ -1,0 +1,20 @@
+<div class="svc-page sd-page">
+  <section class="svc-hero sd-hero" aria-labelledby="service-title">
+    <div class="svc-wrap">
+      <nav class="sd-breadcrumb" aria-label="Breadcrumb"><a href="/services">Services</a><span aria-hidden="true">/</span><span aria-current="page">{{page.serviceName}}</span></nav>
+      <h1 id="service-title">{{page.title}}</h1>
+      <div class="svc-hero-intro"><h2>{{page.headline}}</h2><p>{{page.intro}}</p></div>
+      <div class="sd-hero-actions"><a class="sd-button sd-button--green svc-motion" href="#formats"><span class="svc-button-label"><span>Explore the formats</span><span aria-hidden="true">Explore the formats</span></span><span class="svc-action-arrow svc-action-arrow--down" aria-hidden="true"><span>↘</span><span>↘</span></span></a><a class="sd-text-link svc-motion-link" href="mailto:info@nmesis.io?subject=Automotive%20CGI%20enquiry"><span class="svc-button-label"><span>Discuss your next launch</span><span aria-hidden="true">Discuss your next launch</span></span><span class="svc-action-arrow" aria-hidden="true"><span>↗</span><span>↗</span></span></a></div>
+      <figure class="svc-hero-image"><img src="{{page.hero.src}}" alt="{{page.hero.alt}}" width="2400" height="1792" fetchpriority="high"><figcaption>{{page.hero.caption}}</figcaption></figure>
+    </div>
+  </section>
+  <div class="svc-wrap">
+    <nav class="sd-format-index" id="formats" aria-label="Automotive CGI formats">{{{detailIndex}}}</nav>
+    <p class="sd-context">Selected work created with automotive teams through their authorised distributors.</p>
+    {{{detailFormats}}}
+    <section class="svc-process" id="production" aria-labelledby="production-title"><header><p class="svc-kicker">The production process</p><h2 id="production-title">{{page.processTitle}}</h2><p>{{page.processIntro}}</p></header><ol>{{{detailSteps}}}</ol></section>
+    <section class="sd-brief" aria-labelledby="brief-title"><div><p class="svc-kicker">Your starting point</p><h2 id="brief-title">{{page.briefTitle}}</h2><p>{{page.briefIntro}}</p><a class="svc-project-link svc-motion-link" href="mailto:info@nmesis.io?subject=My%20automotive%20CGI%20brief"><span class="svc-button-label"><span>Send us your brief</span><span aria-hidden="true">Send us your brief</span></span><span class="svc-action-arrow" aria-hidden="true"><span>↗</span><span>↗</span></span></a></div><div class="sd-inputs">{{{detailInputs}}}</div></section>
+    <section class="sd-faq" aria-labelledby="cgi-faq-title"><header><p class="svc-kicker">Before we begin</p><h2 id="cgi-faq-title">A few things you might be wondering.</h2></header><div>{{{detailFaqs}}}</div></section>
+    <section class="sd-contact" aria-labelledby="cgi-contact-title"><p class="svc-kicker">Let’s make it happen</p><h2 id="cgi-contact-title">{{page.ctaTitle}}</h2><p>{{page.ctaText}}</p><div><a class="sd-button sd-button--green svc-motion" href="mailto:info@nmesis.io?subject=Automotive%20CGI%20enquiry"><span class="svc-button-label"><span>Discuss your project</span><span aria-hidden="true">Discuss your project</span></span><span class="svc-action-arrow" aria-hidden="true"><span>↗</span><span>↗</span></span></a><a class="sd-text-link svc-motion-link" href="/services"><span class="svc-button-label"><span>Explore all services</span><span aria-hidden="true">Explore all services</span></span><span class="svc-action-arrow" aria-hidden="true"><span>↗</span><span>↗</span></span></a></div></section>
+  </div>
+</div>

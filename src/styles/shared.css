@@ -1,0 +1,5 @@
+/* Shared structural reset. Layout and typography presets are scoped by page. */
+html, body { margin:0; padding:0; }
+*, *::before, *::after { box-sizing:border-box; }
+button, input, textarea { font:inherit; }
+img { max-width:100%; }

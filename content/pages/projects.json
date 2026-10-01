@@ -1,0 +1,37 @@
+{
+  "our_projects": "our\nwork.",
+  "case_studies": "Selected projects.",
+  "services": {
+    "eyebrow": "The craft behind the work.",
+    "title": "What can we create for you?",
+    "description": "From the first digital twin to the final customer experience. Explore the services that bring these projects to life.",
+    "action": "Explore our services",
+    "items": [
+      {
+        "title": "Digital twins",
+        "description": "Accurate vehicles, built from CAD or reference images.",
+        "url": "/services#digital-twins",
+        "image": "/assets/services/digital-twin-poster.jpg"
+      },
+      {
+        "title": "Automotive CGI",
+        "description": "Cinematic films, feature animations and key visuals.",
+        "url": "/services#automotive-cgi",
+        "image": "/assets/projects/soueast-egypt/cinematic/s08-dm.jpg"
+      },
+      {
+        "title": "Configurators",
+        "description": "Light configurators and real-time pixel streaming.",
+        "url": "/services#configurators",
+        "image": "/assets/projects/soueast-egypt/configurators/s07-opening.avif"
+      },
+      {
+        "title": "Interactive brochures",
+        "description": "Films, features and vehicle exploration in one story.",
+        "url": "/services#interactive-brochures",
+        "image": "/assets/projects/im-motors/brochures/im5-interior.webp"
+      }
+    ]
+  },
+  "_images": {}
+}

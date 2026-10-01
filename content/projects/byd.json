@@ -1,0 +1,240 @@
+{
+  "slug": "byd",
+  "title": "BYD.",
+  "subtitle": "From digital detail to the open road.",
+  "description": "For Al Mansour Automotive, NMESIS created digital twins and visualizations for nine BYD models, alongside interactive brochures, automotive content and infographic animations. Explore the TI7 film and key visuals, discover the driver-assistance features of Sealion 6 DM-i, and get closer to six models through their interactive configurators.",
+  "cover": "/assets/projects/byd/ti7-campaign.jpeg",
+  "coverAlt": "BYD TI7 automotive campaign visual",
+  "tags": [
+    "Digital twins",
+    "Interactive brochures",
+    "Automotive CGI"
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "mediaLayout": "collection",
+  "brand": "BYD",
+  "heroCover": "/assets/projects/byd/key-visuals/2.webp",
+  "heroCoverAlt": "BYD TI7 driving through the city in warm evening light",
+  "heroLayout": "landscape",
+  "galleryShape": "landscape",
+  "cinematicDescription": "Follow the TI7 through the city. A cinematic study of its presence, proportions and details in motion.",
+  "infographicDescription": "Eight animations make the driver-assistance features of Sealion 6 DM-i easier to understand, from cruise control and lane support to collision and blind-spot warnings.",
+  "experienceDescription": "Choose from six BYD models. Explore the vehicle details, colours and features through each live configurator.",
+  "defaultExperience": "Sealion 05",
+  "films": [
+    {
+      "title": "TI7. The city in motion.",
+      "src": "/assets/projects/byd/cinematic/ti7-cinematic.mp4",
+      "poster": "/assets/projects/byd/cinematic/ti7-cinematic.jpg",
+      "format": "Cinematic film"
+    }
+  ],
+  "infographics": [
+    {
+      "title": "Adaptive cruise control.",
+      "src": "/assets/projects/byd/infographics/sealion-6-dmi-acc.mp4",
+      "poster": "/assets/projects/byd/infographics/sealion-6-dmi-acc.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "Automatic emergency braking.",
+      "src": "/assets/projects/byd/infographics/sealion-6-dmi-aeb.mp4",
+      "poster": "/assets/projects/byd/infographics/sealion-6-dmi-aeb.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "Lane-keeping assistance.",
+      "src": "/assets/projects/byd/infographics/sealion-6-dmi-alka.mp4",
+      "poster": "/assets/projects/byd/infographics/sealion-6-dmi-alka.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "Blind-spot detection.",
+      "src": "/assets/projects/byd/infographics/sealion-6-dmi-bsd.mp4",
+      "poster": "/assets/projects/byd/infographics/sealion-6-dmi-bsd.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "Door opening warning.",
+      "src": "/assets/projects/byd/infographics/sealion-6-dmi-dow.mp4",
+      "poster": "/assets/projects/byd/infographics/sealion-6-dmi-dow.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "Front cross-traffic alert.",
+      "src": "/assets/projects/byd/infographics/sealion-6-dmi-fcta.mp4",
+      "poster": "/assets/projects/byd/infographics/sealion-6-dmi-fcta.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "Forward collision warning.",
+      "src": "/assets/projects/byd/infographics/sealion-6-dmi-fcw.mp4",
+      "poster": "/assets/projects/byd/infographics/sealion-6-dmi-fcw.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "Speed-limit information.",
+      "src": "/assets/projects/byd/infographics/sealion-6-dmi-isli.mp4",
+      "poster": "/assets/projects/byd/infographics/sealion-6-dmi-isli.jpg",
+      "format": "Feature animation"
+    }
+  ],
+  "galleries": [
+    {
+      "label": "03 / BYD",
+      "navigationLabel": "Key visuals",
+      "title": "TI7. In every light.",
+      "description": "Five campaign compositions move from warm city streets to the lights after dark.",
+      "images": [
+        {
+          "src": "/assets/projects/byd/key-visuals/1.webp",
+          "thumbnail": "/assets/projects/byd/key-visuals/1-thumb.webp",
+          "alt": "TI7 · Rear three-quarter view",
+          "caption": "TI7 · Rear three-quarter view",
+          "width": 2400,
+          "height": 1792
+        },
+        {
+          "src": "/assets/projects/byd/key-visuals/2.webp",
+          "thumbnail": "/assets/projects/byd/key-visuals/2-thumb.webp",
+          "alt": "TI7 · Golden-hour drive",
+          "caption": "TI7 · Golden-hour drive",
+          "width": 2400,
+          "height": 1792
+        },
+        {
+          "src": "/assets/projects/byd/key-visuals/3.webp",
+          "thumbnail": "/assets/projects/byd/key-visuals/3-thumb.webp",
+          "alt": "TI7 · Front and centre",
+          "caption": "TI7 · Front and centre",
+          "width": 2400,
+          "height": 1792
+        },
+        {
+          "src": "/assets/projects/byd/key-visuals/4.webp",
+          "thumbnail": "/assets/projects/byd/key-visuals/4-thumb.webp",
+          "alt": "TI7 · Into the light",
+          "caption": "TI7 · Into the light",
+          "width": 2400,
+          "height": 1792
+        },
+        {
+          "src": "/assets/projects/byd/key-visuals/5.webp",
+          "thumbnail": "/assets/projects/byd/key-visuals/5-thumb.webp",
+          "alt": "TI7 · City after dark",
+          "caption": "TI7 · City after dark",
+          "width": 2400,
+          "height": 1792
+        }
+      ]
+    },
+    {
+      "label": "04 / BYD",
+      "navigationLabel": "Behind the work",
+      "title": "Built down to the detail.",
+      "description": "A look inside the digital-twin workflow. These work-in-progress views focus on surfaces, lighting and the details that make each vehicle recognisable.",
+      "images": [
+        {
+          "src": "/assets/projects/byd/behind-the-work/1.webp",
+          "thumbnail": "/assets/projects/byd/behind-the-work/1-thumb.webp",
+          "alt": "Sealion 05 · Front-end detail",
+          "caption": "Sealion 05 · Front-end detail",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/assets/projects/byd/behind-the-work/2.webp",
+          "thumbnail": "/assets/projects/byd/behind-the-work/2-thumb.webp",
+          "alt": "Sealion 6 DM-i · Digital model",
+          "caption": "Sealion 6 DM-i · Digital model",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/assets/projects/byd/behind-the-work/3.webp",
+          "thumbnail": "/assets/projects/byd/behind-the-work/3-thumb.webp",
+          "alt": "Sealion 6 DM-i · Headlight detail",
+          "caption": "Sealion 6 DM-i · Headlight detail",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/assets/projects/byd/behind-the-work/4.webp",
+          "thumbnail": "/assets/projects/byd/behind-the-work/4-thumb.webp",
+          "alt": "Sealion 05 · Headlight detail",
+          "caption": "Sealion 05 · Headlight detail",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/assets/projects/byd/behind-the-work/5.webp",
+          "thumbnail": "/assets/projects/byd/behind-the-work/5-thumb.webp",
+          "alt": "Sealion 05 · Rear lighting detail",
+          "caption": "Sealion 05 · Rear lighting detail",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "model": "Sealion 05",
+      "type": "Vehicle configurator",
+      "title": "Explore the Sealion 05.",
+      "url": "https://nmesis.up.railway.app/BYD/BYDsealion05/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/byd/configurators/sealion05-opening.avif"
+    },
+    {
+      "model": "Sealion 06 DMI",
+      "type": "Vehicle configurator",
+      "title": "Explore the Sealion 06 DMI.",
+      "url": "https://nmesis.up.railway.app/BYD/BYDsealion06dmi/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/byd/configurators/sealion06dmi-opening.avif"
+    },
+    {
+      "model": "Atto 08",
+      "type": "Vehicle configurator",
+      "title": "Explore the Atto 08.",
+      "url": "https://nmesis.up.railway.app/BYD/BYDatto08/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/byd/configurators/atto08-opening.avif"
+    },
+    {
+      "model": "Dolphin Surf",
+      "type": "Vehicle configurator",
+      "title": "Explore the Dolphin Surf.",
+      "url": "https://nmesis.up.railway.app/BYD/BYDdolphinsurf/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/byd/configurators/dolphinsurf-opening.avif"
+    },
+    {
+      "model": "Shark 6",
+      "type": "Vehicle configurator",
+      "title": "Explore the Shark 6.",
+      "url": "https://nmesis.up.railway.app/BYD/BYDshark6/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/byd/configurators/shark6-opening.avif"
+    },
+    {
+      "model": "TI7",
+      "type": "Vehicle configurator",
+      "title": "Explore the TI7.",
+      "url": "https://nmesis.up.railway.app/BYD/BYDti7/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/byd/configurators/ti7-opening.avif"
+    }
+  ],
+  "client": "BYD · Al Mansour Automotive",
+  "scope": "Digital twins, cinematic content, key visuals, infographic animations and interactive brochures",
+  "market": "Egypt"
+}

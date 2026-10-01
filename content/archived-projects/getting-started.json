@@ -1,0 +1,44 @@
+{
+  "slug": "getting-started",
+  "title": "Vehicle configurator.",
+  "subtitle": "Explore the vehicle, down to the local trim.",
+  "description": "A placeholder case study for an NMESIS configurator. This page will document the vehicle range, market-specific options, asset preparation and interactive experience. Approved project details and visuals will replace the current samples.",
+  "cover": "/assets/images/793mulLdGFDEHpAFmWc0es0aI.png",
+  "coverAlt": "Placeholder artwork for Vehicle configurator",
+  "tags": [
+    "Digital twins",
+    "Configurators",
+    "Vehicle exploration"
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/9r64GmClFPS0M46NaS1cqQggO8.png",
+      "alt": "Placeholder gallery image for Vehicle configurator",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "src": "/assets/images/7sWjgiI4bykumcHe1iJU1Xl8MKM.png",
+      "alt": "Placeholder gallery image for Vehicle configurator",
+      "width": 3680,
+      "height": 2760
+    },
+    {
+      "src": "/assets/images/QmY1xDSiya0qHetOgpxkVOkwt0.png",
+      "alt": "Placeholder gallery image for Vehicle configurator",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/assets/images/yEpvDEbEGCfijbL4sjpbcXC7828.png",
+      "alt": "Placeholder gallery image for Vehicle configurator",
+      "width": 2500,
+      "height": 1875
+    }
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "client": "To be confirmed",
+  "scope": "Digital twins, Configurators, Vehicle exploration",
+  "market": "To be confirmed"
+}

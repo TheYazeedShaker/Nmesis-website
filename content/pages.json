@@ -1,0 +1,56 @@
+[
+  {
+    "route": "/",
+    "template": "home",
+    "title": "Home",
+    "cta": true
+  },
+  {
+    "route": "/projects",
+    "template": "projects",
+    "title": "Projects",
+    "cta": false
+  },
+  {
+    "route": "/services",
+    "template": "services",
+    "title": "Services",
+    "cta": true
+  },
+  {
+    "route": "/services/automotive-cgi",
+    "template": "service-detail",
+    "title": "Automotive CGI",
+    "cta": false
+  },
+  {
+    "route": "/about",
+    "template": "about",
+    "title": "About",
+    "cta": false
+  },
+  {
+    "route": "/contact",
+    "template": "contact",
+    "title": "Contact",
+    "cta": false
+  },
+  {
+    "route": "/terms",
+    "template": "terms",
+    "title": "Terms of service",
+    "cta": false
+  },
+  {
+    "route": "/privacy-policy",
+    "template": "privacy-policy",
+    "title": "Privacy policy",
+    "cta": false
+  },
+  {
+    "route": "/404",
+    "template": "404",
+    "title": "Page not found",
+    "cta": false
+  }
+]

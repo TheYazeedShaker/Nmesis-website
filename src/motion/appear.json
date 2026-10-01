@@ -1,0 +1,2439 @@
+{
+  "/": {
+    "entries": [
+      {
+        "selector": ".design-1k0wel8",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "bounce": 0,
+                "delay": 1,
+                "duration": 1,
+                "type": "spring"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      },
+      {
+        "selector": ".design-4ykqrg-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "bounce": 0.2,
+                "delay": 0.3,
+                "duration": 2,
+                "type": "spring"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1g0lhvm": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "bounce": 0.2,
+                "delay": 0.3,
+                "duration": 2,
+                "type": "spring"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "uh7gmc": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "bounce": 0.2,
+                "delay": 0.3,
+                "duration": 2,
+                "type": "spring"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      },
+      {
+        "selector": ".design-15u04nt-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.7,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "bounce": 0,
+                "delay": 0.6,
+                "duration": 1.1,
+                "type": "spring"
+              },
+              "x": 0,
+              "y": 0
+            },
+            "transformTemplate": "translateX(-50%) __Appear_Animation_Transform__"
+          },
+          "uh7gmc": {
+            "initial": {
+              "opacity": 0.7,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "bounce": 0,
+                "delay": 0.6,
+                "duration": 1.1,
+                "type": "spring"
+              },
+              "x": 0,
+              "y": 0
+            },
+            "transformTemplate": "translateX(-50%) __Appear_Animation_Transform__"
+          },
+          "1g0lhvm": {
+            "initial": {
+              "opacity": 0.7,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "bounce": 0,
+                "delay": 0.6,
+                "duration": 1.1,
+                "type": "spring"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      },
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      },
+      {
+        "selector": ".design-10Ueu",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "uh7gmc": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1g0lhvm": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "72rtr7",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "uh7gmc",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1g0lhvm",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/contact": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "pbtvsn",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "1jfxr8l",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "xa56jd",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/privacy-policy": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "1o9vo9m",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "85bf49",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "jqyaiy",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/projects": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      },
+      {
+        "selector": ".design-10Ueu",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "qy6vz3": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "w6pcm3": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "1ahd7f9",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "w6pcm3",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "qy6vz3",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/projects/brand-identity-for-a-howey": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      },
+      {
+        "selector": ".design-10Ueu",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1e5jlu0": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1v7vlwr": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "a8bp4g",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "1e5jlu0",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1v7vlwr",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/projects/sun-flower-tech": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      },
+      {
+        "selector": ".design-10Ueu",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1e5jlu0": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1v7vlwr": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "a8bp4g",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "1e5jlu0",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1v7vlwr",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/projects/getting-started": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      },
+      {
+        "selector": ".design-10Ueu",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1e5jlu0": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1v7vlwr": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "a8bp4g",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "1e5jlu0",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1v7vlwr",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/projects/shopify-site-and-lookbook-for-aur\u00e9": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      },
+      {
+        "selector": ".design-10Ueu",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1e5jlu0": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1v7vlwr": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "a8bp4g",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "1e5jlu0",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1v7vlwr",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/projects/tenfold-s-first-sneaker-release": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      },
+      {
+        "selector": ".design-10Ueu",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1e5jlu0": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1v7vlwr": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "a8bp4g",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "1e5jlu0",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1v7vlwr",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/projects/strategy-design-and-full-build-for-a-clean-beauty-brand-targeting-gen-z": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      },
+      {
+        "selector": ".design-10Ueu",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1e5jlu0": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          },
+          "1v7vlwr": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 0.9,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 0,
+                "duration": 0.4,
+                "ease": [
+                  0.68,
+                  0,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "a8bp4g",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "1e5jlu0",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1v7vlwr",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/terms": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "4zk71o",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "naxssj",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1l1gy2i",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/about": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "15w4z3n",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "8nx9lm",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "fuw43n",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/blog": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "te1c25",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "1vkuzcu",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1lt06ri",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/blog/why-your-brand-isn-t-just-a-logo": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "cevexm",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "fs1swm",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "6yj33g",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/blog/the-power-of-product-design-that-gets-out-of-the-way": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "cevexm",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "fs1swm",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "6yj33g",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/blog/the-anatomy-of-a-strong-brand-launch": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "cevexm",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "fs1swm",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "6yj33g",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/blog/seo-isn-t-dead-it-s-just-grown-up": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "cevexm",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "fs1swm",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "6yj33g",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/blog/don-t-just-post-campaign": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "cevexm",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "fs1swm",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "6yj33g",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  },
+  "/404": {
+    "entries": [
+      {
+        "selector": ".design-5wlq7v-container",
+        "variants": {
+          "default": {
+            "initial": {
+              "opacity": 0.001,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "x": 0,
+              "y": 0
+            },
+            "animate": {
+              "opacity": 1,
+              "rotate": 0,
+              "rotateX": 0,
+              "rotateY": 0,
+              "scale": 1,
+              "skewX": 0,
+              "skewY": 0,
+              "transition": {
+                "delay": 3,
+                "duration": 0.4,
+                "ease": [
+                  0.71,
+                  -0.01,
+                  0.56,
+                  1
+                ],
+                "type": "tween"
+              },
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "hash": "1cwdrw9",
+        "mediaQuery": "(min-width: 1200px)"
+      },
+      {
+        "hash": "14g84dj",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "fa8l33",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "zagzij",
+        "mediaQuery": "(max-width: 809.98px)"
+      },
+      {
+        "hash": "1hmfo5g",
+        "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+      },
+      {
+        "hash": "1eh47ed",
+        "mediaQuery": "(min-width: 1200px)"
+      }
+    ]
+  }
+}

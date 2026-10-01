@@ -1,0 +1,28 @@
+# Generated output and machine-local dependencies
+/dist/
+/node_modules/
+/.vercel/
+*.log
+.DS_Store
+
+# Credentials and machine configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local reference material, exports, backups and working notes
+/archives/
+/references/
+/output/
+/tmp/
+/CLAUDE.md
+/HANDOFF.md
+/CONTENT_REVIEW.md
+/INTERACTION-CHECKS.md
+/RESPONSIVE-REVIEW.md
+/VERSION.md
+/MOTION.md
+/public/**/sources.json
+/public/**/*-sources.json

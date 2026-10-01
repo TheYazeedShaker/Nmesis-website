@@ -1,0 +1,228 @@
+{
+  "metaDescription": "Meet NMESIS Motion Lab, the studio behind automotive digital twins, cinematic CGI, configurators and interactive brochures that change how people experience cars online.",
+  "hero": {
+    "eyebrow": "NMESIS Motion Lab",
+    "title": "We bring cars to life. Online.",
+    "description": "An automotive studio bringing together visual craft, engineering and a curiosity for what comes next.",
+    "scrollLabel": "Our story",
+    "titleLines": [
+      "We bring cars",
+      "to life.",
+      "Online."
+    ]
+  },
+  "origin": {
+    "eyebrow": "Who we are",
+    "title": "CGI artists at heart.\nAutomotive technologists by evolution.",
+    "paragraphs": [
+      "NMESIS brings CG artists and software engineers together around a shared fascination with cars. We care about the things that give each vehicle its character: a surface, a reflection, the feel of a cabin.",
+      "Based in Egypt and the UAE, we work with automotive teams to translate that character into a digital experience. Our founders stay close to the work, from the first conversation to the final detail."
+    ],
+    "image": "/assets/projects/gac/key-visuals/image-57.webp",
+    "alt": "GAC interior CGI showing the leather, carbon fibre and metal finishes of the centre console",
+    "caption": "GAC · A study in materials, light and detail."
+  },
+  "evolution": {
+    "eyebrow": "Our craft, in practice",
+    "title": "From the vehicle\nto the experience.",
+    "description": "Four ways our work brings people closer to a car. Each example comes from our studio.",
+    "stages": [
+      {
+        "number": "01",
+        "title": "Digital twins",
+        "description": "It begins with the vehicle itself. Geometry, materials and individual components come together in a detailed digital model.",
+        "image": "/assets/services/digital-twin-poster.jpg",
+        "video": "/assets/services/digital-twin.mp4",
+        "alt": "NMESIS digital twin construction film",
+        "caption": "Watch the digital vehicle come together.",
+        "action": {
+          "label": "Digital twins",
+          "href": "/services#digital-twins"
+        }
+      },
+      {
+        "number": "02",
+        "title": "Automotive CGI",
+        "description": "Light, camera and movement give that model a presence. Our GAC Empow launch film shows the finished craft in motion.",
+        "image": "/assets/projects/gac/cinematic/empow.jpg",
+        "video": "/assets/projects/gac/cinematic/empow.mp4",
+        "alt": "GAC Empow cinematic launch film",
+        "caption": "GAC Empow · Cinematic launch film.",
+        "action": {
+          "label": "Explore GAC",
+          "href": "/projects/gac"
+        }
+      },
+      {
+        "number": "03",
+        "title": "Configurators",
+        "description": "The viewer takes control. This AVATR 12 interface brings together colours, environments, cabin views and vehicle details.",
+        "image": "/assets/projects/avatr/configurators/avatr12-pixel.webp",
+        "alt": "AVATR 12 configurator with interior, exterior, environment and feature controls",
+        "caption": "AVATR 12 · Pixel-streaming configurator.",
+        "action": {
+          "label": "Explore AVATR",
+          "href": "/projects/avatr#experience-1"
+        }
+      },
+      {
+        "number": "04",
+        "title": "Interactive brochures",
+        "description": "A car’s story, ready to explore. The IM6 brochure connects an immersive cabin with feature explanations in one online experience.",
+        "image": "/assets/projects/im-motors/brochures/im6-interior.webp",
+        "alt": "IM6 interactive brochure cabin exploration",
+        "detailImage": "/assets/projects/im-motors/brochures/im6-features.webp",
+        "detailAlt": "IM6 brochure feature cards for air suspension, cruise control, thermal management and parking",
+        "caption": "IM6 · Cabin exploration and feature stories.",
+        "action": {
+          "label": "Explore IM brochures",
+          "href": "/projects/im-motors#interactive-brochures"
+        }
+      }
+    ]
+  },
+  "principles": {
+    "eyebrow": "What matters to us",
+    "title": "Care in the details.\nClarity in the experience.",
+    "items": [
+      {
+        "title": "Know the vehicle",
+        "description": "We study the references, specifications and local trims before making creative decisions."
+      },
+      {
+        "title": "Stay close to the team",
+        "description": "Artists, engineers and clients share feedback throughout the work, so decisions stay connected."
+      },
+      {
+        "title": "Keep exploring",
+        "description": "Our lab gives us room to test new lighting, movement and ways to interact."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Our foundations",
+    "items": [
+      {
+        "value": "10+",
+        "unit": "years",
+        "description": "CGI experience among our founders."
+      },
+      {
+        "value": "Egypt + UAE",
+        "unit": "",
+        "description": "Our operating footprint."
+      }
+    ]
+  },
+  "clients": {
+    "eyebrow": "Selected brands",
+    "title": "Trusted across the automotive industry.",
+    "description": "Working with the teams and authorized distributors representing leading automotive brands.",
+    "names": [
+      "Toyota",
+      "Lexus",
+      "Ford",
+      "BYD",
+      "Cadillac",
+      "GAC",
+      "AVATR",
+      "IM Motors"
+    ]
+  },
+  "people": {
+    "eyebrow": "Our founders",
+    "title": "The people\nbehind NMESIS.",
+    "description": "Four founders, bringing together visual craft, technology and a shared curiosity for how people experience cars.",
+    "members": [
+      {
+        "name": "Moaaz Yasser",
+        "role": "Co-Founder & CEO",
+        "bio": "Moaaz leads strategy, client relationships and the vision for how people experience cars online.",
+        "portrait": "/assets/team/moaaz-yasser.png",
+        "portraitAlt": "Moaaz Yasser, Co-Founder and CEO of NMESIS",
+        "portraitPosition": "50% 38%",
+        "portraitScale": "1"
+      },
+      {
+        "name": "Kareem Abd El Azeem",
+        "role": "Co-Founder / Head of CG",
+        "bio": "Kareem leads CG quality and artistic direction, with a close eye for the details that make a vehicle feel real.",
+        "portrait": "/assets/team/kareem-abd-el-azeem.jpg",
+        "portraitAlt": "Kareem Abd El Azeem, Co-Founder of NMESIS",
+        "portraitPosition": "50% 40%",
+        "portraitScale": "1"
+      },
+      {
+        "name": "Islam Hamouly",
+        "role": "Co-Founder / Data Architecture",
+        "bio": "Islam brings experience at Etisalat and du to NMESIS’s work in data architecture.",
+        "portrait": "/assets/team/islam-hamouly.jpg",
+        "portraitAlt": "Islam Hamouly, Co-Founder of NMESIS",
+        "portraitPosition": "62% 48%",
+        "portraitScale": "1.24"
+      },
+      {
+        "name": "Bishoy Khalifa",
+        "role": "Co-Founder / CGI + VFX",
+        "bio": "Bishoy brings CGI and VFX experience, including work as a lead FX artist at Framestore.",
+        "portrait": "/assets/team/bishoy-khalifa.jpg",
+        "portraitAlt": "Bishoy Khalifa, Co-Founder of NMESIS",
+        "portraitPosition": "50% 58%",
+        "portraitScale": "1.12"
+      }
+    ]
+  },
+  "working": {
+    "eyebrow": "How we work",
+    "title": "From the first scene\nto the final frame.",
+    "description": "Our artists develop the scene, refine the surfaces and build the lighting together. This IM Motors breakdown opens up that process, showing how an unfinished scene becomes the launch film.",
+    "closing": "A look inside the work, layer by layer.",
+    "video": "/assets/projects/im-motors/cinematic/campaign-breakdown.mp4",
+    "image": "/assets/projects/im-motors/cinematic/campaign-breakdown.jpg",
+    "alt": "IM Motors campaign production breakdown comparing unfinished and final scenes",
+    "caption": "IM Motors · From clay render to finished campaign."
+  },
+  "locations": {
+    "eyebrow": "Our locations",
+    "items": [
+      {
+        "city": "Cairo",
+        "country": "Egypt"
+      },
+      {
+        "city": "Dubai",
+        "country": "UAE"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Let’s work together",
+    "title": "Bring your vehicle\nto life online.",
+    "description": "Tell us what you have in mind. We’ll work out the next step together.",
+    "primaryAction": {
+      "label": "Start a project",
+      "href": "/contact"
+    },
+    "secondaryAction": {
+      "label": "Explore our work",
+      "href": "/projects"
+    },
+    "image": "/assets/projects/avatr/key-visuals/visual-03.webp"
+  },
+  "mission": {
+    "eyebrow": "Our mission",
+    "title": "Change how people\nexperience cars online.",
+    "paragraphs": [
+      "We want discovering a car online to feel like getting to know it. To step inside, look closely, try a different finish and understand what a feature does, wherever you are.",
+      "Our mission is to make that experience more intuitive, more informative and closer to the real vehicle."
+    ],
+    "image": "/assets/projects/cadillac/configurators/vistiq-pixel.webp",
+    "alt": "Cadillac VISTIQ online exploration walkthrough with cabin, exterior and environment controls",
+    "caption": "Cadillac VISTIQ · See online exploration in action.",
+    "action": {
+      "label": "Experience Cadillac",
+      "href": "/projects/cadillac#experience-1"
+    },
+    "video": "/assets/projects/cadillac/videos/vistiq-walkthrough.mp4"
+  }
+}

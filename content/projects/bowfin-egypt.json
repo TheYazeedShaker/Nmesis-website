@@ -1,0 +1,96 @@
+{
+  "slug": "bowfin-egypt",
+  "title": "Bowfin Egypt.",
+  "subtitle": "From the first reveal to open water.",
+  "description": "A cinematic reveal, key visuals and a configurator experience for Bowfin Egypt. NMESIS brings the boat’s form, materials and details into focus, from its presence on the water to the finishes explored in the configurator.",
+  "client": "Bowfin",
+  "scope": "Cinematic CGI, key visuals and boat configurator",
+  "market": "Egypt",
+  "cover": "/assets/projects/bowfin-egypt/key-visuals/visual-03.webp",
+  "coverAlt": "Bowfin rear three-quarter view on the water",
+  "heroCover": "/assets/projects/bowfin-egypt/key-visuals/visual-03.webp",
+  "heroCoverAlt": "Bowfin rear three-quarter view on the water",
+  "heroLayout": "landscape",
+  "tags": [
+    "Cinematic CGI",
+    "Key visuals",
+    "Boat configurator"
+  ],
+  "brand": "Bowfin",
+  "brandLogo": "/assets/projects/bowfin-egypt/bowfin-logo.png",
+  "brandLogoInvert": true,
+  "mediaLayout": "collection",
+  "cinematicTitle": "The reveal.",
+  "cinematicNavigationLabel": "Cinematic film",
+  "cinematicDescription": "Light, movement and a first look at Bowfin. A cinematic introduction that moves from the silhouette to the details.",
+  "films": [
+    {
+      "title": "Bowfin. The reveal.",
+      "format": "Cinematic reveal",
+      "src": "/assets/projects/bowfin-egypt/videos/reveal.mp4",
+      "poster": "/assets/projects/bowfin-egypt/videos/reveal.jpg"
+    }
+  ],
+  "galleryShape": "landscape",
+  "galleries": [
+    {
+      "label": "02 / Bowfin Egypt",
+      "navigationLabel": "Key visuals",
+      "title": "Designed for the water.",
+      "description": "Five views of Bowfin, from open-water compositions to a controlled studio setting. Explore the hull, cockpit and material details.",
+      "images": [
+        {
+          "src": "/assets/projects/bowfin-egypt/key-visuals/visual-01.webp",
+          "thumbnail": "/assets/projects/bowfin-egypt/key-visuals/visual-01-thumb.webp",
+          "alt": "Bowfin boat in seafoam green on open water",
+          "caption": "Bowfin boat in seafoam green on open water",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "/assets/projects/bowfin-egypt/key-visuals/visual-02.webp",
+          "thumbnail": "/assets/projects/bowfin-egypt/key-visuals/visual-02-thumb.webp",
+          "alt": "Bowfin front three-quarter view showing the open cockpit",
+          "caption": "Bowfin front three-quarter view showing the open cockpit",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "/assets/projects/bowfin-egypt/key-visuals/visual-03.webp",
+          "thumbnail": "/assets/projects/bowfin-egypt/key-visuals/visual-03-thumb.webp",
+          "alt": "Bowfin rear three-quarter view on the water",
+          "caption": "Bowfin rear three-quarter view on the water",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "/assets/projects/bowfin-egypt/key-visuals/visual-04.webp",
+          "thumbnail": "/assets/projects/bowfin-egypt/key-visuals/visual-04-thumb.webp",
+          "alt": "Bowfin cockpit, seating and helm viewed from the stern",
+          "caption": "Bowfin cockpit, seating and helm viewed from the stern",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "src": "/assets/projects/bowfin-egypt/key-visuals/visual-05.webp",
+          "thumbnail": "/assets/projects/bowfin-egypt/key-visuals/visual-05-thumb.webp",
+          "alt": "Black Bowfin boat in a studio setting",
+          "caption": "Black Bowfin boat in a studio setting",
+          "width": 1840,
+          "height": 1057
+        }
+      ]
+    }
+  ],
+  "walkthroughTitle": "Make it your Bowfin.",
+  "walkthroughDescription": "A recorded tour of the Bowfin configurator. Explore colour and finish combinations, move around the boat and take a closer look at the cockpit.",
+  "walkthroughs": [
+    {
+      "title": "Bowfin configurator walkthrough",
+      "format": "Recorded configurator demonstration",
+      "src": "/assets/projects/bowfin-egypt/videos/configurator-walkthrough.mp4",
+      "poster": "/assets/projects/bowfin-egypt/videos/configurator-walkthrough.jpg"
+    }
+  ],
+  "experiences": []
+}

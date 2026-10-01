@@ -1,0 +1,40 @@
+{
+  "header": {
+    "home": "Home.",
+    "projects": "Projects.",
+    "about": "About.",
+    "x": "X.",
+    "ig": "IG.",
+    "be": "BE.",
+    "db": "DB.",
+    "contact": "Contact",
+    "services": "Services."
+  },
+  "footer": {
+    "updates": "Let’s talk about your next project.",
+    "sign_in_to_our_newsletter": "From your next launch to your digital vehicle range, tell us what you have in mind.",
+    "email": "Email.",
+    "site_map": "Site map.",
+    "home": "Home.",
+    "projects": "Projects.",
+    "about": "About.",
+    "connect": "Connect.",
+    "social": "Find NMESIS.",
+    "x": "X.",
+    "ig": "IG.",
+    "be": "BE.",
+    "db": "DB.",
+    "made_by": "Website preview · ",
+    "volt_supply": "NMESIS",
+    "terms_of_service": "Terms of service",
+    "copy": ".",
+    "privacy_policy": "Privacy policy",
+    "services": "Services."
+  },
+  "cta": {
+    "let_s_build_something_great": "let’s build your\nnext experience.",
+    "let_s_talk_about_your_next_move": "The car. The craft. The experience.",
+    "whether_it_s_strategy_design_or_both_we_re_here_to_help": " From vehicle detail to cinematic stories and interactive exploration. Tell us what comes next.",
+    "contact": "Start a project"
+  }
+}

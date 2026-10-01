@@ -1,0 +1,185 @@
+{
+  "eyebrow": "Digital vehicles. Films. Interactive experiences.",
+  "title": "Built to move.",
+  "intro": "One digital twin. Every way to experience it.",
+  "description": "We build accurate digital vehicles, turn them into cinematic content and let customers explore them through configurators and interactive brochures. Start with one service or bring the whole launch together.",
+  "heroImage": "/assets/projects/im-motors/launch-key-visual.webp",
+  "heroAlt": "IM6, LS7 and IM5 in a cinematic launch visual",
+  "heroCaption": "IM Motors · Launch campaign imagery for Al Mansour Automotive",
+  "groups": [
+    {
+      "id": "digital-twins",
+      "label": "Digital twins",
+      "title": "The vehicle behind every experience.",
+      "description": "A detailed digital twin gives your content a consistent foundation. Build the right exterior, cabin and materials once, then carry that vehicle into films, campaign imagery and interactive experiences.",
+      "project": "/projects",
+      "projectLabel": "See the work built around our digital twins",
+      "variants": [
+        {
+          "label": "Digital vehicle creation",
+          "title": "Start with CAD. Or just references.",
+          "description": "No CAD file? Our reference-based workflow reconstructs the vehicle from images and specifications. We develop the geometry, finishes and moving parts, then review the model against the references and the trim sold in your market.",
+          "points": [
+            "Exterior, interior and material development",
+            "CAD preparation or modelling from reference images",
+            "Local trims, colours, wheels and equipment",
+            "A reusable foundation for content and interaction"
+          ],
+          "media": {
+            "type": "video",
+            "src": "/assets/services/digital-twin.mp4",
+            "poster": "/assets/services/digital-twin-poster.jpg",
+            "caption": "Digital twin · From individual components to the finished vehicle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "automotive-cgi",
+      "label": "Automotive CGI",
+      "title": "Make them feel it. Help them understand it.",
+      "description": "Cinematic films create the first impression. Infographic animations explain the technology. Key visuals give the campaign its defining image. Build one piece or a connected content suite around the same digital vehicle.",
+      "project": "/projects/soueast-egypt",
+      "projectLabel": "Explore SOUEAST",
+      "variants": [
+        {
+          "label": "Cinematic films",
+          "title": "A launch with a story.",
+          "description": "Give the vehicle a world, a mood and a story. From a short teaser to a full launch film, we shape the creative direction, environments, lighting and motion around its character.",
+          "points": [
+            "Launch films, teasers and reveals",
+            "Creative direction, environments and animation",
+            "Campaign cutdowns and screen formats"
+          ],
+          "media": {
+            "type": "video",
+            "src": "/assets/projects/soueast-egypt/cinematic/s08-dm.mp4",
+            "poster": "/assets/projects/soueast-egypt/cinematic/s08-dm.jpg",
+            "caption": "SOUEAST S08 DM · Launch film"
+          },
+          "project": "/projects/soueast-egypt#film-1",
+          "projectLabel": "Watch the SOUEAST films"
+        },
+        {
+          "label": "Infographic animations",
+          "title": "Show what a feature really does.",
+          "description": "Make the technology visible, from aerodynamics and driver assistance to lighting and cabin comfort. Pair accurate vehicle animation with a clear explanation of the benefit.",
+          "points": [
+            "Feature and technology explainers",
+            "Product benefits and visual storytelling",
+            "Content for brochures, campaigns and launches"
+          ],
+          "media": {
+            "type": "video",
+            "src": "/assets/projects/im-motors/infographics/ls7-zero-gravity-seats.mp4",
+            "poster": "/assets/projects/im-motors/infographics/ls7-zero-gravity-seats.jpg",
+            "caption": "IM LS7 · Zero-gravity seat animation"
+          },
+          "project": "/projects/im-motors#infographics",
+          "projectLabel": "Explore IM feature animations"
+        },
+        {
+          "label": "Key visuals",
+          "title": "One image. A lasting impression.",
+          "description": "Create a distinctive still with the right vehicle, setting, light and composition. Develop a family of images for a launch, a model range or a campaign across different channels.",
+          "points": [
+            "Outdoor and launch campaign imagery",
+            "Digital, social and retail adaptations",
+            "Consistent visuals across the vehicle range"
+          ],
+          "media": {
+            "type": "image",
+            "src": "/assets/projects/chevrolet/gallery/key-visual-2.webp",
+            "alt": "Chevrolet Silverado moving through desert sand in a CGI key visual",
+            "caption": "Chevrolet Silverado · Campaign key visual"
+          },
+          "project": "/projects/chevrolet#project-gallery",
+          "projectLabel": "See Chevrolet visuals and breakdown"
+        }
+      ],
+      "detailUrl": "/services/automotive-cgi"
+    },
+    {
+      "id": "configurators",
+      "label": "Configurators",
+      "title": "From looking to exploring.",
+      "description": "Let customers rotate the vehicle, compare finishes and step inside. Choose a light configurator built from pre-rendered imagery or a real-time experience delivered through pixel streaming.",
+      "project": "/projects/soueast-egypt#experience-1",
+      "projectLabel": "Explore the SOUEAST configurators",
+      "variants": [
+        {
+          "label": "Light configurators",
+          "title": "Beautiful views. A simple way to choose.",
+          "description": "Use a prepared library of rendered views to explore the vehicle and compare the available colours and finishes. A focused experience that fits naturally into your website or interactive brochure.",
+          "points": [
+            "Pre-rendered exterior and interior views",
+            "Vehicle rotation and finish selection",
+            "Integration into websites and interactive brochures"
+          ],
+          "media": {
+            "type": "experience",
+            "project": "soueast-egypt",
+            "model": "S07",
+            "caption": "SOUEAST S07 · Live light configurator"
+          }
+        },
+        {
+          "label": "Pixel streaming",
+          "title": "A vehicle you can explore in real time.",
+          "description": "Give customers more freedom through a live 3D experience streamed to their browser. Explore interiors and exteriors, change materials and lighting, and move between environments.",
+          "points": [
+            "Real-time cameras, materials and vehicle interaction",
+            "Interior, exterior and environment exploration",
+            "Hosted streaming planned around your audience"
+          ],
+          "media": {
+            "type": "experience",
+            "project": "avatr",
+            "model": "AVATR 12",
+            "group": "pixel",
+            "caption": "AVATR 12 · Live pixel streaming"
+          },
+          "project": "/projects/cadillac#experience-1",
+          "projectLabel": "Explore Cadillac pixel streaming"
+        }
+      ]
+    },
+    {
+      "id": "interactive-brochures",
+      "label": "Interactive brochures",
+      "title": "The full vehicle story. In one link.",
+      "description": "Bring 360° exterior views, immersive interiors, galleries, feature animations and specifications together in a brochure customers can explore. Built for discovery and easy sharing by your sales team.",
+      "project": "/projects/im-motors#interactive-brochures",
+      "projectLabel": "Explore the IM Motors project",
+      "brochureProject": "im-motors"
+    }
+  ],
+  "processTitle": "One asset. A connected production.",
+  "processIntro": "Commission a single film, brochure or configurator, or bring the services together. We plan the digital twin around the outputs you need, so the same vehicle can support the next campaign too.",
+  "steps": [
+    {
+      "title": "Define.",
+      "text": "Agree the vehicles, local specification, audience and deliverables."
+    },
+    {
+      "title": "Build.",
+      "text": "Create or refine the digital twins and review the details together."
+    },
+    {
+      "title": "Create.",
+      "text": "Develop films, key visuals, feature animation and interactive experiences."
+    },
+    {
+      "title": "Launch.",
+      "text": "Prepare the final formats, connect the experiences and support the handover."
+    }
+  ],
+  "metaDescription": "Digital twins, automotive CGI, light and pixel-streaming configurators, and interactive brochures by NMESIS. Explore real work and choose the right service for your next launch.",
+  "ctaBackground": {
+    "src": "/assets/projects/cadillac/key-visuals/visual-06.webp",
+    "width": 1672,
+    "height": 941,
+    "position": "center",
+    "mobilePosition": "45% center"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "chevrolet",
+  "title": "Chevrolet.",
+  "subtitle": "From the first layer to the final frame.",
+  "description": "Chevrolet Silverado automotive CGI by NMESIS, from desert motion to urban compositions. Explore three finished key visuals alongside a short production breakdown showing how one scene comes together.",
+  "cover": "/assets/projects/chevrolet/gallery/key-visual-2.webp",
+  "coverAlt": "Chevrolet Silverado driving through desert sand",
+  "tags": [
+    "Automotive CGI",
+    "Vehicle visualization",
+    "Visual content"
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "heroCover": "/assets/projects/chevrolet/gallery/key-visual-2.webp",
+  "heroCoverAlt": "Chevrolet Silverado driving through desert sand",
+  "heroLayout": "landscape",
+  "galleries": [
+    {
+      "layout": "mixed",
+      "label": "01 / Chevrolet",
+      "title": "The work. And how it’s made.",
+      "description": "Three perspectives on Silverado, plus a look behind the production. Select a key visual to explore the detail or play the breakdown.",
+      "images": [
+        {
+          "src": "/assets/projects/chevrolet/gallery/key-visual-2.webp",
+          "thumbnail": "/assets/projects/chevrolet/gallery/key-visual-2-thumb.webp",
+          "alt": "Silverado. In its element.",
+          "caption": "Silverado. In its element.",
+          "width": 2000,
+          "height": 1125
+        },
+        {
+          "type": "video",
+          "src": "/assets/projects/chevrolet/gallery/breakdown.mp4",
+          "poster": "/assets/projects/chevrolet/gallery/breakdown.jpg",
+          "alt": "Chevrolet Silverado CGI production breakdown",
+          "caption": "Behind the frame.",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "src": "/assets/projects/chevrolet/gallery/key-visual-1.webp",
+          "thumbnail": "/assets/projects/chevrolet/gallery/key-visual-1-thumb.webp",
+          "alt": "Silverado. Street presence.",
+          "caption": "Silverado. Street presence.",
+          "width": 1920,
+          "height": 1088
+        },
+        {
+          "src": "/assets/projects/chevrolet/gallery/key-visual-3.webp",
+          "thumbnail": "/assets/projects/chevrolet/gallery/key-visual-3-thumb.webp",
+          "alt": "Silverado. Urban perspective.",
+          "caption": "Silverado. Urban perspective.",
+          "width": 1920,
+          "height": 1088
+        }
+      ]
+    }
+  ],
+  "client": "Chevrolet",
+  "scope": "Automotive CGI key visuals and production breakdown",
+  "market": "To be confirmed"
+}

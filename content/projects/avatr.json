@@ -1,0 +1,133 @@
+{
+  "slug": "avatr",
+  "title": "AVATR.",
+  "subtitle": "Two ways to explore AVATR.",
+  "description": "From digital twins to interactive exploration, NMESIS brings AVATR 11 and 12 into focus. Discover the vehicles through light configurators built with pre-rendered imagery, or explore AVATR 12 through pixel streaming with real-time materials, lighting and environments.",
+  "cover": "/assets/projects/avatr/poster.jpg",
+  "coverAlt": "AVATR 12 interactive vehicle visualizer",
+  "tags": [
+    "Digital twins",
+    "Light configurators",
+    "Pixel streaming"
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "video": "/assets/projects/avatr/preview.mp4",
+  "client": "AVATR",
+  "scope": "Digital twins, key visuals, pre-rendered configurators and pixel streaming",
+  "market": "To be confirmed",
+  "heroCover": "/assets/projects/avatr/key-visuals/visual-02.webp",
+  "heroCoverAlt": "White AVATR 12 beside sculptural architecture in warm light",
+  "heroLayout": "landscape",
+  "mediaLayout": "collection",
+  "brand": "AVATR",
+  "galleryShape": "landscape",
+  "walkthroughTitle": "A closer look at the experience.",
+  "walkthroughDescription": "Watch a recorded tour of AVATR 12, from exterior finishes and lighting to the interior and different environments.",
+  "walkthroughs": [
+    {
+      "title": "AVATR 12 configurator walkthrough",
+      "src": "/assets/projects/avatr/videos/walkthrough.mp4",
+      "poster": "/assets/projects/avatr/videos/walkthrough.jpg",
+      "format": "Recorded configurator walkthrough"
+    }
+  ],
+  "experienceTitle": "Choose your way in.",
+  "experienceDescription": "Two ways to explore the same detail. Choose an experience, then select a model.",
+  "defaultExperienceGroup": "pixel",
+  "experiences": [],
+  "galleries": [
+    {
+      "label": "01 / AVATR",
+      "title": "Form. Light. Presence.",
+      "description": "Five perspectives on AVATR 11 and 12, exploring the vehicles through architecture, light and landscape.",
+      "images": [
+        {
+          "src": "/assets/projects/avatr/key-visuals/visual-01.webp",
+          "thumbnail": "/assets/projects/avatr/key-visuals/visual-01-thumb.webp",
+          "alt": "White AVATR 11 in a reflective mountain landscape",
+          "caption": "White AVATR 11 in a reflective mountain landscape",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/avatr/key-visuals/visual-02.webp",
+          "thumbnail": "/assets/projects/avatr/key-visuals/visual-02-thumb.webp",
+          "alt": "White AVATR 12 beside sculptural architecture",
+          "caption": "White AVATR 12 beside sculptural architecture",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/avatr/key-visuals/visual-03.webp",
+          "thumbnail": "/assets/projects/avatr/key-visuals/visual-03-thumb.webp",
+          "alt": "AVATR 12 rear view at sunset",
+          "caption": "AVATR 12 rear view at sunset",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/avatr/key-visuals/visual-04.webp",
+          "thumbnail": "/assets/projects/avatr/key-visuals/visual-04-thumb.webp",
+          "alt": "Blue AVATR 12 in an illuminated architectural setting",
+          "caption": "Blue AVATR 12 in an illuminated architectural setting",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/avatr/key-visuals/visual-05.webp",
+          "thumbnail": "/assets/projects/avatr/key-visuals/visual-05-thumb.webp",
+          "alt": "White AVATR 11 front three-quarter view beside water",
+          "caption": "White AVATR 11 front three-quarter view beside water",
+          "width": 1672,
+          "height": 941
+        }
+      ]
+    }
+  ],
+  "experienceGroups": [
+    {
+      "id": "pixel",
+      "label": "Pixel streaming",
+      "description": "Explore AVATR 12 in real time, with interior and exterior views, materials, lighting and environments. Best with a stable internet connection.",
+      "defaultExperience": "AVATR 12",
+      "experiences": [
+        {
+          "model": "AVATR 12",
+          "title": "AVATR 12 Pixel streaming",
+          "type": "Pixel streaming",
+          "url": "https://avatr12.nmesis.workers.dev/",
+          "poster": "/assets/projects/avatr/configurators/avatr12-pixel.webp",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "id": "light",
+      "label": "Light configurators",
+      "description": "Explore AVATR 11 and 12 through pre-rendered views. Rotate the vehicle and compare the available finishes.",
+      "defaultExperience": "AVATR 11",
+      "experiences": [
+        {
+          "model": "AVATR 11",
+          "title": "AVATR 11 Pre-rendered configurator",
+          "type": "Pre-rendered configurator",
+          "url": "https://config.nmesis.io/exterior/configurators%2F9ea462eb-0cb3-48f9-84cb-5a3b8a99b02d.json",
+          "poster": "/assets/projects/avatr/configurators/avatr11-light.avif",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "model": "AVATR 12",
+          "title": "AVATR 12 Pre-rendered configurator",
+          "type": "Pre-rendered configurator",
+          "url": "https://config.nmesis.io/configurators%2F37f00c05-fad0-489b-b3de-cccb34a4e67b.json",
+          "poster": "/assets/projects/avatr/configurators/avatr12-light.avif",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    }
+  ]
+}

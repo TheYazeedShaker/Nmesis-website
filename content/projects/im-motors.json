@@ -1,0 +1,251 @@
+{
+  "slug": "im-motors",
+  "title": "IM Motors.",
+  "subtitle": "Bringing IM5, IM6 and LS7 to launch.",
+  "description": "Working with Al Mansour Automotive in Egypt, NMESIS created the launch campaign for IM5, IM6 and LS7, supported by interactive brochures and infographic animations. Explore the campaign film, teaser and production breakdown, then take a closer look at the technology and the three vehicles.",
+  "cover": "/assets/projects/im-motors/launch-key-visual.webp",
+  "coverAlt": "IM6, LS7 and IM5 launch campaign key visual",
+  "tags": [
+    "Launch films",
+    "Interactive brochures",
+    "Infographic animation"
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "mediaLayout": "collection",
+  "brand": "IM",
+  "heroCover": "/assets/projects/im-motors/launch-key-visual.webp",
+  "heroCoverAlt": "IM6, LS7 and IM5 launch campaign key visual",
+  "heroLayout": "landscape",
+  "cinematicDescription": "From the first glimpse to the full reveal. Explore the IM launch campaign, its teaser and a look behind the production.",
+  "infographicDescription": "A closer look at the details that shape the drive, from IM5 aerodynamics, lighting and range to the comfort and cabin experience of LS7.",
+  "experienceDescription": "Explore IM5, IM6 and LS7. Switch between models to discover their details in an interactive experience.",
+  "defaultExperience": "IM5",
+  "galleries": [],
+  "films": [
+    {
+      "title": "IM5, IM6 and LS7. The launch film.",
+      "src": "/assets/projects/im-motors/cinematic/launch-campaign.mp4",
+      "poster": "/assets/projects/im-motors/cinematic/launch-campaign.jpg",
+      "format": "Launch campaign film"
+    },
+    {
+      "title": "A first glimpse of IM.",
+      "src": "/assets/projects/im-motors/cinematic/teaser.mp4",
+      "poster": "/assets/projects/im-motors/cinematic/teaser.jpg",
+      "format": "Campaign teaser"
+    },
+    {
+      "title": "Behind the campaign.",
+      "src": "/assets/projects/im-motors/cinematic/campaign-breakdown.mp4",
+      "poster": "/assets/projects/im-motors/cinematic/campaign-breakdown.jpg",
+      "format": "Production breakdown"
+    }
+  ],
+  "infographics": [
+    {
+      "title": "IM5. Aerodynamics.",
+      "src": "/assets/projects/im-motors/infographics/im5-aerodynamics.mp4",
+      "poster": "/assets/projects/im-motors/infographics/im5-aerodynamics.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "IM5. Long-range headlights.",
+      "src": "/assets/projects/im-motors/infographics/im5-headlights.mp4",
+      "poster": "/assets/projects/im-motors/infographics/im5-headlights.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "IM5. Battery range.",
+      "src": "/assets/projects/im-motors/infographics/im5-battery-range.mp4",
+      "poster": "/assets/projects/im-motors/infographics/im5-battery-range.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "LS7. Zero-gravity seats.",
+      "src": "/assets/projects/im-motors/infographics/ls7-zero-gravity-seats.mp4",
+      "poster": "/assets/projects/im-motors/infographics/ls7-zero-gravity-seats.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "LS7. Starfall windshield.",
+      "src": "/assets/projects/im-motors/infographics/ls7-starfall-windshield.mp4",
+      "poster": "/assets/projects/im-motors/infographics/ls7-starfall-windshield.jpg",
+      "format": "Feature animation"
+    },
+    {
+      "title": "LS7. Ambient lighting.",
+      "src": "/assets/projects/im-motors/infographics/ls7-ambient-light.mp4",
+      "poster": "/assets/projects/im-motors/infographics/ls7-ambient-light.jpg",
+      "format": "Feature animation"
+    }
+  ],
+  "experiences": [
+    {
+      "model": "IM5",
+      "type": "Vehicle configurator",
+      "title": "Explore the IM5.",
+      "url": "https://nmesis.up.railway.app/IM/IM5/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/im-motors/configurators/im5-opening.avif"
+    },
+    {
+      "model": "IM6",
+      "type": "Vehicle configurator",
+      "title": "Explore the IM6.",
+      "url": "https://nmesis.up.railway.app/IM/IM6/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/im-motors/configurators/im6-opening.avif"
+    },
+    {
+      "model": "LS7",
+      "type": "Vehicle configurator",
+      "title": "Explore the LS7.",
+      "url": "https://nmesis.up.railway.app/IM/IMls7/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/im-motors/configurators/ls7-opening.avif"
+    }
+  ],
+  "client": "IM Motors · Al Mansour Automotive",
+  "scope": "Launch films, interactive brochures and infographic animations",
+  "market": "Egypt",
+  "brochureTitle": "The whole story. Yours to explore.",
+  "brochureDescription": "Three models. Three interactive journeys. Discover the design, step inside the cabin and explore the technology in a brochure that moves with you.",
+  "brochures": [
+    {
+      "model": "IM5",
+      "title": "IM5. Every angle, explored.",
+      "description": "From its exterior lines to the cabin and the technology underneath. Move through 360° views, imagery and feature stories in one interactive brochure.",
+      "url": "https://imbrochure.framer.ai/im5",
+      "preview": "/assets/projects/im-motors/brochures/im5-preview.webp",
+      "width": 1250,
+      "height": 1582,
+      "previewScenes": [
+        {
+          "title": "Explore the exterior",
+          "description": "Rotate the vehicle and explore colours and trims.",
+          "src": "/assets/projects/im-motors/brochures/im5-exterior.webp",
+          "alt": "IM5 brochure: explore the exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "title": "Step inside",
+          "description": "Look around the cabin in an immersive 360° view.",
+          "src": "/assets/projects/im-motors/brochures/im5-interior.webp",
+          "alt": "IM5 brochure: step inside",
+          "width": 1265,
+          "height": 791
+        },
+        {
+          "title": "Browse the gallery",
+          "description": "Move through the design, details and different angles.",
+          "src": "/assets/projects/im-motors/brochures/im5-gallery.webp",
+          "alt": "IM5 brochure: browse the gallery",
+          "width": 1265,
+          "height": 889
+        },
+        {
+          "title": "Discover the features",
+          "description": "Watch the technology and comfort features come to life.",
+          "src": "/assets/projects/im-motors/brochures/im5-features.webp",
+          "alt": "IM5 brochure: discover the features",
+          "width": 960,
+          "height": 540,
+          "video": "/assets/projects/im-motors/infographics/im5-headlights.mp4"
+        }
+      ]
+    },
+    {
+      "model": "IM6",
+      "title": "IM6. Space to discover.",
+      "description": "Explore the cabin, see the exterior from every angle and get closer to the details, from air suspension to driver assistance.",
+      "url": "https://imbrochure.framer.ai/im6",
+      "preview": "/assets/projects/im-motors/brochures/im6-preview.webp",
+      "width": 1250,
+      "height": 1582,
+      "previewScenes": [
+        {
+          "title": "Explore the exterior",
+          "description": "Rotate the vehicle and explore colours and trims.",
+          "src": "/assets/projects/im-motors/brochures/im6-exterior.webp",
+          "alt": "IM6 brochure: explore the exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "title": "Step inside",
+          "description": "Look around the cabin in an immersive 360° view.",
+          "src": "/assets/projects/im-motors/brochures/im6-interior.webp",
+          "alt": "IM6 brochure: step inside",
+          "width": 1265,
+          "height": 791
+        },
+        {
+          "title": "Browse the gallery",
+          "description": "Move through the design, details and different angles.",
+          "src": "/assets/projects/im-motors/brochures/im6-gallery.webp",
+          "alt": "IM6 brochure: browse the gallery",
+          "width": 1280,
+          "height": 802
+        },
+        {
+          "title": "Discover the features",
+          "description": "Watch the technology and comfort features come to life.",
+          "src": "/assets/projects/im-motors/brochures/im6-features.webp",
+          "alt": "IM6 brochure: discover the features",
+          "width": 844,
+          "height": 977,
+          "video": "/assets/projects/im-motors/brochures/im6-air-suspension.mp4"
+        }
+      ]
+    },
+    {
+      "model": "LS7",
+      "title": "LS7. A closer look at comfort.",
+      "description": "Step inside the LS7 and explore its panoramic cabin, zero-gravity seating and design details through imagery, motion and 360° views.",
+      "url": "https://imbrochure.framer.ai/im-ls7",
+      "preview": "/assets/projects/im-motors/brochures/ls7-preview.webp",
+      "width": 1250,
+      "height": 1582,
+      "previewScenes": [
+        {
+          "title": "Explore the exterior",
+          "description": "Rotate the vehicle and explore colours and trims.",
+          "src": "/assets/projects/im-motors/brochures/ls7-exterior.webp",
+          "alt": "LS7 brochure: explore the exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "title": "Step inside",
+          "description": "Look around the cabin in an immersive 360° view.",
+          "src": "/assets/projects/im-motors/brochures/ls7-interior.webp",
+          "alt": "LS7 brochure: step inside",
+          "width": 1265,
+          "height": 791
+        },
+        {
+          "title": "Browse the gallery",
+          "description": "Move through the design, details and different angles.",
+          "src": "/assets/projects/im-motors/brochures/ls7-gallery.webp",
+          "alt": "LS7 brochure: browse the gallery",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "title": "Discover the features",
+          "description": "Watch the technology and comfort features come to life.",
+          "src": "/assets/projects/im-motors/brochures/ls7-features.webp",
+          "alt": "LS7 brochure: discover the features",
+          "width": 960,
+          "height": 540,
+          "video": "/assets/projects/im-motors/infographics/ls7-zero-gravity-seats.mp4"
+        }
+      ]
+    }
+  ]
+}

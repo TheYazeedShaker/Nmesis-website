@@ -1,0 +1,228 @@
+{
+  "slug": "gac",
+  "title": "GAC Egypt.",
+  "subtitle": "From vehicle detail to the driving experience.",
+  "description": "Working with Abdul Latif Jameel in Egypt, NMESIS created digital twins, automotive content and website configurators for GAC. Cinematic films and key visuals bring the vehicles into focus, while infographic animations explain driver assistance features and interactive configurators let customers explore Empow, GS4 Max and Emzoom.",
+  "cover": "/assets/projects/gac/poster.jpg",
+  "coverAlt": "GAC vehicle doors opening and closing",
+  "tags": [
+    "Digital twins",
+    "Automotive CGI",
+    "Configurators"
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "video": "/assets/projects/gac/preview.mp4",
+  "mediaLayout": "collection",
+  "brand": "GAC",
+  "brandMark": "gac",
+  "heroCover": "/assets/projects/gac/key-visuals/empow-still-life-05-hd.webp",
+  "heroCoverAlt": "GAC Empow cinematic city driving key visual",
+  "cinematicDescription": "Two perspectives on GAC. Explore the performance-led Empow film and the expressive world of Emzoom.",
+  "infographicDescription": "Make the technology easier to understand. Four animations explain braking assistance, cruise control, lane assistance and traffic jam assistance.",
+  "experienceDescription": "Three models. One place to explore. Start with Empow, or switch to GS4 Max and Emzoom.",
+  "defaultExperience": "Empow",
+  "films": [
+    {
+      "title": "Empow. Performance in focus.",
+      "src": "/assets/projects/gac/cinematic/empow.mp4",
+      "poster": "/assets/projects/gac/cinematic/empow.jpg",
+      "format": "Cinematic film"
+    },
+    {
+      "title": "Emzoom. A different energy.",
+      "src": "/assets/projects/gac/cinematic/emzoom.mp4",
+      "poster": "/assets/projects/gac/cinematic/emzoom.jpg",
+      "format": "Cinematic film"
+    }
+  ],
+  "infographics": [
+    {
+      "title": "Braking assistance.",
+      "src": "/assets/projects/gac/infographics/braking-assistance.mp4",
+      "poster": "/assets/projects/gac/infographics/braking-assistance.jpg",
+      "format": "Driver assistance explained"
+    },
+    {
+      "title": "Cruise control.",
+      "src": "/assets/projects/gac/infographics/cruise-control.mp4",
+      "poster": "/assets/projects/gac/infographics/cruise-control.jpg",
+      "format": "Driver assistance explained"
+    },
+    {
+      "title": "Lane assistance.",
+      "src": "/assets/projects/gac/infographics/lane-assistance.mp4",
+      "poster": "/assets/projects/gac/infographics/lane-assistance.jpg",
+      "format": "Driver assistance explained"
+    },
+    {
+      "title": "Traffic jam assistance.",
+      "src": "/assets/projects/gac/infographics/traffic-jam-assistance.mp4",
+      "poster": "/assets/projects/gac/infographics/traffic-jam-assistance.jpg",
+      "format": "Driver assistance explained"
+    }
+  ],
+  "galleries": [
+    {
+      "label": "03 / GAC Egypt",
+      "title": "Key visuals.",
+      "description": "City scenes, coastal drives and close-up details. Explore the GAC visual collection, then select any image for a closer look.",
+      "images": [
+        {
+          "src": "/assets/projects/gac/key-visuals/empow-still-life-03-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/empow-still-life-03-hd-thumb.webp",
+          "width": 1365,
+          "height": 768,
+          "alt": "GAC Empow · City presence",
+          "caption": "Empow · City presence"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/empow-still-life-05-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/empow-still-life-05-hd-thumb.webp",
+          "width": 1365,
+          "height": 768,
+          "alt": "GAC Empow · In motion",
+          "caption": "Empow · In motion"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/empow-still-life-06-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/empow-still-life-06-hd-thumb.webp",
+          "width": 2400,
+          "height": 1446,
+          "alt": "GAC Empow · Sunset drive",
+          "caption": "Empow · Sunset drive"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/gac-empow-sline-interior-ambientlight-v001.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/gac-empow-sline-interior-ambientlight-v001-thumb.webp",
+          "width": 2400,
+          "height": 1200,
+          "alt": "GAC Empow · Ambient interior",
+          "caption": "Empow · Ambient interior"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/gs4-still-life-01-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/gs4-still-life-01-hd-thumb.webp",
+          "width": 2400,
+          "height": 1340,
+          "alt": "GAC GS4 Max · Coastal drive",
+          "caption": "GS4 Max · Coastal drive"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/gs4-still-life-02-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/gs4-still-life-02-hd-thumb.webp",
+          "width": 2400,
+          "height": 1340,
+          "alt": "GAC GS4 Max · By the water",
+          "caption": "GS4 Max · By the water"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/gs4-still-life-03-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/gs4-still-life-03-hd-thumb.webp",
+          "width": 1364,
+          "height": 767,
+          "alt": "GAC GS4 Max · City perspective",
+          "caption": "GS4 Max · City perspective"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/gs4-still-life-05-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/gs4-still-life-05-hd-thumb.webp",
+          "width": 2400,
+          "height": 1340,
+          "alt": "GAC GS4 Max · After dark",
+          "caption": "GS4 Max · After dark"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/gs4-still-life-06-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/gs4-still-life-06-hd-thumb.webp",
+          "width": 2400,
+          "height": 1340,
+          "alt": "GAC GS4 Max · Golden hour",
+          "caption": "GS4 Max · Golden hour"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/gs4-still-life-08-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/gs4-still-life-08-hd-thumb.webp",
+          "width": 1563,
+          "height": 880,
+          "alt": "GAC GS4 Max · Urban arrival",
+          "caption": "GS4 Max · Urban arrival"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/gs4-still-life-09-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/gs4-still-life-09-hd-thumb.webp",
+          "width": 1344,
+          "height": 768,
+          "alt": "GAC GS4 Max · Everyday presence",
+          "caption": "GS4 Max · Everyday presence"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/gs4-still-life-10-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/gs4-still-life-10-hd-thumb.webp",
+          "width": 2400,
+          "height": 1174,
+          "alt": "GAC GS4 Max · Inside the cabin",
+          "caption": "GS4 Max · Inside the cabin"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/gs4-still-life-11-hd.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/gs4-still-life-11-hd-thumb.webp",
+          "width": 1364,
+          "height": 767,
+          "alt": "GAC GS4 Max · Architectural setting",
+          "caption": "GS4 Max · Architectural setting"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/image-57.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/image-57-thumb.webp",
+          "width": 2000,
+          "height": 1000,
+          "alt": "GAC Interior · Precision in detail",
+          "caption": "Interior · Precision in detail"
+        },
+        {
+          "src": "/assets/projects/gac/key-visuals/image-66.webp",
+          "thumbnail": "/assets/projects/gac/key-visuals/image-66-thumb.webp",
+          "width": 1413,
+          "height": 794,
+          "alt": "GAC Emzoom · Colour and character",
+          "caption": "Emzoom · Colour and character"
+        }
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "model": "Empow",
+      "type": "Vehicle configurator",
+      "title": "Explore the GAC Empow.",
+      "url": "https://nmesis.up.railway.app/GAC/GACempow/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/gac/configurators/empow-opening.avif"
+    },
+    {
+      "model": "GS4 Max",
+      "type": "Vehicle configurator",
+      "title": "Explore the GAC GS4 Max.",
+      "url": "https://nmesis.up.railway.app/GAC/GACgs4max/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/gac/configurators/gs4-max-opening.avif"
+    },
+    {
+      "model": "Emzoom",
+      "type": "Vehicle configurator",
+      "title": "Explore the GAC Emzoom.",
+      "url": "https://nmesis.up.railway.app/GAC/GACemzoom/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/gac/configurators/emzoom-opening.avif"
+    }
+  ],
+  "heroLayout": "landscape",
+  "galleryShape": "landscape",
+  "client": "GAC · Abdul Latif Jameel",
+  "scope": "Digital twins, cinematic films, key visuals, infographic animations and website configurators",
+  "market": "Egypt"
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "brand-identity-for-a-howey",
+  "title": "Vehicle digital twin.",
+  "subtitle": "An accurate foundation for every experience.",
+  "description": "A placeholder case study for a market-specific vehicle twin. This page will show the modeling, materials and local trim work that prepares a vehicle for CGI and interactive use. Final assets and project credits are still to be added.",
+  "cover": "/assets/images/d3TUVw8GT1po6eDbHtQgFDJwFU.png",
+  "coverAlt": "Placeholder artwork for Vehicle digital twin",
+  "tags": [
+    "Digital twins",
+    "3D modeling",
+    "Materials"
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/9r64GmClFPS0M46NaS1cqQggO8.png",
+      "alt": "Placeholder gallery image for Vehicle digital twin",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "src": "/assets/images/7sWjgiI4bykumcHe1iJU1Xl8MKM.png",
+      "alt": "Placeholder gallery image for Vehicle digital twin",
+      "width": 3680,
+      "height": 2760
+    },
+    {
+      "src": "/assets/images/QmY1xDSiya0qHetOgpxkVOkwt0.png",
+      "alt": "Placeholder gallery image for Vehicle digital twin",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/assets/images/yEpvDEbEGCfijbL4sjpbcXC7828.png",
+      "alt": "Placeholder gallery image for Vehicle digital twin",
+      "width": 2500,
+      "height": 1875
+    }
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "client": "To be confirmed",
+  "scope": "Digital twins, 3D modeling, Materials",
+  "market": "To be confirmed"
+}

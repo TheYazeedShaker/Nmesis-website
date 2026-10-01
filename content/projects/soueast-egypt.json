@@ -1,0 +1,238 @@
+{
+  "slug": "soueast-egypt",
+  "title": "SOUEAST Egypt.",
+  "subtitle": "From digital twins to launch campaigns.",
+  "description": "Working with Al Mansour Automotive, NMESIS built digital twins for SOUEAST’s six-model fleet in Egypt, then brought them into launch films, infographic animations, campaign key visuals and interactive vehicle experiences. Explore the work, from the DM family’s launch content to five live model configurators.",
+  "cover": "/assets/projects/soueast-egypt/s08-dm-launch-kv.png",
+  "coverAlt": "SOUEAST S08 DM Egypt launch key visual created by NMESIS",
+  "tags": [
+    "Digital twins",
+    "Launch campaigns",
+    "Configurators"
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "films": [
+    {
+      "title": "S08 DM. Designed to stand out.",
+      "src": "/assets/projects/soueast-egypt/cinematic/s08-dm.mp4",
+      "poster": "/assets/projects/soueast-egypt/cinematic/s08-dm.jpg",
+      "format": "Launch film"
+    },
+    {
+      "title": "S06 DM. Every detail in motion.",
+      "src": "/assets/projects/soueast-egypt/cinematic/s06-dm.mp4",
+      "poster": "/assets/projects/soueast-egypt/cinematic/s06-dm.jpg",
+      "format": "Launch film"
+    },
+    {
+      "title": "S09. A new point of view.",
+      "src": "/assets/projects/soueast-egypt/cinematic/s09.mp4",
+      "poster": "/assets/projects/soueast-egypt/cinematic/s09.jpg",
+      "format": "Launch film"
+    },
+    {
+      "title": "DM. The launch film.",
+      "src": "/assets/projects/soueast-egypt/cinematic/dm-launch.mp4",
+      "poster": "/assets/projects/soueast-egypt/cinematic/dm-launch.jpg",
+      "format": "Campaign film"
+    },
+    {
+      "title": "The DM family.",
+      "src": "/assets/projects/soueast-egypt/cinematic/dm-family.mp4",
+      "poster": "/assets/projects/soueast-egypt/cinematic/dm-family.jpg",
+      "format": "Square campaign edit"
+    }
+  ],
+  "experiences": [
+    {
+      "model": "S05",
+      "type": "Vehicle configurator",
+      "title": "Explore the SOUEAST S05.",
+      "url": "https://nmesis.up.railway.app/Soueast/Soueasts05/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/soueast-egypt/configurators/s05-opening.avif"
+    },
+    {
+      "model": "S06",
+      "type": "Vehicle configurator",
+      "title": "Explore the SOUEAST S06.",
+      "url": "https://nmesis.up.railway.app/Soueast/Soueasts06/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/soueast-egypt/configurators/s06-opening.avif"
+    },
+    {
+      "model": "S07",
+      "type": "Vehicle configurator",
+      "title": "Explore the SOUEAST S07.",
+      "url": "https://nmesis.up.railway.app/Soueast/Soueasts07/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/soueast-egypt/configurators/s07-opening.avif"
+    },
+    {
+      "model": "S09",
+      "type": "Vehicle configurator",
+      "title": "Explore the SOUEAST S09.",
+      "url": "https://nmesis.up.railway.app/Soueast/Soueasts09/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/soueast-egypt/configurators/s09-opening.avif"
+    },
+    {
+      "model": "S08 DM",
+      "type": "Vehicle configurator",
+      "title": "Explore the SOUEAST S08 DM.",
+      "url": "https://nmesis.up.railway.app/Soueast/Soueasts08dm/",
+      "width": 1920,
+      "height": 1080,
+      "poster": "/assets/projects/soueast-egypt/configurators/s08-dm-opening.avif"
+    }
+  ],
+  "galleries": [
+    {
+      "title": "Key visuals.",
+      "description": "Launch imagery, exterior details and campaign compositions for the SOUEAST DM family. Select any image to view the full collection.",
+      "images": [
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s06-08dm-kv.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s06-08dm-kv-thumb.webp",
+          "alt": "SOUEAST The DM family · Launch key visual",
+          "caption": "The DM family · Launch key visual",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s06dm-kv.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s06dm-kv-thumb.webp",
+          "alt": "SOUEAST S06 DM · Launch key visual",
+          "caption": "S06 DM · Launch key visual",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s08dm-kv.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s08dm-kv-thumb.webp",
+          "alt": "SOUEAST S08 DM · Launch key visual",
+          "caption": "S08 DM · Launch key visual",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv01.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv01-thumb.webp",
+          "alt": "SOUEAST S06 DM · Exterior presence",
+          "caption": "S06 DM · Exterior presence",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv02.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv02-thumb.webp",
+          "alt": "SOUEAST S06 DM · Rear three-quarter",
+          "caption": "S06 DM · Rear three-quarter",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv03.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv03-thumb.webp",
+          "alt": "SOUEAST S06 DM · Front detail",
+          "caption": "S06 DM · Front detail",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv04.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv04-thumb.webp",
+          "alt": "SOUEAST S06 DM · Rear detail",
+          "caption": "S06 DM · Rear detail",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv05.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv05-thumb.webp",
+          "alt": "SOUEAST S06 DM · Low-angle perspective",
+          "caption": "S06 DM · Low-angle perspective",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv6.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s06-dm-kv6-thumb.webp",
+          "alt": "SOUEAST S06 DM · Form from above",
+          "caption": "S06 DM · Form from above",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv01.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv01-thumb.webp",
+          "alt": "SOUEAST S08 DM · Rear three-quarter",
+          "caption": "S08 DM · Rear three-quarter",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv02.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv02-thumb.webp",
+          "alt": "SOUEAST S08 DM · Exterior presence",
+          "caption": "S08 DM · Exterior presence",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv03.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv03-thumb.webp",
+          "alt": "SOUEAST S08 DM · Side profile",
+          "caption": "S08 DM · Side profile",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv04.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv04-thumb.webp",
+          "alt": "SOUEAST S08 DM · Front detail",
+          "caption": "S08 DM · Front detail",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv05.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv05-thumb.webp",
+          "alt": "SOUEAST S08 DM · Rear detail",
+          "caption": "S08 DM · Rear detail",
+          "width": 2400,
+          "height": 2400
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv06.webp",
+          "thumbnail": "/assets/projects/soueast-egypt/key-visuals/s08-dm-kv06-thumb.webp",
+          "alt": "SOUEAST The DM family · Together in frame",
+          "caption": "The DM family · Together in frame",
+          "width": 2400,
+          "height": 2400
+        }
+      ],
+      "label": "03 / SOUEAST Egypt"
+    }
+  ],
+  "mediaLayout": "collection",
+  "infographics": [
+    {
+      "title": "DM and REEV. The difference, explained.",
+      "src": "/assets/projects/soueast-egypt/infographics/dm-vs-reev.mp4",
+      "poster": "/assets/projects/soueast-egypt/infographics/dm-vs-reev.jpg"
+    }
+  ],
+  "defaultExperience": "S07",
+  "brand": "SOUEAST",
+  "brandLogo": "/assets/projects/soueast-egypt/configurators/soueast-logo.avif",
+  "experienceDescription": "Five models. One place to explore. Choose a SOUEAST, then step inside its live configurator.",
+  "client": "SOUEAST · Al Mansour Automotive",
+  "scope": "Digital twins, launch campaigns, infographic animations, interactive brochures and website configurators",
+  "market": "Egypt"
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "strategy-design-and-full-build-for-a-clean-beauty-brand-targeting-gen-z",
+  "title": "Virtual showroom.",
+  "subtitle": "A digital space built around the vehicle range.",
+  "description": "A placeholder case study for a virtual showroom. The final page will explain how the space, navigation and vehicle information support discovery, with the actual project scope and approved captures.",
+  "cover": "/assets/images/5N4LamNkFZvmZVdY2vPKY1l9NQ.png",
+  "coverAlt": "Placeholder artwork for Virtual showroom",
+  "tags": [
+    "Virtual showroom",
+    "Experience design",
+    "Interactive"
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/9r64GmClFPS0M46NaS1cqQggO8.png",
+      "alt": "Placeholder gallery image for Virtual showroom",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "src": "/assets/images/7sWjgiI4bykumcHe1iJU1Xl8MKM.png",
+      "alt": "Placeholder gallery image for Virtual showroom",
+      "width": 3680,
+      "height": 2760
+    },
+    {
+      "src": "/assets/images/QmY1xDSiya0qHetOgpxkVOkwt0.png",
+      "alt": "Placeholder gallery image for Virtual showroom",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/assets/images/yEpvDEbEGCfijbL4sjpbcXC7828.png",
+      "alt": "Placeholder gallery image for Virtual showroom",
+      "width": 2500,
+      "height": 1875
+    }
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "client": "To be confirmed",
+  "scope": "Virtual showroom, Experience design, Interactive",
+  "market": "To be confirmed"
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "shopify-site-and-lookbook-for-auré",
+  "title": "Autoverse.",
+  "subtitle": "A planned immersive, multi-brand automotive platform.",
+  "description": "Autoverse by NMESIS is in development. This page is reserved for the platform vision and approved roadmap. It is not a live product announcement; the current gallery is illustrative placeholder imagery.",
+  "cover": "/assets/images/OLm5FVxsrKBd3qfPJX0AWlVs3g.png",
+  "coverAlt": "Placeholder artwork for Autoverse",
+  "tags": [
+    "Autoverse",
+    "Platform concept",
+    "In development"
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/9r64GmClFPS0M46NaS1cqQggO8.png",
+      "alt": "Placeholder gallery image for Autoverse",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "src": "/assets/images/7sWjgiI4bykumcHe1iJU1Xl8MKM.png",
+      "alt": "Placeholder gallery image for Autoverse",
+      "width": 3680,
+      "height": 2760
+    },
+    {
+      "src": "/assets/images/QmY1xDSiya0qHetOgpxkVOkwt0.png",
+      "alt": "Placeholder gallery image for Autoverse",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/assets/images/yEpvDEbEGCfijbL4sjpbcXC7828.png",
+      "alt": "Placeholder gallery image for Autoverse",
+      "width": 2500,
+      "height": 1875
+    }
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "client": "NMESIS",
+  "scope": "Autoverse platform concept",
+  "market": "To be confirmed"
+}

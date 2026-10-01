@@ -1,0 +1,21 @@
+{
+  "slug": "your-project",
+  "title": "Your project.",
+  "subtitle": "A short introduction to the project.",
+  "description": "Describe the client, the brief and what NMESIS created.",
+  "cover": "/assets/projects/project-placeholder.svg",
+  "coverAlt": "Project artwork placeholder",
+  "tags": [
+    "Digital twins",
+    "Automotive CGI",
+    "Interactive experiences"
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "films": [],
+  "galleries": [],
+  "experiences": [],
+  "client": "Add the client or commissioning partner",
+  "scope": "Describe the work delivered",
+  "market": "Add the country or region"
+}

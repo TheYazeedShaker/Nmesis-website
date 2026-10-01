@@ -1,0 +1,44 @@
+{
+  "slug": "sun-flower-tech",
+  "title": "Launch campaign.",
+  "subtitle": "One vehicle story, built for multiple formats.",
+  "description": "A placeholder case study for automotive launch content. Approved stills, film sequences and campaign formats will show how one creative direction carries across the launch. No client or campaign results are claimed in this preview.",
+  "cover": "/assets/images/75ifN8wBfQxjN6u6Bee9UT2Jq8.png",
+  "coverAlt": "Placeholder artwork for Launch campaign",
+  "tags": [
+    "CGI stills",
+    "Campaign films",
+    "Art direction"
+  ],
+  "gallery": [
+    {
+      "src": "/assets/images/9r64GmClFPS0M46NaS1cqQggO8.png",
+      "alt": "Placeholder gallery image for Launch campaign",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "src": "/assets/images/7sWjgiI4bykumcHe1iJU1Xl8MKM.png",
+      "alt": "Placeholder gallery image for Launch campaign",
+      "width": 3680,
+      "height": 2760
+    },
+    {
+      "src": "/assets/images/QmY1xDSiya0qHetOgpxkVOkwt0.png",
+      "alt": "Placeholder gallery image for Launch campaign",
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "src": "/assets/images/yEpvDEbEGCfijbL4sjpbcXC7828.png",
+      "alt": "Placeholder gallery image for Launch campaign",
+      "width": 2500,
+      "height": 1875
+    }
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "client": "To be confirmed",
+  "scope": "CGI stills, Campaign films, Art direction",
+  "market": "To be confirmed"
+}

@@ -1,0 +1,133 @@
+{
+  "slug": "cadillac",
+  "title": "Cadillac.",
+  "subtitle": "Presence, brought to life.",
+  "description": "Explore Cadillac through key visuals and interactive vehicle experiences. Discover the design in a series of crafted environments, watch recorded configurator tours of VISTIQ and Escalade IQL, and step into the live VISTIQ pixel-streaming experience.",
+  "client": "Cadillac",
+  "scope": "Key visuals, vehicle visualization and pixel-streaming configurators",
+  "market": "To be confirmed",
+  "cover": "/assets/projects/cadillac/key-visuals/visual-07.webp",
+  "coverAlt": "White Cadillac in warm architectural light",
+  "heroCover": "/assets/projects/cadillac/key-visuals/visual-07.webp",
+  "heroCoverAlt": "White Cadillac in warm architectural light",
+  "heroLayout": "landscape",
+  "mediaLayout": "collection",
+  "brand": "Cadillac",
+  "tags": [
+    "Key visuals",
+    "Vehicle visualization",
+    "Pixel streaming"
+  ],
+  "liveLabel": "Discuss a similar project",
+  "liveUrl": "/contact",
+  "galleryShape": "landscape",
+  "galleries": [
+    {
+      "label": "01 / Cadillac",
+      "title": "Presence in every setting.",
+      "description": "Ten perspectives on Cadillac, from quiet mountain retreats to sunlit architecture and city evenings.",
+      "images": [
+        {
+          "src": "/assets/projects/cadillac/key-visuals/visual-01.webp",
+          "thumbnail": "/assets/projects/cadillac/key-visuals/visual-01-thumb.webp",
+          "alt": "Cadillac rear view at a lakeside retreat at dusk",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/cadillac/key-visuals/visual-02.webp",
+          "thumbnail": "/assets/projects/cadillac/key-visuals/visual-02-thumb.webp",
+          "alt": "White Cadillac beside an alpine lodge",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/cadillac/key-visuals/visual-03.webp",
+          "thumbnail": "/assets/projects/cadillac/key-visuals/visual-03-thumb.webp",
+          "alt": "Black Cadillac surrounded by forest",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/cadillac/key-visuals/visual-04.webp",
+          "thumbnail": "/assets/projects/cadillac/key-visuals/visual-04-thumb.webp",
+          "alt": "Dark Cadillac front view under illuminated architecture",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/cadillac/key-visuals/visual-05.webp",
+          "thumbnail": "/assets/projects/cadillac/key-visuals/visual-05-thumb.webp",
+          "alt": "Silver Cadillac rear view overlooking the coast at sunset",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/cadillac/key-visuals/visual-06.webp",
+          "thumbnail": "/assets/projects/cadillac/key-visuals/visual-06-thumb.webp",
+          "alt": "Silver Cadillac beside contemporary stone architecture",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/cadillac/key-visuals/visual-07.webp",
+          "thumbnail": "/assets/projects/cadillac/key-visuals/visual-07-thumb.webp",
+          "alt": "White Cadillac in warm architectural light",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/cadillac/key-visuals/visual-08.webp",
+          "thumbnail": "/assets/projects/cadillac/key-visuals/visual-08-thumb.webp",
+          "alt": "Blue Cadillac beside a terracotta home",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/cadillac/key-visuals/visual-09.webp",
+          "thumbnail": "/assets/projects/cadillac/key-visuals/visual-09-thumb.webp",
+          "alt": "Red Cadillac rear three-quarter view at a city terrace",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/projects/cadillac/key-visuals/visual-10.webp",
+          "thumbnail": "/assets/projects/cadillac/key-visuals/visual-10-thumb.webp",
+          "alt": "White Cadillac side profile at sunset",
+          "width": 1672,
+          "height": 941
+        }
+      ]
+    }
+  ],
+  "walkthroughTitle": "Explore the experience.",
+  "walkthroughDescription": "Recorded tours of VISTIQ and Escalade IQL, showing the vehicles inside and out. Select a preview to watch.",
+  "walkthroughs": [
+    {
+      "title": "Cadillac VISTIQ configurator walkthrough",
+      "src": "/assets/projects/cadillac/videos/vistiq-walkthrough.mp4",
+      "poster": "/assets/projects/cadillac/videos/vistiq-walkthrough.jpg",
+      "format": "Recorded configurator walkthrough"
+    },
+    {
+      "title": "Cadillac Escalade IQL configurator walkthrough",
+      "src": "/assets/projects/cadillac/videos/escalade-iql-walkthrough.mp4",
+      "poster": "/assets/projects/cadillac/videos/escalade-iql-walkthrough.jpg",
+      "format": "Recorded configurator walkthrough"
+    }
+  ],
+  "experienceTitle": "Step inside VISTIQ.",
+  "experienceDescription": "Explore Cadillac VISTIQ in real time through pixel streaming, with exterior and interior views. Open fullscreen for a closer look.",
+  "defaultExperience": "VISTIQ",
+  "experiences": [
+    {
+      "model": "VISTIQ",
+      "title": "Cadillac VISTIQ pixel streaming",
+      "type": "Pixel streaming",
+      "url": "https://vistiq.nmesis.workers.dev/",
+      "poster": "/assets/projects/cadillac/configurators/vistiq-pixel.webp",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "serviceName": "Automotive CGI",
+  "title": "Automotive CGI.",
+  "metaDescription": "Cinematic launch films, campaign key visuals and infographic animations by NMESIS. Explore automotive CGI work, formats and our production process.",
+  "headline": "Make every launch worth looking at.",
+  "intro": "From the first reveal to the details that make a vehicle different, we create films, imagery and animation that turn product truth into a story people can see.",
+  "hero": {
+    "src": "/assets/projects/byd/ti7-campaign.jpeg",
+    "alt": "BYD TI7 driving through a sunlit city in a campaign key visual",
+    "caption": "BYD TI7 · Automotive campaign visual"
+  },
+  "formats": [
+    {
+      "id": "cinematic-films",
+      "label": "Cinematic launch films",
+      "short": "Create anticipation. Introduce the vehicle. Set the tone for the launch.",
+      "headline": "Give the launch a story.",
+      "description": "Build a visual world around the vehicle’s character. We shape the creative direction, environments, lighting and motion into a film that brings the launch to life.",
+      "fit": "For vehicle reveals, launch campaigns and brand moments that need emotion and atmosphere.",
+      "deliverables": [
+        "A creative treatment and storyboard",
+        "Vehicle animation, environments and cinematic lighting",
+        "A master film with cutdowns and formats agreed in the brief"
+      ],
+      "films": [
+        {
+          "title": "SOUEAST S08 DM",
+          "description": "A launch film built around the vehicle, its setting and a distinct visual mood.",
+          "src": "/assets/projects/soueast-egypt/cinematic/s08-dm.mp4",
+          "poster": "/assets/projects/soueast-egypt/cinematic/s08-dm.jpg"
+        },
+        {
+          "title": "SOUEAST S06 DM",
+          "description": "A second perspective on bringing a model’s shape and presence into motion.",
+          "src": "/assets/projects/soueast-egypt/cinematic/s06-dm.mp4",
+          "poster": "/assets/projects/soueast-egypt/cinematic/s06-dm.jpg"
+        }
+      ],
+      "project": "/projects/soueast-egypt#film-1",
+      "projectLabel": "Explore the SOUEAST project"
+    },
+    {
+      "id": "key-visuals",
+      "label": "Campaign key visuals",
+      "short": "Define the campaign with an image made for every place it will appear.",
+      "headline": "One image. A whole campaign.",
+      "description": "Create a defining image with the right vehicle, setting and composition. Plan the campaign’s different crops and placements from the start, so the idea stays strong across outdoor, digital and retail.",
+      "fit": "For outdoor campaigns, launch announcements, product pages and social content that need a consistent look.",
+      "deliverables": [
+        "Creative direction and composition development",
+        "Vehicle, environment, lighting and final finishing",
+        "High-resolution artwork and agreed channel adaptations"
+      ],
+      "images": [
+        {
+          "src": "/assets/projects/byd/ti7-campaign.jpeg",
+          "alt": "BYD TI7 in a sunlit urban environment",
+          "caption": "BYD TI7 · Campaign visual",
+          "width": 2400,
+          "height": 1792
+        },
+        {
+          "src": "/assets/projects/im-motors/launch-lineup.png",
+          "alt": "IM6, LS7 and IM5 together in a launch campaign scene",
+          "caption": "IM Motors · Launch lineup",
+          "width": 2400,
+          "height": 1350
+        },
+        {
+          "src": "/assets/projects/soueast-egypt/s08-dm-launch-kv.png",
+          "alt": "SOUEAST S08 DM against an orange architectural backdrop",
+          "caption": "SOUEAST S08 DM · Egypt launch key visual",
+          "width": 2400,
+          "height": 2400
+        }
+      ],
+      "project": "/projects/byd",
+      "projectLabel": "Explore the BYD project"
+    },
+    {
+      "id": "infographic-animation",
+      "label": "Infographic animations",
+      "short": "Help customers understand the features and technology behind the drive.",
+      "headline": "Make the detail make sense.",
+      "description": "Show what a specification alone cannot. Use animation to reveal how a feature works, explain its purpose and connect technical detail to the customer experience.",
+      "fit": "For technology explainers, product education, interactive brochures and launch presentations.",
+      "deliverables": [
+        "A visual narrative based on approved product information",
+        "Feature animation and graphic explanation",
+        "Versions for the agreed languages, channels and screen formats"
+      ],
+      "films": [
+        {
+          "title": "IM LS7 · Zero-gravity seats",
+          "description": "Showing how the seat transforms the cabin experience.",
+          "src": "/assets/projects/im-motors/infographics/ls7-zero-gravity-seats.mp4",
+          "poster": "/assets/projects/im-motors/infographics/ls7-zero-gravity-seats.jpg"
+        },
+        {
+          "title": "GAC · Braking assistance",
+          "description": "Making a driver-assistance feature clear through vehicle animation and graphics.",
+          "src": "/assets/projects/gac/infographics/braking-assistance.mp4",
+          "poster": "/assets/projects/gac/infographics/braking-assistance.jpg"
+        }
+      ],
+      "project": "/projects/im-motors#infographics",
+      "projectLabel": "Explore the IM Motors project"
+    }
+  ],
+  "processTitle": "Clear stages. Shared direction.",
+  "processIntro": "We agree the vehicle details and creative approach early, then review the work at the moments that matter.",
+  "steps": [
+    {
+      "title": "Define the brief.",
+      "text": "Align on the vehicle, market, audience, launch date and the content you need."
+    },
+    {
+      "title": "Set the direction.",
+      "text": "Agree the treatment, storyboard or key composition before full production."
+    },
+    {
+      "title": "Build & review.",
+      "text": "Develop the vehicle assets, scenes, lighting and animation through planned reviews."
+    },
+    {
+      "title": "Finish & deliver.",
+      "text": "Refine the final details, prepare the agreed formats and hand over content for your channels."
+    }
+  ],
+  "briefTitle": "Start with what you have.",
+  "briefIntro": "You do not need a complete production pack to begin. Send the essentials, and we will identify the gaps and recommend a practical scope.",
+  "inputs": [
+    {
+      "title": "The vehicle",
+      "text": "Models, market, trims and available CAD or reference images."
+    },
+    {
+      "title": "The story",
+      "text": "Campaign objectives, key features, brand guidance and any creative references."
+    },
+    {
+      "title": "The channels",
+      "text": "Where the content will appear, the formats required and any language versions."
+    },
+    {
+      "title": "The timing",
+      "text": "Your launch date, review team and any fixed milestones."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What if we do not have a 3D CAD file?",
+      "a": "We can help. NMESIS has developed a workflow for building detailed vehicle twins from reference images and vehicle information. We first review what is available, identify any missing views or specifications, and agree how the model will be checked for accuracy."
+    },
+    {
+      "q": "Can one vehicle asset support films, stills and interactive content?",
+      "a": "Yes. We plan the digital twin around its intended uses so the same core vehicle asset can support campaign imagery, films, feature animation and interactive experiences. Some outputs may need additional preparation, which we define in the scope."
+    },
+    {
+      "q": "Can you match the trims sold in our market?",
+      "a": "Yes. We work from the agreed local specification, including colours, interiors, wheels, equipment and other visible details. Your team reviews the vehicle before the final content is produced."
+    },
+    {
+      "q": "Can we commission just one film or key visual?",
+      "a": "Absolutely. We can start with a single deliverable or plan a connected launch package. The scope depends on what you need now and whether the assets should also support future content."
+    },
+    {
+      "q": "How long does production take, and what affects the cost?",
+      "a": "The main factors are the number of vehicles, the condition of the available assets, scene complexity, animation, output formats and review rounds. After reviewing the brief, we propose a schedule and quote for the agreed scope."
+    },
+    {
+      "q": "Can you work with our agency or internal marketing team?",
+      "a": "Yes. We can develop the visual direction with you or produce against an established campaign concept. We agree responsibilities, technical requirements and approval stages with your team at the start."
+    }
+  ],
+  "ctaTitle": "What are you launching next?",
+  "ctaText": "Tell us the vehicle, the market and the moment you are planning. We will help shape the right content around it."
+}

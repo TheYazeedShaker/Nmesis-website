@@ -1,0 +1,162 @@
+{
+  "slug": "nmesis-lab",
+  "title": "NMESIS Lab.",
+  "subtitle": "Where the next idea takes shape.",
+  "description": "A collection from inside NMESIS: automotive CGI experiments, motion studies and visual exploration. We use the lab to explore how lighting, materials, camera movement and composition change the way a vehicle is experienced. Discover the moving images and still studies behind that process.",
+  "client": "NMESIS · Internal R&D",
+  "scope": "Automotive CGI, look development, lighting, materials and motion studies",
+  "market": "Not market-specific",
+  "cover": "/assets/projects/nmesis-lab/stills/study-04.webp",
+  "coverAlt": "Gold Nissan GT-R in a study of architectural light and shadow",
+  "heroCover": "/assets/projects/nmesis-lab/stills/study-04.webp",
+  "heroCoverAlt": "Gold Nissan GT-R in a study of architectural light and shadow",
+  "heroLayout": "landscape",
+  "tags": [
+    "Automotive CGI",
+    "Look development",
+    "Motion studies"
+  ],
+  "mediaLayout": "collection",
+  "brand": "NMESIS",
+  "cinematicTitle": "Studies in motion.",
+  "cinematicNavigationLabel": "Motion studies",
+  "cinematicDescription": "Six explorations of movement, finish and atmosphere. Select a study to watch how the image comes together over time.",
+  "galleryShape": "landscape",
+  "films": [
+    {
+      "title": "Light meets performance.",
+      "format": "Studio R&D",
+      "src": "/assets/projects/nmesis-lab/motion/study-04.mp4",
+      "poster": "/assets/projects/nmesis-lab/motion/study-04.jpg"
+    },
+    {
+      "title": "A closer look at the details.",
+      "format": "Studio R&D",
+      "src": "/assets/projects/nmesis-lab/motion/study-05.mp4",
+      "poster": "/assets/projects/nmesis-lab/motion/study-05.jpg"
+    },
+    {
+      "title": "Paint, finish and reflection.",
+      "format": "Studio R&D",
+      "src": "/assets/projects/nmesis-lab/motion/study-02.mp4",
+      "poster": "/assets/projects/nmesis-lab/motion/study-02.jpg"
+    },
+    {
+      "title": "In motion. On the street.",
+      "format": "Studio R&D",
+      "src": "/assets/projects/nmesis-lab/motion/study-01.mp4",
+      "poster": "/assets/projects/nmesis-lab/motion/study-01.jpg"
+    },
+    {
+      "title": "Form in motion.",
+      "format": "Studio R&D",
+      "src": "/assets/projects/nmesis-lab/motion/study-03.mp4",
+      "poster": "/assets/projects/nmesis-lab/motion/study-03.jpg"
+    },
+    {
+      "title": "A reveal in blue.",
+      "format": "Studio R&D",
+      "src": "/assets/projects/nmesis-lab/motion/study-06.mp4",
+      "poster": "/assets/projects/nmesis-lab/motion/study-06.jpg"
+    }
+  ],
+  "galleries": [
+    {
+      "label": "02 / NMESIS Lab",
+      "navigationLabel": "Visual studies",
+      "title": "A different point of view.",
+      "description": "Eleven studies in lighting, surface and composition. From controlled studio setups to city streets and natural environments, each image explores a different visual direction.",
+      "images": [
+        {
+          "src": "/assets/projects/nmesis-lab/stills/study-01.webp",
+          "thumbnail": "/assets/projects/nmesis-lab/stills/study-01-thumb.webp",
+          "alt": "Honda Civic · Warm city light",
+          "caption": "Honda Civic · Warm city light",
+          "width": 2398,
+          "height": 1351
+        },
+        {
+          "src": "/assets/projects/nmesis-lab/stills/study-02.webp",
+          "thumbnail": "/assets/projects/nmesis-lab/stills/study-02-thumb.webp",
+          "alt": "Honda Civic · Rear detail",
+          "caption": "Honda Civic · Rear detail",
+          "width": 2399,
+          "height": 1353
+        },
+        {
+          "src": "/assets/projects/nmesis-lab/stills/study-03.webp",
+          "thumbnail": "/assets/projects/nmesis-lab/stills/study-03-thumb.webp",
+          "alt": "Porsche Taycan · Surface and reflection",
+          "caption": "Porsche Taycan · Surface and reflection",
+          "width": 2396,
+          "height": 1440
+        },
+        {
+          "src": "/assets/projects/nmesis-lab/stills/study-04.webp",
+          "thumbnail": "/assets/projects/nmesis-lab/stills/study-04-thumb.webp",
+          "alt": "Nissan GT-R · Light and shadow",
+          "caption": "Nissan GT-R · Light and shadow",
+          "width": 2398,
+          "height": 1355
+        },
+        {
+          "src": "/assets/projects/nmesis-lab/stills/study-05.webp",
+          "thumbnail": "/assets/projects/nmesis-lab/stills/study-05-thumb.webp",
+          "alt": "BMW · Studio front three-quarter",
+          "caption": "BMW · Studio front three-quarter",
+          "width": 2400,
+          "height": 1350
+        },
+        {
+          "src": "/assets/projects/nmesis-lab/stills/study-06.webp",
+          "thumbnail": "/assets/projects/nmesis-lab/stills/study-06-thumb.webp",
+          "alt": "BMW · Studio rear three-quarter",
+          "caption": "BMW · Studio rear three-quarter",
+          "width": 2400,
+          "height": 1350
+        },
+        {
+          "src": "/assets/projects/nmesis-lab/stills/study-07.webp",
+          "thumbnail": "/assets/projects/nmesis-lab/stills/study-07-thumb.webp",
+          "alt": "Audi Q8 · Forest lighting",
+          "caption": "Audi Q8 · Forest lighting",
+          "width": 2400,
+          "height": 1350
+        },
+        {
+          "src": "/assets/projects/nmesis-lab/stills/study-08.webp",
+          "thumbnail": "/assets/projects/nmesis-lab/stills/study-08-thumb.webp",
+          "alt": "Honda Civic · Overhead composition",
+          "caption": "Honda Civic · Overhead composition",
+          "width": 2398,
+          "height": 1351
+        },
+        {
+          "src": "/assets/projects/nmesis-lab/stills/study-09.webp",
+          "thumbnail": "/assets/projects/nmesis-lab/stills/study-09-thumb.webp",
+          "alt": "Porsche Taycan · Architectural setting",
+          "caption": "Porsche Taycan · Architectural setting",
+          "width": 2390,
+          "height": 1440
+        },
+        {
+          "src": "/assets/projects/nmesis-lab/stills/study-10.webp",
+          "thumbnail": "/assets/projects/nmesis-lab/stills/study-10-thumb.webp",
+          "alt": "Audi Q8 · Environmental composition",
+          "caption": "Audi Q8 · Environmental composition",
+          "width": 2398,
+          "height": 1351
+        },
+        {
+          "src": "/assets/projects/nmesis-lab/stills/study-11.webp",
+          "thumbnail": "/assets/projects/nmesis-lab/stills/study-11-thumb.webp",
+          "alt": "Two vehicles · Colour and composition",
+          "caption": "Two vehicles · Colour and composition",
+          "width": 2000,
+          "height": 1125
+        }
+      ]
+    }
+  ],
+  "experiences": []
+}

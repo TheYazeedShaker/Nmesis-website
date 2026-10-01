@@ -1,0 +1,102 @@
+{
+  "brandName": "NMESIS",
+  "title": "NMESIS Motion Lab",
+  "description": "NMESIS Motion Lab creates automotive CGI, configurators and interactive brochures built on accurate, market-specific digital twins.",
+  "logo": "/assets/brand/nmesis-wordmark.png",
+  "email": "info@nmesis.io",
+  "contactName": "NMESIS",
+  "contactEmail": "info@nmesis.io",
+  "supportEmail": "info@nmesis.io",
+  "phone": "Email the studio",
+  "phoneHref": "mailto:info@nmesis.io",
+  "location": "Egypt / UAE",
+  "copyright": "© 2026 NMESIS. All rights reserved.",
+  "updated": "Last updated 19 September 2026",
+  "creditsLabel": "NMESIS",
+  "creditsUrl": "/about",
+  "baseUrl": "",
+  "social": [
+    {
+      "label": "X.",
+      "url": "https://twitter.com"
+    },
+    {
+      "label": "IG.",
+      "url": "https://instagram.com"
+    },
+    {
+      "label": "BE.",
+      "url": "https://behance.com"
+    },
+    {
+      "label": "DB.",
+      "url": "https://dribbble.com"
+    }
+  ],
+  "navigation": [
+    {
+      "label": "Home.",
+      "url": "/"
+    },
+    {
+      "label": "Projects.",
+      "url": "/projects"
+    },
+    {
+      "label": "Services.",
+      "url": "/services"
+    },
+    {
+      "label": "About.",
+      "url": "/about"
+    }
+  ],
+  "colors": {
+    "background": "#f7f8f6",
+    "ink": "#141414",
+    "white": "#ffffff",
+    "border": "#cbd0cb",
+    "muted": "#606760",
+    "accent": "#d9ff00",
+    "surface": "#eef0ed",
+    "silver": "#e1e5e0",
+    "panel": "#d4dad3",
+    "graphite": "#303530"
+  },
+  "forms": {
+    "contactEndpoint": "",
+    "newsletterEndpoint": ""
+  },
+  "projectOrder": [
+    "soueast-egypt",
+    "byd",
+    "im-motors",
+    "avatr",
+    "cadillac",
+    "chevrolet",
+    "gac",
+    "bowfin-egypt",
+    "nmesis-lab"
+  ],
+  "articleOrder": [
+    "don-t-just-post-campaign",
+    "seo-isn-t-dead-it-s-just-grown-up",
+    "the-anatomy-of-a-strong-brand-launch",
+    "the-power-of-product-design-that-gets-out-of-the-way",
+    "why-your-brand-isn-t-just-a-logo"
+  ],
+  "timezone": "Africa/Cairo",
+  "featuredProjects": [
+    "gac",
+    "soueast-egypt",
+    "byd",
+    "avatr",
+    "chevrolet",
+    "im-motors"
+  ],
+  "featuredArticles": [
+    "the-anatomy-of-a-strong-brand-launch",
+    "the-power-of-product-design-that-gets-out-of-the-way",
+    "don-t-just-post-campaign"
+  ]
+}

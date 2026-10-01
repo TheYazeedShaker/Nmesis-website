@@ -1,0 +1,15 @@
+<div class="svc-page">
+  <section class="svc-hero" aria-labelledby="services-title">
+    <div class="svc-wrap">
+      <p class="svc-kicker"><span class="svc-green-dot" aria-hidden="true"></span>{{page.eyebrow}}</p>
+      <h1 id="services-title">{{page.title}}</h1>
+      <div class="svc-hero-intro"><h2>{{page.intro}}</h2><p>{{page.description}}</p></div>
+      <figure class="svc-hero-image"><img src="{{page.heroImage}}" alt="{{page.heroAlt}}" width="2400" height="1350" fetchpriority="high"><figcaption>{{page.heroCaption}}</figcaption></figure>
+    </div>
+  </section>
+  <div class="svc-wrap">
+    <nav class="svc-index" aria-label="Explore services">{{{serviceNavigation}}}</nav>
+    {{{serviceSections}}}
+    <section class="svc-process" aria-labelledby="svc-process-title"><header><p class="svc-kicker">How we work</p><h2 id="svc-process-title">{{page.processTitle}}</h2><p>{{page.processIntro}}</p></header><ol>{{{serviceProcess}}}</ol></section>
+  </div>
+</div>
