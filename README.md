@@ -37,7 +37,9 @@ The website does not require Framer, React, Codex, Claude or runtime API keys. C
 
 ## Deployment
 
-Production: [nmesis-website.vercel.app](https://nmesis-website.vercel.app).
+Production: [www.nmesis.io](https://www.nmesis.io). The root domain `nmesis.io` redirects to `www`; the [Vercel deployment address](https://nmesis-website.vercel.app) remains available.
+
+The domain is registered at GoDaddy and its DNS is managed there. Vercel project settings provide the exact root A record, `www` CNAME and any ownership-verification TXT records. Preserve mail and unrelated subdomain records when updating website DNS. `content/site.json` defines the public URL used for canonical links and the sitemap.
 
 Repository: [TheYazeedShaker/Nmesis-website](https://github.com/TheYazeedShaker/Nmesis-website).
 
