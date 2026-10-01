@@ -11,7 +11,8 @@
     "check:scroll": "node scripts/check-scroll.mjs",
     "check:projects": "node scripts/check-project-builder.mjs",
     "check:deployment": "node scripts/check-deployment.mjs",
-    "verify": "npm run check && npm run check:motion && npm run check:scroll && npm run check:projects && npm run build && npm run check:deployment"
+    "verify": "npm run check && npm run check:motion && npm run check:scroll && npm run check:projects && npm run check:flags && npm run build && npm run check:deployment",
+    "check:flags": "node scripts/check-feature-flags.mjs"
   },
   "engines": {
     "node": "24.x"

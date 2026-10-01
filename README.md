@@ -47,6 +47,19 @@ The deployment configuration uses Vercel’s existing Git integration. A push to
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for activation, verification, routine updates and rollback. Local archives, reference documents, screenshots, exports and credentials are excluded from this repository.
 
+## Testimonial visibility
+
+The existing [allow-testimonials flag](https://eu.posthog.com/project/290562/feature_flags/296612) in PostHog project `290562` controls every current client quote/card: the complete homepage testimonial section (four people), and the Ahmed Ali card in the featured SOUEAST project (both responsive versions). Project scope, client logos and project descriptions remain independent.
+
+- Only an explicit enabled result reveals these areas. Initial HTML, a disabled/missing flag, an evaluation error, blocked requests, or a five-second timeout keep them hidden with no empty section.
+- Each browser evaluates the flag on page load and checks again every minute while the page is visible, as well as on focus/return. Changes to the PostHog flag do not require a site deployment. Refreshing the page requests the latest evaluation immediately.
+- PostHog rollout/targeting rules still apply per anonymous browser. The controller stores only an anonymous ID locally; it never stores a previously enabled flag value. It uses the public flags-only API and does not enable analytics or session replay.
+- `content/site.json` contains the EU API host and public project token, which is designed for browser use. Never substitute a personal/secret API key.
+- New testimonial placements must carry `data-feature-flag="allow-testimonials" hidden` on their full wrapper. The shared layout supplies hiding styles and the controller on every page; pages without these wrappers make no flag requests.
+- `npm run check:flags` covers hidden-by-default rendering, all current placements, on/off behavior, request failures, timeout, refresh and responsive preservation. It is included in the production verification command.
+
+This is a presentation flag, not access control for confidential content: the static HTML and media remain public.
+
 ## Add a project
 
 Open http://localhost:4175/project-builder. Add multiple films, photo galleries and configurator/brochure embeds, then create the page. Files are copied into the corresponding project asset folders.

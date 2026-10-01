@@ -98,5 +98,10 @@
     "the-anatomy-of-a-strong-brand-launch",
     "the-power-of-product-design-that-gets-out-of-the-way",
     "don-t-just-post-campaign"
-  ]
+  ],
+  "posthog": {
+    "projectId": "290562",
+    "projectToken": "phc_A8HhwtUjSjU4ojXeRvc3XUvLH8NMvGV3XBiHWJHjDYan",
+    "apiHost": "https://eu.i.posthog.com"
+  }
 }
