@@ -27,7 +27,7 @@ npm run verify      # Run all checks and produce the deployment build
 - `public/assets/`: all local images, client logos, fonts and videos in their corresponding folders.
 - `public/vendor/`: local Motion and Lenis runtimes, with licenses.
 - `scripts/`: standalone builder, preview server and checks.
-- `dist/`: generated static website, ready for hosting after content approval. Do not edit it directly.
+- `dist/`: generated static website, published by Vercel after verification. Do not edit it directly.
 - `.github/workflows/ci.yml`: checks for pushes to main and pull requests.
 - `vercel.json`: Vercel build command and static output configuration.
 
@@ -36,6 +36,8 @@ The source currently builds 18 routes, including Home, Projects, Services, About
 The website does not require Framer, React, Codex, Claude or runtime API keys. Contact enquiries open the visitor’s email application addressed to info@nmesis.io. The local project-authoring screen is intentionally not published.
 
 ## Deployment
+
+Production: [nmesis-website.vercel.app](https://nmesis-website.vercel.app).
 
 Repository: [TheYazeedShaker/Nmesis-website](https://github.com/TheYazeedShaker/Nmesis-website).
 

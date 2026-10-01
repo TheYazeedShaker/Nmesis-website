@@ -14,7 +14,7 @@
   "updated": "Last updated 19 September 2026",
   "creditsLabel": "NMESIS",
   "creditsUrl": "/about",
-  "baseUrl": "",
+  "baseUrl": "https://nmesis-website.vercel.app/",
   "social": [
     {
       "label": "X.",

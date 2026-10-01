@@ -4,6 +4,7 @@
 
 - Repository: https://github.com/TheYazeedShaker/Nmesis-website
 - Vercel: https://vercel.com/yazeed-4833s-projects/nmesis-website
+- Production URL: https://nmesis-website.vercel.app
 - Production branch: `main`
 - Node.js: `24.x`
 - Framework preset: Other (`null` in `vercel.json`)
@@ -22,9 +23,11 @@
 
 The checks cover page links and assets, animation behavior, project creation, Linux-compatible file paths, custom 404 output and complete media files. GitHub Actions is not the deployment uploader; Vercel owns deployment through its Git connection. No Vercel deployment token needs to be stored in GitHub, and there is no second deployment workflow.
 
-## First activation and verification
+## Activation and verification
 
-The files in this repository prepare the pipeline. Confirm the following after the first authenticated push:
+Initial production activation was verified on 1 October 2026 for commit `a58309b`. [GitHub Actions passed](https://github.com/TheYazeedShaker/Nmesis-website/actions/runs/36871673257) and [Vercel published a Ready production deployment](https://vercel.com/yazeed-4833s-projects/nmesis-website/BTF4oiqQuREtMgcDYU3tXivCdoKy). The public production domain passed checks for all 18 routes, the custom 404, JavaScript, CSS, a poster and video byte-range streaming.
+
+Use this checklist when verifying the connection or moving to another hosting project:
 
 1. The repository has its source and workflow on `main`.
 2. Vercel Settings → Git shows this exact repository; Environments → Production tracks `main`.
@@ -33,7 +36,7 @@ The files in this repository prepare the pipeline. Confirm the following after t
 5. Open the production domain shown in Vercel. Check `/`, `/about`, `/services`, `/projects/soueast-egypt`, a film and an unknown URL (which must return HTTP 404).
 6. Push a follow-up commit to `main` and confirm another automatic deployment reaches Ready and the production domain serves it.
 
-Remote activation is only verified once these checks have been completed; a successful local build alone does not confirm deployment.
+The follow-up domain-configuration commit is also used to verify the automatic update path. A successful local build alone does not confirm a remote deployment; check GitHub Actions and Vercel for the pushed commit.
 
 ## Routine updates
 
@@ -49,7 +52,7 @@ For preview work, create a feature branch and open a pull request into `main`. V
 
 ## Canonical domain
 
-Once the production hostname is confirmed, set `SITE_URL` in Vercel to its HTTPS origin, for example `https://your-confirmed-domain.example`, and redeploy. This enables canonical URLs and the sitemap. Leave it unset until the domain is known. Do not use a changing preview deployment hostname as the production canonical.
+The confirmed production origin is configured as `baseUrl` in `content/site.json`. This enables canonical URLs and the sitemap. If you later connect a custom domain, update that value and push, or set `SITE_URL` in Vercel to the confirmed HTTPS origin and redeploy. `SITE_URL` overrides the source setting. Do not use a changing preview deployment hostname as the production canonical.
 
 ## Media and local authoring
 
