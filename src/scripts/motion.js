@@ -322,6 +322,8 @@
           el.style.backgroundColor=`rgba(255,255,255,${clamp(p)})`;
           const lines=el.querySelectorAll('.menu-close span');
           if(lines.length===2){
+            lines[0].style.width=`${20-4*clamp(p)}px`;
+            lines[1].style.width=`${12+4*clamp(p)}px`;
             lines[0].style.transform=`translateY(${-4*(1-clamp(p))}px) rotate(${-45*clamp(p)}deg)`;
             lines[1].style.transform=`translateY(${4*(1-clamp(p))}px) rotate(${45*clamp(p)}deg)`;
           }

@@ -60,3 +60,16 @@ html.lenis,html.lenis body { height:auto; }
  .mobile-menu { overflow-y:auto; }
  .mobile-menu .mobile-social { position:relative;left:0;right:auto;bottom:auto;margin-top:32px;padding-bottom:16px; }
 }
+
+/* The overlay takes ownership of the header for the whole transition. */
+html.navigation-open .design-8v54va-container { visibility:hidden; }
+.mobile-menu .menu-brand { left:var(--menu-logo-x,16px);top:var(--menu-logo-y,20px); }
+.mobile-menu .menu-brand img { display:block;width:var(--menu-logo-width,128px);height:var(--menu-logo-height,auto); }
+.mobile-menu .menu-close { appearance:none;-webkit-appearance:none;left:var(--menu-toggle-x);top:var(--menu-toggle-y,13px);right:auto!important;width:44px!important;height:40px;color:var(--color-ink);background:transparent;box-shadow:none;-webkit-tap-highlight-color:transparent; }
+.mobile-menu .menu-close span { left:auto!important;right:12px!important;transform-origin:center; }
+.mobile-menu .menu-contact { left:var(--menu-contact-x);top:var(--menu-contact-y);right:auto;width:var(--menu-contact-width);height:var(--menu-contact-height)!important; }
+nav [data-part="default"] { -webkit-tap-highlight-color:transparent; }
+nav [data-part="default"]::before { content:"";position:absolute;inset:0 -12px;background:transparent; }
+.mobile-menu { overflow-y:auto; }
+.mobile-menu .mobile-social { position:relative;left:0;right:auto;bottom:auto;height:auto;display:flex;flex-direction:column;align-items:flex-start;gap:16px;margin-top:40px;padding-bottom:24px; }
+.mobile-menu .mobile-social .nmesis-social-links a { display:inline-grid; }

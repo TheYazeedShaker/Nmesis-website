@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import {socialLinks as renderSocialLinks} from './social-links.mjs';
 import {aboutPage} from './about-page.mjs';
 import {projectMedia} from './project-media.mjs';
 import {serviceShowcase} from './service-showcase.mjs';
@@ -110,12 +111,12 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
   };
   const featuredProjects = selectFeatured(site.featuredProjects, projects, 6, 'featuredProjects');
   const featuredArticles = selectFeatured(site.featuredArticles, blog, 3, 'featuredArticles');
-  const base = {site,shared,projects,blog,featuredProjects,featuredArticles};
+  const socialLinks = renderSocialLinks(site.social,escapeHTML);
+  const base = {site,shared,projects,blog,featuredProjects,featuredArticles,socialLinks};
   const header = await partial('header', base);
   const footer = await partial('footer', base);
   const icons = await read('src/templates/partials/icons.html');
   const mobileLinks = site.navigation.map(link => `<a class="design-SmDrJ design-ovk8g8 design-v-1sujeta" data-part="Default" href="${escapeHTML(link.url)}"><div class="design-q9bf4u"><div class="design-1g3dvz0"><h3>${escapeHTML(link.label)}</h3></div><div class="design-12n0ytl" aria-hidden="true"><h3>${escapeHTML(link.label)}</h3></div></div><div class="design-fhY6R design-h3njfy" aria-hidden="true"></div></a>`).join('\n');
-  const socialLinks = site.social.map(link => `<a href="${escapeHTML(link.url)}" target="_blank" rel="noopener">${escapeHTML(link.label)}</a>`).join('\n');
   const allRoutes = [];
   async function page(route, templateName, extra, title, withCTA) {
     const pageData = await json(`content/pages/${templateName}.json`);

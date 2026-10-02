@@ -10,7 +10,7 @@
   <style>[data-feature-flag][hidden]{display:none!important}</style>
   <meta name="theme-color" content="{{site.colors.background}}">
   {{{meta.canonical}}}
-  <link rel="icon" href="data:,">
+  <link rel="icon" type="image/svg+xml" href="/assets/brand/nmesis-n.svg">
   <link rel="stylesheet" href="/styles/shared.css">
   <link rel="stylesheet" href="/styles/pages/{{meta.style}}.css">
   <link rel="stylesheet" href="/styles/theme.css">
@@ -39,7 +39,7 @@
   <dialog data-lenis-prevent class="mobile-menu" aria-label="Main navigation">
     <button class="menu-close" aria-label="Close navigation"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
     <nav>{{{mobileLinks}}}</nav>
-    <div class="mobile-social"><a href="mailto:{{site.email}}">{{site.email}}</a></div>
+    <div class="mobile-social"><a href="mailto:{{site.email}}">{{site.email}}</a>{{{socialLinks}}}</div>
   </dialog>
   <div class="form-notice" role="status" hidden></div>
 </body>

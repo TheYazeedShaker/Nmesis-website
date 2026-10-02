@@ -10,27 +10,21 @@
   "phone": "Email the studio",
   "phoneHref": "mailto:info@nmesis.io",
   "location": "Egypt / UAE",
-  "copyright": "© 2026 NMESIS. All rights reserved.",
+  "copyright": "\u00a9 2026 NMESIS. All rights reserved.",
   "updated": "Last updated 19 September 2026",
   "creditsLabel": "NMESIS",
   "creditsUrl": "/about",
   "baseUrl": "https://www.nmesis.io/",
   "social": [
     {
-      "label": "X.",
-      "url": "https://twitter.com"
+      "label": "Instagram",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/nmesis.studio/"
     },
     {
-      "label": "IG.",
-      "url": "https://instagram.com"
-    },
-    {
-      "label": "BE.",
-      "url": "https://behance.com"
-    },
-    {
-      "label": "DB.",
-      "url": "https://dribbble.com"
+      "label": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/company/nmesis-motionlab/"
     }
   ],
   "navigation": [

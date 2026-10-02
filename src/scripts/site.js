@@ -30,11 +30,28 @@
   const menuContact=document.querySelector('nav .design-gzg5v.design-v-hyui4n')?.cloneNode(true);
   if(menuContact){menuContact.classList.add('menu-contact');menu.append(menuContact);}
   let opener,menuEpoch=0,previousOverflow='',previousGutter='';
+  const alignMenuHeader=()=>{
+    const nav=opener?.closest('nav');
+    if(!nav)return;
+    const position=(element,prefix,offset=0)=>{
+      if(!element)return;
+      const rect=element.getBoundingClientRect();
+      menu.style.setProperty(`--menu-${prefix}-x`,`${rect.left-offset}px`);
+      menu.style.setProperty(`--menu-${prefix}-y`,`${rect.top}px`);
+      menu.style.setProperty(`--menu-${prefix}-width`,`${rect.width}px`);
+      menu.style.setProperty(`--menu-${prefix}-height`,`${rect.height}px`);
+    };
+    position(nav.querySelector('.brand-image'),'logo');
+    position(opener,'toggle',12);
+    position(nav.querySelector('.design-gzg5v'),'contact');
+  };
   for (const toggle of document.querySelectorAll('nav [data-part="default"]')) {
     toggle.setAttribute('role','button'); toggle.setAttribute('tabindex','0');
     toggle.setAttribute('aria-label','Open navigation');toggle.setAttribute('aria-expanded','false');
     const open = () => {
+      if(menu.open)return;
       menuEpoch++;menu.dataset.state='open';
+      opener=toggle;alignMenuHeader();
       const root=document.documentElement;
       previousOverflow=root.style.overflow;previousGutter=root.style.scrollbarGutter;
       menu.style.width=innerWidth+'px';
@@ -42,7 +59,8 @@
       root.style.scrollbarGutter='stable';root.style.overflow='hidden';
       opener=toggle;toggle.setAttribute('aria-expanded','true');
       menu.style.clipPath=window.MoroMotion?'inset(0 0 '+Math.max(0,innerHeight-66)+'px 0)':'';
-      menu.showModal();
+      root.classList.add('navigation-open');
+      menu.showModal();menu.scrollTop=0;
       window.MoroMotion?.menu(menu,true);
     };
     toggle.addEventListener('click',open);
@@ -54,10 +72,11 @@
   menu.addEventListener('close',()=>{
     const root=document.documentElement;root.style.overflow=previousOverflow;root.style.scrollbarGutter=previousGutter;
     menu.style.clipPath='';menu.style.backgroundColor='';menu._menuProgress=0;
+    root.classList.remove('navigation-open');
     opener?.setAttribute('aria-expanded','false');opener?.focus({preventScroll:true});
   });
-  window.addEventListener('resize',()=>{if(menu.open)menu.style.width=innerWidth+'px';},{passive:true});
-  const desktopMenu=matchMedia('(min-width:810px)');
+  window.addEventListener('resize',()=>{if(menu.open){menu.style.width=innerWidth+'px';alignMenuHeader();}},{passive:true});
+  const desktopMenu=matchMedia('(min-width:1200px)');
   desktopMenu.addEventListener('change',event=>{if(event.matches&&menu.open)closeMenu();});
   if (config.logo) {
     for (const p of document.querySelectorAll('nav p')) {

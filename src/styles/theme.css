@@ -1097,3 +1097,17 @@ body:has(.contact-page) .design-1tssoce-container { transform:none!important;wil
 @media(max-width:1000px) { .work-services { grid-template-columns:1fr;gap:36px;margin-bottom:80px; }.work-services-intro { padding:0; }.work-services h2 { max-width:640px; }.work-services-description { max-width:560px; }.work-service { grid-template-columns:120px minmax(0,1fr) 22px; }.work-service h3 { font-size:24px; } }
 @media(max-width:520px) { .work-services { width:calc(100% - 24px);margin-top:32px;margin-bottom:60px;padding:28px 22px;border-radius:22px;gap:32px; }.work-services-eyebrow { font-size:13px;margin-bottom:24px; }.work-services h2 { font-size:38px; }.work-services-description { font-size:16px;margin:22px 0 28px; }.work-services-cta { width:100%;box-sizing:border-box;gap:16px;padding:17px; }.work-service { grid-template-columns:70px minmax(0,1fr) 18px;gap:13px;padding:22px 0; }.work-service h3 { font-size:19px; }.work-service-description { font-size:13px; }.work-service-image { aspect-ratio:.8; }.work-service .svc-action-arrow { width:18px;font-size:18px; }.work-service-number { font-size:11px; } }
 @media(prefers-reduced-motion:reduce) { .work-services a::before,.work-services .svc-button-label>span,.work-services .svc-action-arrow>span,.work-service img { transition:none; }.work-services a:is(:hover,:focus-visible) .svc-button-label>span,.work-services a:is(:hover,:focus-visible) .svc-action-arrow>span:first-child,.work-service:is(:hover,:focus-visible) img { transform:none; }.work-services .svc-action-arrow>span+span { display:none; } }
+
+/* Shared, real studio social destinations at every breakpoint. */
+.nmesis-social-links { display:flex;align-items:center;gap:10px; }
+.nmesis-social-links a { display:inline-grid;place-items:center;width:44px;height:44px;box-sizing:border-box;color:inherit;border:1px solid currentColor;border-radius:50%;text-decoration:none;transition:background .4s cubic-bezier(.22,1,.36,1),color .4s cubic-bezier(.22,1,.36,1);-webkit-tap-highlight-color:transparent; }
+.nmesis-social-links svg { display:block;transition:transform .4s cubic-bezier(.22,1,.36,1); }
+.nmesis-social-links a:hover,.nmesis-social-links a:focus-visible { background:var(--color-accent);color:#141414;border-color:var(--color-accent); }
+.nmesis-social-links a:hover svg,.nmesis-social-links a:focus-visible svg { transform:translateY(-2px); }
+@media(max-width:1199px) {
+ .design-8v54va-container > .responsive-variant.hidden-zagzij { display:none!important; }
+ .design-8v54va-container > .responsive-variant.hidden-1eh47ed { display:block!important; }
+ .design-8v54va-container .brand-image { width:128px; }
+}
+@media(prefers-reduced-motion:reduce) { .nmesis-social-links a,.nmesis-social-links svg { transition:none; } }
+.design-8v54va-container .nmesis-social-links { color:var(--color-ink); }
