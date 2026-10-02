@@ -1,6 +1,6 @@
 import {projectBrochures} from './project-brochures.mjs';
 import {experienceCapsule} from './project-experiences.mjs';
-import {projectGalleryDialog} from './project-media.mjs';
+import {projectGalleryDialog,galleryExpandIcon} from './project-media.mjs';
 import {serviceLabel,serviceArrow,serviceActionContent} from './service-actions.mjs';
 
 // Editable service families and formats live in content/pages/services.json.
@@ -18,7 +18,7 @@ export function serviceShowcase(page, e, projects = {}) {
     }
     let content='';
     if(item.type==='video') content=`<div class="case-film svc-film"><video data-case-film controls playsinline preload="none" poster="${e(item.poster)}" src="${e(item.src)}" aria-label="${e(item.caption)}"></video><button class="case-film-start" type="button" aria-label="Play ${e(item.caption)}"><span class="case-play-icon" aria-hidden="true">▶</span><span class="svc-film-label">${roll('Watch sample')}</span></button></div>`;
-    else content=`<a class="svc-image" href="${e(item.src)}" data-gallery-image data-caption="${e(item.caption || item.alt)}" aria-label="View full image: ${e(item.alt)}"><img src="${e(item.src)}" alt="${e(item.alt)}" loading="lazy" width="1600" height="1000"><span class="svc-enlarge svc-motion">${serviceActionContent('View image',e)}</span></a>`;
+    else content=`<a class="svc-image" href="${e(item.src)}" data-gallery-image data-caption="${e(item.caption || item.alt)}" aria-label="View fullscreen image: ${e(item.alt)}"><img src="${e(item.src)}" alt="${e(item.alt)}" loading="lazy" width="1600" height="1000"><span class="svc-enlarge svc-motion">${roll('View fullscreen')}${galleryExpandIcon()}</span></a>`;
     const live=item.liveUrl ? `<a class="svc-live-link svc-motion" href="${e(item.liveUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${e(item.liveLabel || 'Try the live experience')}">${roll(item.liveLabel || 'Try the live experience')}${arrow}</a>` : '';
     return `<figure class="svc-media" ${item.type==='image'?'data-case-gallery':''}>${content}<figcaption><span class="svc-sample-dot" aria-hidden="true"></span>${e(item.caption)}</figcaption>${live}${item.type==='image'?projectGalleryDialog():''}</figure>`;
   };
