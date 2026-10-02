@@ -136,6 +136,16 @@ body {
 .design-c6og6u .design-1e07pkp .client-logo::before { transform:scale(.74); }
 .design-c6og6u .design-rgvvyl { gap:8px;padding:14px; }
 /* Keep the outline and both animated faces on the card's rounded boundary. */
+.design-c6og6u .design-Cyg5M {
+ --token-e2acdfaa-12ba-46b4-8e43-fdd2f8ee9c1f:var(--color-border);
+ background:var(--token-8b765c29-bd5d-4fb5-b4f3-aa30d6566102,rgba(246,246,249,.5));
+}
+.design-c6og6u .design-Cyg5M::after {
+ content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+ border:1px solid var(--token-e2acdfaa-12ba-46b4-8e43-fdd2f8ee9c1f,rgba(246,246,249,.4));
+ border-radius:inherit;
+}
+.design-c6og6u .design-Cyg5M > .design-1fh6q82::after { content:none; }
 .design-c6og6u .design-Cyg5M > .design-1fh6q82,
 .design-c6og6u .design-Cyg5M > .design-gm3354 { border-radius:inherit; }
 
@@ -280,7 +290,7 @@ body:has(.showreel-hero) .design-8v54va-container .design-gzg5v { --color-ink:#1
  #testimonials .design-6EdCs { min-height:440px;height:100%!important; }
 }
 @media(max-width:599px) {
- .design-bAUIT .design-c6og6u { grid-auto-rows:220px; }
+ .design-bAUIT .design-c6og6u { grid-auto-rows:220px;gap:12px; }
  .design-c6og6u .design-rgvvyl { padding:12px; }
  .design-bAUIT p.design-styles-preset-1ra5k8v { font-size:16px;line-height:1.45; }
  .design-KzayI .design-54npr4 > [data-part="Content"] > div { max-width:290px; }

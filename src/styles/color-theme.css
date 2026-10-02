@@ -32,6 +32,11 @@ html[data-theme="light"] { color-scheme:light; }
 /* Logos and the menu stay legible on dark canvas, including close animation. */
 [data-theme="dark"] :is(.brand-image,.menu-brand img,.project-lab-mark img) { filter:brightness(0) invert(1); }
 [data-theme="dark"] .client-logo::before { background-color:var(--color-ink); }
+[data-theme="dark"] .design-c6og6u .design-Cyg5M {
+ --token-8b765c29-bd5d-4fb5-b4f3-aa30d6566102:#222922;
+ --token-e2acdfaa-12ba-46b4-8e43-fdd2f8ee9c1f:#465045;
+ --surface-card:#222922;
+}
 [data-theme="dark"] .client-logo--mansour::before { background-color:transparent;filter:brightness(0) invert(1); }
 [data-theme="dark"] .project-image-mark--invert { filter:none;mix-blend-mode:normal; }
 [data-theme="dark"] .mobile-menu { background:rgb(var(--menu-rgb)); }
