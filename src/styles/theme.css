@@ -135,15 +135,11 @@ body {
 .design-bAUIT .design-c6og6u { grid-template-rows:none;grid-auto-rows:148px; }
 .design-c6og6u .design-1e07pkp .client-logo::before { transform:scale(.74); }
 .design-c6og6u .design-rgvvyl { gap:8px;padding:14px; }
-/* Keep the outline and both animated faces on the card's rounded boundary. */
+/* Separate rounded client tiles by their fill, including the animated details face. */
 .design-c6og6u .design-Cyg5M {
- --token-e2acdfaa-12ba-46b4-8e43-fdd2f8ee9c1f:var(--color-border);
- background:var(--token-8b765c29-bd5d-4fb5-b4f3-aa30d6566102,rgba(246,246,249,.5));
-}
-.design-c6og6u .design-Cyg5M::after {
- content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
- border:1px solid var(--token-e2acdfaa-12ba-46b4-8e43-fdd2f8ee9c1f,rgba(246,246,249,.4));
- border-radius:inherit;
+ --token-8b765c29-bd5d-4fb5-b4f3-aa30d6566102:#eef0ed;
+ --surface-card:#eef0ed;
+ background:var(--surface-card);
 }
 .design-c6og6u .design-Cyg5M > .design-1fh6q82::after { content:none; }
 .design-c6og6u .design-Cyg5M > .design-1fh6q82,
