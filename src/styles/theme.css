@@ -74,6 +74,7 @@ body {
 .design-n9w4av .design-qvhep-container {
   /* The dotted title's overlay must match its surrounding surface. */
   --color-ink:var(--color-silver);
+  --surface-deep:var(--color-silver);
 }
 .design-n9w4av .design-hWt2h {
   --color-white:#ffffff;
@@ -134,6 +135,9 @@ body {
 .design-bAUIT .design-c6og6u { grid-template-rows:none;grid-auto-rows:148px; }
 .design-c6og6u .design-1e07pkp .client-logo::before { transform:scale(.74); }
 .design-c6og6u .design-rgvvyl { gap:8px;padding:14px; }
+/* Keep the outline and both animated faces on the card's rounded boundary. */
+.design-c6og6u .design-Cyg5M > .design-1fh6q82,
+.design-c6og6u .design-Cyg5M > .design-gm3354 { border-radius:inherit; }
 
 /* Keep the founder story and team profiles on the dedicated About page. */
 .design-bAUIT .design-1yf02wr { display:none!important; }

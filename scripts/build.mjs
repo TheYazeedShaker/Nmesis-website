@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import {themeSurfaces} from './theme-surfaces.mjs';
 import {socialLinks as renderSocialLinks} from './social-links.mjs';
 import {aboutPage} from './about-page.mjs';
 import {projectMedia} from './project-media.mjs';
@@ -83,6 +84,12 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
     return name !== '.DS_Store' && !/(?:^|-)sources\.json$/i.test(name);
   }});
   await fs.cp(path.join(root,'src/styles'), path.join(output,'styles'), {recursive:true});
+  for (const entry of await fs.readdir(path.join(output,'styles/pages'))) {
+    if(entry.endsWith('.css')) {
+      const file=path.join(output,'styles/pages',entry);
+      await fs.writeFile(file,themeSurfaces(await fs.readFile(file,'utf8')));
+    }
+  }
   await fs.cp(path.join(root,'src/scripts'), path.join(output,'scripts'), {recursive:true});
   const motion = {...await json('src/motion/effects.json'), appear:await json('src/motion/appear.json')};
   for (const page of Object.values(motion.appear)) for (const entry of page.entries) for (const spec of Object.values(entry.variants)) {
@@ -112,7 +119,8 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
   const featuredProjects = selectFeatured(site.featuredProjects, projects, 6, 'featuredProjects');
   const featuredArticles = selectFeatured(site.featuredArticles, blog, 3, 'featuredArticles');
   const socialLinks = renderSocialLinks(site.social,escapeHTML);
-  const base = {site,shared,projects,blog,featuredProjects,featuredArticles,socialLinks};
+  const themeToggle = '<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light mode"><svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.2A8.4 8.4 0 0 1 9.8 4a8.5 8.5 0 1 0 10.2 10.2Z"/></svg><span data-theme-label>Light mode</span></button>';
+  const base = {site,shared,projects,blog,featuredProjects,featuredArticles,socialLinks,themeToggle};
   const header = await partial('header', base);
   const footer = await partial('footer', base);
   const icons = await read('src/templates/partials/icons.html');
@@ -151,7 +159,7 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
     const backdrop = extra.project?.ctaBackground || pageData.ctaBackground;
     const ctaBackground = backdrop ? `<div class="nmesis-cta-background" aria-hidden="true" style="--cta-position:${escapeHTML(backdrop.position || 'center')};--cta-mobile-position:${escapeHTML(backdrop.mobilePosition || backdrop.position || 'center')}"><img src="${escapeHTML(backdrop.src)}" alt="" width="${Number(backdrop.width)}" height="${Number(backdrop.height)}" loading="lazy" decoding="async"></div>` : '';
     const cta = withCTA ? await partial('cta', {...ctx,ctaBackground}) : '';
-    let html = render(shell, {...ctx,header,footer,cta,icons,mobileLinks,socialLinks,content,meta:{title:`${title} — ${site.brandName}`,description:extra.project?.subtitle || extra.article?.excerpt || pageData.metaDescription || site.description,style:templateName,canonical}});
+    let html = themeSurfaces(render(shell, {...ctx,header,footer,cta,icons,mobileLinks,socialLinks,content,meta:{title:`${title} — ${site.brandName}`,description:extra.project?.subtitle || extra.article?.excerpt || pageData.metaDescription || site.description,style:templateName,canonical}}));
     // Keep contact/form configuration public and separate from the layout.
     html = html.replace('</head>', `<script type="application/json" id="site-config">${JSON.stringify({brandName:site.brandName,logo:site.logo,forms:site.forms,timezone:site.timezone}).replace(/</g,'\\u003c')}</script>\n</head>`);
     // Article HTML is intentionally editable; all JSON strings remain HTML-escaped.

@@ -319,7 +319,7 @@
         const paintMenu=p=>{
           el._menuProgress=p;
           el.style.clipPath=`inset(0 0 ${(1-clamp(p))*Math.max(0,el.clientHeight-66)}px 0)`;
-          el.style.backgroundColor=`rgba(255,255,255,${clamp(p)})`;
+          el.style.backgroundColor=`rgba(var(--menu-rgb,255,255,255),${clamp(p)})`;
           const lines=el.querySelectorAll('.menu-close span');
           if(lines.length===2){
             lines[0].style.width=`${20-4*clamp(p)}px`;

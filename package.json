@@ -11,9 +11,10 @@
     "check:scroll": "node scripts/check-scroll.mjs",
     "check:projects": "node scripts/check-project-builder.mjs",
     "check:deployment": "node scripts/check-deployment.mjs",
-    "verify": "npm run check && npm run check:motion && npm run check:scroll && npm run check:projects && npm run check:flags && npm run check:media && npm run build && npm run check:deployment",
+    "verify": "npm run check && npm run check:motion && npm run check:scroll && npm run check:projects && npm run check:flags && npm run check:media && npm run check:theme && npm run build && npm run check:deployment",
     "check:flags": "node scripts/check-feature-flags.mjs",
-    "check:media": "node scripts/check-media-controls.mjs"
+    "check:media": "node scripts/check-media-controls.mjs",
+    "check:theme": "node scripts/check-color-theme.mjs"
   },
   "engines": {
     "node": "24.x"

@@ -1,0 +1,123 @@
+/* Light keeps the accepted palette. Dark changes surfaces, not photographs. */
+:root,body { --surface-card:#fff;--surface-deep:#141414;--menu-rgb:255,255,255; }
+:root[data-theme="dark"],:root[data-theme="dark"] body {
+  --color-background:#101211;--color-ink:#eef1eb;--color-muted:#a9b2a8;
+  --color-border:#363d36;--color-surface:#191d19;--color-silver:#2b322b;
+  --color-panel:#222822;--color-graphite:#303930;--color-white:#fff;
+  --surface-card:#1b201c;--surface-deep:#090c0a;--menu-rgb:19,24,20;
+  --token-44e0b61a-0d45-4abd-a816-7cc3fce51538:#303830;
+  --token-e77614a2-ba91-4d64-ba1c-3649efb36d98:#a9b2a8;
+  --token-9ba88951-3cef-4c82-8d32-490f48d874a3:#a9b2a8;
+  --token-1f32a6c5-e7fe-4fa0-830a-9d056964c691:#202720;
+  --token-794520ef-faec-440e-8f2d-9d79cc1f8644:#171d18;
+  --token-8b765c29-bd5d-4fb5-b4f3-aa30d6566102:#1b201ced;
+  --token-e2acdfaa-12ba-46b4-8e43-fdd2f8ee9c1f:#ffffff29;
+}
+html[data-theme="dark"] { background:#101211;color-scheme:dark; }
+html[data-theme="light"] { color-scheme:light; }
+::selection { color:#141414;background:#d9ff00; }
+.theme-toggle { display:inline-flex;align-items:center;justify-content:center;gap:9px;flex:none;min-height:44px;padding:10px 15px;border:1px solid var(--color-border);border-radius:30px;background:transparent;color:inherit;font:500 12px/1.2 var(--font-body);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:color .4s cubic-bezier(.22,1,.36,1),background .4s cubic-bezier(.22,1,.36,1); }
+.theme-toggle svg { width:18px;height:18px;flex:none; }
+.theme-toggle:hover,.theme-toggle:focus-visible { background:var(--color-accent);color:#141414; }
+.theme-toggle:focus-visible { outline:2px solid var(--color-accent);outline-offset:4px; }
+[data-theme="dark"] .theme-moon,[data-theme="light"] .theme-sun { display:none; }
+.header-appearance { margin-left:auto;margin-right:20px;color:var(--color-ink); }
+.header-appearance .theme-toggle { width:44px;padding:10px;border-color:currentColor; }
+.header-appearance [data-theme-label] { display:none; }
+.footer-appearance { display:flex;align-items:center;gap:20px;flex-wrap:wrap; }
+.mobile-social .theme-toggle { margin-top:4px; }
+@media(max-width:1199px) { .header-appearance { display:none; } }
+@media(prefers-reduced-motion:reduce) { .theme-toggle { transition:none; } }
+
+/* Logos and the menu stay legible on dark canvas, including close animation. */
+[data-theme="dark"] :is(.brand-image,.menu-brand img,.project-lab-mark img) { filter:brightness(0) invert(1); }
+[data-theme="dark"] .client-logo::before { background-color:var(--color-ink); }
+[data-theme="dark"] .client-logo--mansour::before { background-color:transparent;filter:brightness(0) invert(1); }
+[data-theme="dark"] .project-image-mark--invert { filter:none;mix-blend-mode:normal; }
+[data-theme="dark"] .mobile-menu { background:rgb(var(--menu-rgb)); }
+[data-theme="dark"] nav [data-part="Line"] { background-color:var(--color-ink)!important; }
+/* Brand buttons retain dark ink on lime and white, including rolling labels. */
+[data-theme="dark"] :is(.design-gzg5v,.design-PLGvS) { --color-ink:#141414;--color-white:#fff;--surface-card:#f1f4ed;--surface-deep:#292f29; }
+[data-theme="dark"] :is(.contact-email span,.nmesis-footer-email span) { color:#141414; }
+[data-theme="dark"] .contact-email:is(:hover,:focus-visible) span { background:#eef1eb;color:#141414; }
+[data-theme="dark"] #testimonials :is(.design-9425ek)::before { color:var(--color-muted); }
+[data-theme="dark"] #testimonials .design-1s6oi7i { background:var(--surface-card); }
+/* Price-card accents have their own ink, independent of body text. */
+[data-theme="dark"] .design-10Ueu .design-109ugy2 .design-gjnrea { color:#141414; }
+
+/* Project films, carousels, model selectors, and hosted experience chrome. */
+[data-theme="dark"] :is(.case-section-heading>p,.case-embed-note,.case-embed-cover p) { color:var(--color-muted); }
+[data-theme="dark"] :is(.case-capsule,.collection-experience-scene .case-capsule,.collection-experience-scene .case-capsule-toolbar,.collection-experiences .case-capsule:fullscreen) { background:var(--surface-card);border-color:var(--color-border); }
+[data-theme="dark"] .case-capsule-toolbar :is(button,a) { background:#252c25;color:var(--color-ink);border-color:#465045; }
+[data-theme="dark"] .case-embed-stage { background:#141814; }
+[data-theme="dark"] :is(.collection-film-picker button,.collection-rail-toolbar button,.collection-model-tabs button,.collection-format-tabs) { border-color:var(--color-border); }
+[data-theme="dark"] .collection-film-picker button[aria-selected=true] { background:#272e24;border-color:#83962d; }
+[data-theme="dark"] .collection-rail-toolbar button:hover:not(:disabled),
+[data-theme="dark"] .collection-model-tabs button[aria-selected=true],
+[data-theme="dark"] .collection-format-tabs button[aria-selected=true] { color:#141414; }
+[data-theme="dark"] .collection-format-tabs { background:#1b201c; }
+[data-theme="dark"] .collection-format-tabs button { color:var(--color-muted); }
+[data-theme="dark"] .collection-experience-formats .collection-model-tabs button[aria-selected=true] { background:#2a3325;color:var(--color-ink);border-color:#788944; }
+[data-theme="dark"] :is(.brochure-panel,.brochure-dialog,.brochure-dialog-bar,.brochure-dialog-status) { background:var(--surface-card);border-color:var(--color-border); }
+[data-theme="dark"] :is(.brochure-kicker,.brochure-editorial>p,.brochure-separate,.brochure-dialog-hint,.brochure-dialog-status) { color:var(--color-muted); }
+[data-theme="dark"] .brochure-editorial-footer { color:var(--color-muted);border-color:var(--color-border); }
+[data-theme="dark"] .brochure-open { color:#141414; }
+[data-theme="dark"] .brochure-open:is(:hover,:focus-visible) { color:#fff; }
+
+/* Services share the project treatments, with restrained raised panels. */
+[data-theme="dark"] .svc-page { background:var(--color-background);color:var(--color-ink); }
+[data-theme="dark"] :is(.svc-panel,.sd-format-index a,.svc-process,.sd-inputs>div,.sd-brief) { background:var(--surface-card);border-color:var(--color-border); }
+[data-theme="dark"] :is(.svc-index a:hover,.sd-format-index a:hover) { background:#2a3426; }
+[data-theme="dark"] :is(.svc-index a>span:first-child,.svc-chapter .svc-kicker,.svc-description,.svc-panel-copy>p,.svc-media figcaption,.svc-chapter-foot>span,.svc-process .svc-kicker,.svc-process header>p:last-child,.svc-process li>span,.svc-process li p,.sd-format-index p,.sd-page .sd-context,.sd-label,.sd-format-guidance p,.sd-format-foot>span,.sd-inputs p,.sd-faq-number,.sd-faq-answer p,.svc-brochure-chapter .svc-kicker) { color:var(--color-muted); }
+[data-theme="dark"] :is(.svc-tabs button,.sd-faq-row,.sd-format-guidance,.sd-format-foot,.svc-index a,.svc-process li,.sd-inputs,.svc-project-link) { border-color:var(--color-border); }
+[data-theme="dark"] .svc-tabs button { color:var(--color-ink); }
+[data-theme="dark"] .svc-tabs button[aria-selected=true] { color:#141414; }
+[data-theme="dark"] .svc-tabs button:hover { color:#141414; }
+[data-theme="dark"] .sd-faq-icon { background:#303a2b; }
+[data-theme="dark"] .sd-faq-icon::before,[data-theme="dark"] .sd-faq-icon::after { background:var(--color-ink); }
+[data-theme="dark"] .sd-faq-trigger[aria-expanded=true] .sd-faq-icon::before { background:#141414; }
+[data-theme="dark"] .svc-panel li::before { color:var(--color-accent); }
+[data-theme="dark"] .svc-page .case-capsule-toolbar :is(button,a) { --svc-hover-fill:#3a4830; }
+
+/* Inquiry fields: browser-native controls follow the same dark color scheme. */
+[data-theme="dark"] .contact-brief { background:var(--surface-card);border-color:var(--color-border); }
+[data-theme="dark"] .contact-brief :is(input,select,textarea) { background:#131713;border-color:#465044;color:var(--color-ink); }
+[data-theme="dark"] .contact-brief :is(input,textarea)::placeholder { color:#98a293; }
+[data-theme="dark"] .contact-email { border-color:var(--color-border); }
+[data-theme="dark"] .contact-submit button { color:#141414; }
+[data-theme="dark"] .contact-submit .contact-animated-button:is(:hover,:focus-visible) { color:#fff; }
+[data-theme="dark"] .contact-ready { background:#293225; }
+[data-theme="dark"] .contact-ready :is(a,button) { background:var(--color-accent);color:#141414; }
+[data-theme="dark"] .contact-brief :is(input,select,textarea):focus-visible { outline-color:var(--color-accent); }
+
+/* About retains its dark film chapters, with new neutral editorial sections. */
+[data-theme="dark"] .ast-page :is(.ast-body,.ast-principle p,.ast-index,.ast-stat>p:last-child,.ast-founder-role,.ast-founder-bio,.ast-country,.ast-origin-visual figcaption,.ast-mission-visual figcaption) { color:var(--color-muted); }
+[data-theme="dark"] .ast-page :is(.ast-text-link,.ast-stat-value) { color:var(--color-ink); }
+[data-theme="dark"] .ast-page :is(.ast-principles,.ast-working) { background:#161b17; }
+[data-theme="dark"] .ast-page :is(.ast-origin-visual,.ast-mission-visual,.ast-founder-portrait,.ast-brochure-screens) { background:var(--surface-card); }
+[data-theme="dark"] .ast-page :is(.ast-principle,.ast-founder-role,.ast-locations>div>p,.ast-logo) { border-color:var(--color-border); }
+[data-theme="dark"] .ast-page .ast-logo { background:var(--surface-card); }
+[data-theme="dark"] .ast-page .ast-stage-copy .ast-text-link { color:var(--color-accent); }
+[data-theme="dark"] .ast-page .ast-action--outline { color:#fff; }
+/* Interface artwork and third-party iframe contents remain unfiltered. */
+[data-theme="dark"] .design-10Ueu .design-1egctel { background:rgba(27,32,28,.94)!important; }
+[data-theme="dark"] .project-image-mark:not(.project-image-mark--invert) { filter:brightness(0) invert(1); }
+[data-theme="dark"] :is(.brochure-open,.contact-animated-button)::before { background:#303b2b; }
+[data-theme="dark"] .design-1dj4jm2 { background:var(--surface-card)!important; }
+[data-theme="dark"] .svc-page .svc-kicker { color:var(--color-muted); }
+[data-theme="dark"] .svc-page .sd-contact .svc-kicker { color:var(--color-accent); }
+[data-theme="dark"] .sd-faq-trigger:is([aria-expanded=true],:hover,:focus-visible) .sd-faq-icon::before,
+[data-theme="dark"] .sd-faq-trigger:is([aria-expanded=true],:hover,:focus-visible) .sd-faq-icon::after { background:#141414; }
+/* Legacy homepage panels had local light-only foreground overrides. */
+[data-theme="dark"] .design-bAUIT .design-n9w4av {
+  --color-white:#eef1eb;--color-muted:#bdc5bb;
+  --token-9ba88951-3cef-4c82-8d32-490f48d874a3:#bdc5bb;
+  --token-e77614a2-ba91-4d64-ba1c-3649efb36d98:#bdc5bb;
+}
+[data-theme="dark"] .design-MXLLX { background-color:rgba(25,31,26,.96)!important; }
+[data-theme="dark"] .skip-link { background:#eef1eb;color:#141414; }
+[data-theme="dark"] .collection-thumb>span { color:#141414; }
+[data-theme="dark"] .svc-page :is(.svc-detail-link,.svc-live-link,.sd-button--green) { color:#141414; }
+[data-theme="dark"] .svc-page :is(.svc-detail-link,.svc-live-link,.sd-button--green):is(:hover,:focus-visible) { color:#fff; }
+[data-theme="dark"] .design-YbVe8 .design-t0zaqg { background:var(--color-background); }
+[data-theme="dark"] .design-YbVe8 h2 { --design-text-color:var(--color-ink)!important; }

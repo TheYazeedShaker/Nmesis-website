@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,12 +11,14 @@
   <meta name="theme-color" content="{{site.colors.background}}">
   {{{meta.canonical}}}
   <link rel="icon" type="image/svg+xml" href="/assets/brand/nmesis-n.svg">
+  <script src="/scripts/color-theme.js"></script>
   <link rel="stylesheet" href="/styles/shared.css">
   <link rel="stylesheet" href="/styles/pages/{{meta.style}}.css">
   <link rel="stylesheet" href="/styles/theme.css">
   <link rel="stylesheet" href="/styles/interactions.css">
   <link rel="stylesheet" href="/styles/motion.css">
   <link rel="stylesheet" href="/styles/motion-initial.css">
+  <link rel="stylesheet" href="/styles/color-theme.css">
   <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('motion-ready');setTimeout(()=>document.documentElement.classList.remove('motion-ready'),5000);}</script>
   <script src="/vendor/motion.js" defer></script>
   <script src="/vendor/lenis.js" defer></script>
@@ -39,7 +41,7 @@
   <dialog data-lenis-prevent class="mobile-menu" aria-label="Main navigation">
     <button class="menu-close" aria-label="Close navigation"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
     <nav>{{{mobileLinks}}}</nav>
-    <div class="mobile-social"><a href="mailto:{{site.email}}">{{site.email}}</a>{{{socialLinks}}}</div>
+    <div class="mobile-social"><a href="mailto:{{site.email}}">{{site.email}}</a>{{{socialLinks}}}{{{themeToggle}}}</div>
   </dialog>
   <div class="form-notice" role="status" hidden></div>
 </body>
