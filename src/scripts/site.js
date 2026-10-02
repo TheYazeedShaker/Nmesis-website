@@ -235,8 +235,18 @@
 (() => {
   for (const film of document.querySelectorAll('[data-case-film]')) {
     const start=film.parentElement.querySelector('.case-film-start');
-    start.addEventListener('click',()=>{film.play().catch(()=>{start.hidden=false;});});
+    // Native mobile play overlays must not compete with the custom poster control.
+    const showPoster=()=>{
+      film.controls=false;
+      film.parentElement.classList.toggle('is-awaiting-play',Boolean(start.querySelector('.case-film-poster')));
+      start.hidden=false;
+    };
+    showPoster();
+    start.addEventListener('click',()=>{film.play().catch(showPoster);});
+    film.addEventListener('error',showPoster);
     film.addEventListener('play',()=>{
+      film.parentElement.classList.remove('is-awaiting-play');
+      film.controls=true;
       start.hidden=true;
       for(const other of document.querySelectorAll('[data-case-film]'))if(other!==film)other.pause();
     });

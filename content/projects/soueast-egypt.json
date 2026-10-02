@@ -3,7 +3,7 @@
   "title": "SOUEAST Egypt.",
   "subtitle": "From digital twins to launch campaigns.",
   "description": "Working with Al Mansour Automotive, NMESIS built digital twins for SOUEAST’s six-model fleet in Egypt, then brought them into launch films, infographic animations, campaign key visuals and interactive vehicle experiences. Explore the work, from the DM family’s launch content to five live model configurators.",
-  "cover": "/assets/projects/soueast-egypt/s08-dm-launch-kv.png",
+  "cover": "/assets/projects/soueast-egypt/s08-dm-launch-kv-1920.webp",
   "coverAlt": "SOUEAST S08 DM Egypt launch key visual created by NMESIS",
   "tags": [
     "Digital twins",
@@ -234,5 +234,13 @@
   "experienceDescription": "Five models. One place to explore. Choose a SOUEAST, then step inside its live configurator.",
   "client": "SOUEAST · Al Mansour Automotive",
   "scope": "Digital twins, launch campaigns, infographic animations, interactive brochures and website configurators",
-  "market": "Egypt"
+  "market": "Egypt",
+  "coverSrcset": "/assets/projects/soueast-egypt/s08-dm-launch-kv-640.webp 640w, /assets/projects/soueast-egypt/s08-dm-launch-kv-1200.webp 1200w, /assets/projects/soueast-egypt/s08-dm-launch-kv-1920.webp 1920w",
+  "ctaBackground": {
+    "src": "/assets/project-cta/soueast-egypt.webp",
+    "width": 1600,
+    "height": 1600,
+    "position": "center",
+    "mobilePosition": "center"
+  }
 }

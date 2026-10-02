@@ -1,3 +1,4 @@
+import {playIcon,mediaArrow,filmPoster} from './media-icons.mjs';
 import {projectExperiences} from './project-experiences.mjs';
 import {projectBrochures} from './project-brochures.mjs';
 // An opt-in collection layout; legacy project pages and the local builder stay compatible.
@@ -5,7 +6,7 @@ export function projectCollection(project, e, renderMedia) {
   const brand=project.brand || project.title.replace(/\.$/,'');
   const label=project.title.replace(/\.$/,'');
   const header=(number,title,description)=>`<header class="case-section-heading"><div><span class="case-eyebrow">${number} / ${e(label)}</span><h2>${e(title)}</h2></div><p>${e(description)}</p></header>`;
-  const player=(film)=>`<div class="case-film collection-player"><video data-case-film controls playsinline preload="none" aria-label="${e(film.title)}" poster="${e(film.poster)}" src="${e(film.src)}"></video><button class="case-film-start" type="button" aria-label="Play ${e(film.title)}"><span class="case-play-icon" aria-hidden="true">▶</span><span>Play film</span></button></div>`;
+  const player=(film)=>`<div class="case-film collection-player"><video data-case-film controls playsinline preload="none" aria-label="${e(film.title)}" poster="${e(film.poster)}" src="${e(film.src)}"></video><button class="case-film-start" type="button" aria-label="Play ${e(film.title)}">${filmPoster(film.poster,e)}<span class="case-play-icon" aria-hidden="true">${playIcon()}</span><span>Play film</span></button></div>`;
   const films=project.films || [],infographics=project.infographics || [],walkthroughs=project.walkthroughs || [];
   const videoSection=(items,{id,prefix,number,title,description,format})=>{
     if(!items.length)return '';
@@ -19,7 +20,7 @@ export function projectCollection(project, e, renderMedia) {
   let galleryIndex=0;
   const gallery=renderMedia({slug:project.slug,galleries},e).media
     .replaceAll('class="case-section"',`class="case-section collection-visuals${project.galleryShape==='landscape'?' collection-visuals-landscape':''}" data-carousel`)
-    .replaceAll('<div class="case-gallery">',()=>{const group=galleries[galleryIndex++];const name=group.navigationLabel || 'Key visuals';return `<div class="collection-rail-toolbar"><p>Drag to explore · Select a visual to enlarge</p><div><span data-carousel-count aria-live="polite">01 / ${group.images.length}</span><button type="button" data-carousel-prev aria-label="Previous ${e(name.toLowerCase())}">←</button><button type="button" data-carousel-next aria-label="Next ${e(name.toLowerCase())}">→</button></div></div><div class="case-gallery" data-carousel-track tabindex="0" role="region" aria-label="${e(name)} carousel">`;});
+    .replaceAll('<div class="case-gallery">',()=>{const group=galleries[galleryIndex++];const name=group.navigationLabel || 'Key visuals';return `<div class="collection-rail-toolbar"><p>Drag to explore · Select a visual to enlarge</p><div><span data-carousel-count aria-live="polite">01 / ${group.images.length}</span><button type="button" data-carousel-prev aria-label="Previous ${e(name.toLowerCase())}">${mediaArrow('previous')}</button><button type="button" data-carousel-next aria-label="Next ${e(name.toLowerCase())}">${mediaArrow('next')}</button></div></div><div class="case-gallery" data-carousel-track tabindex="0" role="region" aria-label="${e(name)} carousel">`;});
   const experiences=project.experiences || [];
   const walkthrough=videoSection(walkthroughs,{id:'configurator-walkthrough',prefix:'walkthrough',number:String((films.length?1:0)+(infographics.length?1:0)+galleries.length+1).padStart(2,'0'),title:project.walkthroughTitle || 'Explore the configurator.',description:project.walkthroughDescription || 'Watch a recorded tour of the configurator experience.',format:'Configurator walkthrough'});
   const brochures=project.brochures || [];

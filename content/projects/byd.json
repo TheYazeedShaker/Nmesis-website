@@ -236,5 +236,12 @@
   ],
   "client": "BYD · Al Mansour Automotive",
   "scope": "Digital twins, cinematic content, key visuals, infographic animations and interactive brochures",
-  "market": "Egypt"
+  "market": "Egypt",
+  "ctaBackground": {
+    "src": "/assets/project-cta/byd.webp",
+    "width": 1600,
+    "height": 900,
+    "position": "center",
+    "mobilePosition": "center"
+  }
 }

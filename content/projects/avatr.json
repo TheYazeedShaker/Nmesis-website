@@ -129,5 +129,12 @@
         }
       ]
     }
-  ]
+  ],
+  "ctaBackground": {
+    "src": "/assets/project-cta/avatr.webp",
+    "width": 1600,
+    "height": 900,
+    "position": "center",
+    "mobilePosition": "center"
+  }
 }

@@ -158,5 +158,12 @@
       ]
     }
   ],
-  "experiences": []
+  "experiences": [],
+  "ctaBackground": {
+    "src": "/assets/project-cta/nmesis-lab.webp",
+    "width": 1600,
+    "height": 900,
+    "position": "center",
+    "mobilePosition": "center"
+  }
 }

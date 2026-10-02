@@ -247,5 +247,12 @@
         }
       ]
     }
-  ]
+  ],
+  "ctaBackground": {
+    "src": "/assets/project-cta/im-motors.webp",
+    "width": 1600,
+    "height": 900,
+    "position": "center",
+    "mobilePosition": "center"
+  }
 }

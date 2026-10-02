@@ -224,5 +224,12 @@
   "galleryShape": "landscape",
   "client": "GAC · Abdul Latif Jameel",
   "scope": "Digital twins, cinematic films, key visuals, infographic animations and website configurators",
-  "market": "Egypt"
+  "market": "Egypt",
+  "ctaBackground": {
+    "src": "/assets/project-cta/gac.webp",
+    "width": 1413,
+    "height": 794,
+    "position": "center",
+    "mobilePosition": "center"
+  }
 }

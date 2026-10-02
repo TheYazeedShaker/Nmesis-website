@@ -63,7 +63,7 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
     const style = 'display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover';
     item.coverMedia = item.video
       ? `<video data-project-loop autoplay muted loop playsinline preload="metadata" poster="${escapeHTML(item.cover)}" src="${escapeHTML(item.video)}" aria-label="${escapeHTML(item.coverAlt)}" style="${style};pointer-events:none"></video>`
-      : `<img alt="${escapeHTML(item.coverAlt)}" decoding="async" loading="lazy" src="${escapeHTML(item.cover)}" style="${style}"/>`;
+      : `<img alt="${escapeHTML(item.coverAlt)}" decoding="async" loading="lazy" src="${escapeHTML(item.cover)}"${item.coverSrcset ? ` srcset="${escapeHTML(item.coverSrcset)}" sizes="(max-width:809px) 100vw, 66vw"` : ''} style="${style}"/>`;
   }
   for (const item of projectList) {
     item.heroClass = item.heroLayout === 'landscape' ? 'case-hero-landscape' : '';
@@ -147,7 +147,7 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
     if (templateName === 'article') ctx.relatedArticles = (await Promise.all(articleList.filter(a=>a.slug!==extra.article.slug).slice(0,3).map(article=>partial('related-article-card',{...ctx,article})))).join('\n');
     const content = render(await read(`src/templates/pages/${templateName}.html`), ctx);
     const canonical = site.baseUrl ? `<link rel="canonical" href="${escapeHTML(new URL(route,site.baseUrl).href)}">` : '';
-    const backdrop = pageData.ctaBackground;
+    const backdrop = extra.project?.ctaBackground || pageData.ctaBackground;
     const ctaBackground = backdrop ? `<div class="nmesis-cta-background" aria-hidden="true" style="--cta-position:${escapeHTML(backdrop.position || 'center')};--cta-mobile-position:${escapeHTML(backdrop.mobilePosition || backdrop.position || 'center')}"><img src="${escapeHTML(backdrop.src)}" alt="" width="${Number(backdrop.width)}" height="${Number(backdrop.height)}" loading="lazy" decoding="async"></div>` : '';
     const cta = withCTA ? await partial('cta', {...ctx,ctaBackground}) : '';
     let html = render(shell, {...ctx,header,footer,cta,icons,mobileLinks,socialLinks,content,meta:{title:`${title} — ${site.brandName}`,description:extra.project?.subtitle || extra.article?.excerpt || pageData.metaDescription || site.description,style:templateName,canonical}});

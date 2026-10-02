@@ -92,5 +92,12 @@
       "poster": "/assets/projects/bowfin-egypt/videos/configurator-walkthrough.jpg"
     }
   ],
-  "experiences": []
+  "experiences": [],
+  "ctaBackground": {
+    "src": "/assets/project-cta/bowfin-egypt.webp",
+    "width": 1600,
+    "height": 919,
+    "position": "center",
+    "mobilePosition": "center"
+  }
 }

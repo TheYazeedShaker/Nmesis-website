@@ -269,7 +269,7 @@
   "showreel_src": "/assets/video/nmesis-showreel.mp4",
   "showreel_scroll": "Scroll down",
   "soueast_project_url": "/projects/soueast-egypt",
-  "soueast_cover": "/assets/projects/soueast-egypt/s08-dm-launch-kv.png",
+  "soueast_cover": "/assets/projects/soueast-egypt/s08-dm-launch-kv-1920.webp",
   "soueast_cover_alt": "SOUEAST S08 DM Egypt launch key visual created by NMESIS",
   "project_scope_label_1": "Launch content",
   "project_scope_value_1": "Films & key visuals",
@@ -289,5 +289,6 @@
     "height": 1355,
     "position": "center 60%",
     "mobilePosition": "52% center"
-  }
+  },
+  "soueast_cover_srcset": "/assets/projects/soueast-egypt/s08-dm-launch-kv-640.webp 640w, /assets/projects/soueast-egypt/s08-dm-launch-kv-1200.webp 1200w, /assets/projects/soueast-egypt/s08-dm-launch-kv-1920.webp 1920w"
 }

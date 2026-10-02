@@ -60,5 +60,12 @@
   ],
   "client": "Chevrolet",
   "scope": "Automotive CGI key visuals and production breakdown",
-  "market": "To be confirmed"
+  "market": "To be confirmed",
+  "ctaBackground": {
+    "src": "/assets/project-cta/chevrolet.webp",
+    "width": 1600,
+    "height": 907,
+    "position": "center",
+    "mobilePosition": "center"
+  }
 }
