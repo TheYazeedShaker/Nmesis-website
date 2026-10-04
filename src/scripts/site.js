@@ -116,12 +116,14 @@
     window.addEventListener('pagehide',()=>{leaving=true;showreel.pause();});
     window.addEventListener('pageshow',()=>{leaving=false;syncPlayback();});
   }
-  // Project previews loop as soon as their card is visible, independent of hover.
+  // Project previews loop as soon as their card is visible, independent of hover. They have no
+  // autoplay attribute, so hidden responsive copies never download, and reduced motion keeps the poster.
   const projectLoops=[...document.querySelectorAll('[data-project-loop]')];
   if(projectLoops.length){
     const visible=new Set();
     let leaving=false;
-    const shouldPlay=video=>visible.has(video)&&!document.hidden&&!leaving;
+    const shouldPlay=video=>visible.has(video)&&!document.hidden&&!leaving&&!reducedMotion.matches;
+    reducedMotion.addEventListener('change',()=>projectLoops.forEach(sync));
     const sync=video=>{
       if(shouldPlay(video))video.play()?.then(()=>{if(!shouldPlay(video))video.pause();}).catch(()=>{});
       else video.pause();

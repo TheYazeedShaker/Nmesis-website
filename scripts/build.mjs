@@ -65,8 +65,9 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
       ? `<span class="project-brand client-logo client-logo--${brand}" role="img" aria-label="${escapeHTML(item.title.replace(/\.$/, ''))}"></span>`
       : item.slug==='nmesis-lab' ? `<span class="project-lab-mark" role="img" aria-label="NMESIS Lab"><img src="/assets/brand/nmesis-wordmark.png" alt=""><span>LAB</span></span>` : escapeHTML(item.title);
     if (!Array.isArray(item.tags) || item.tags.length !== 3) throw new Error(`${item.slug}: provide three project tags`);
+    // Card loops start from site.js once visible, so hidden responsive copies never download video.
     item.coverMedia = item.video
-      ? `<video data-project-loop autoplay muted loop playsinline preload="metadata" poster="${escapeHTML(item.cover)}" src="${escapeHTML(item.video)}" aria-label="${escapeHTML(item.coverAlt)}" style="${style};pointer-events:none"></video>`
+      ? `<video data-project-loop muted loop playsinline preload="none" poster="${escapeHTML(item.cover)}" src="${escapeHTML(item.video)}" aria-label="${escapeHTML(item.coverAlt)}" style="${style};pointer-events:none"></video>`
       : `<img alt="${escapeHTML(item.coverAlt)}" decoding="async" loading="lazy" src="${escapeHTML(item.cover)}"${item.coverSrcset ? ` srcset="${escapeHTML(item.coverSrcset)}" sizes="(max-width:809px) 100vw, 66vw"` : ''} style="${style}"/>`;
   }
   for (const item of projectList) {
