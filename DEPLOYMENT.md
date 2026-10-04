@@ -77,6 +77,10 @@ Before the domain is verified, leaving `CONTACT_FROM` unset uses Resend's test s
 
 After a production deployment, verify the domain in Google Search Console (DNS TXT record at GoDaddy) and Bing Webmaster Tools, and submit `https://www.nmesis.io/sitemap.xml` in both. Bing also feeds ChatGPT search and Microsoft Copilot. In Vercel → Firewall, make sure bot protection does not block the AI crawlers that `robots.txt` welcomes.
 
+A newly submitted sitemap often shows "Couldn't fetch" in Search Console for a day or more even when it is fine; that status means it has not been processed yet. To confirm Google can read it, paste the sitemap URL into URL Inspection and choose **Test live URL**, and leave the submission in place.
+
+Every push to `main` also runs `scripts/indexnow.mjs` in GitHub Actions (after the checks pass). It waits until the deployment serves the IndexNow key file (`public/<key>.txt`), then submits every page in the live sitemap to IndexNow, which Bing, Yandex, Seznam and Naver share. Keep the key file; Bing Webmaster Tools → IndexNow shows the submissions.
+
 ## Canonical domain
 
 The confirmed production origin is configured as `baseUrl` in `content/site.json`. This enables canonical URLs and the sitemap. If you later connect a custom domain, update that value and push, or set `SITE_URL` in Vercel to the confirmed HTTPS origin and redeploy. `SITE_URL` overrides the source setting. Do not use a changing preview deployment hostname as the production canonical.

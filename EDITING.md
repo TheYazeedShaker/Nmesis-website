@@ -50,7 +50,7 @@ This creates a clean project from `templates/project.json` with empty image and 
 | `films`, `galleries`, `experiences` | Repeatable media sections; see PROJECT-TEMPLATE.md |
 | `ctaBackground` | Optional image behind the closing call to action |
 | `seoTitle`, `metaDescription` | Search result title (up to ~65 characters) and description (50–165 characters) |
-| `shareImage` | 1200×630 JPG in `public/assets/share/` shown when the page is shared on LinkedIn, WhatsApp or X |
+| `shareImage` | 1600×840 JPG in `public/assets/share/` shown when the page is shared on LinkedIn, WhatsApp or X (`npm run share-images` creates it from the project's sharpest cover; optional `shareFocus: {"x": 0.5, "y": 0.4}` moves the crop) |
 
 Put project media in `public/assets/projects/<slug>/`, and reference it as `/assets/projects/<slug>/filename.webp`. The `mediaLayout: "collection"` option used by most current projects adds film pickers, carousels, brochures and configurator tabs; PROJECT-TEMPLATE.md describes the fields.
 
@@ -71,7 +71,7 @@ The Privacy policy and Terms pages share one layout (`scripts/legal-page.mjs`). 
 Every page is built with its own title, description, canonical link, Open Graph/Twitter share tags and schema.org structured data (organization, website, page, breadcrumbs, services, FAQs and project case studies with their films). The build also writes `sitemap.xml` (with images, videos and last-modified dates from Git), `robots.txt` (which welcomes search and AI crawlers), `llms.txt` and `llms-full.txt` (plain summaries for AI assistants), and `site.webmanifest`.
 
 - Page titles are set by `seoTitle` in `content/pages.json`; project titles and descriptions by `seoTitle` and `metaDescription` in each project file. Page descriptions use `metaDescription` in `content/pages/*.json`.
-- Share images are 1200×630 JPGs in `public/assets/share/`, referenced by `shareImage`; pages without one use `seo.shareImage` from `site.json`.
+- Share images are 1600×840 JPGs in `public/assets/share/`, referenced by `shareImage`; pages without one use `seo.shareImage` from `site.json`. `npm run share-images` redraws them all (or name files to redraw only those, e.g. `npm run share-images -- home.jpg`) from the sharpest artwork, with the wordmark, keeping each under WhatsApp's ~300 KB preview limit. Page artwork is chosen at the top of `scripts/share-images.mjs`; projects use their larger cover. It needs Edge or Chrome installed (set `CHROME_PATH` if it is not found). LinkedIn and WhatsApp cache previews: after a change, re-inspect the URL in LinkedIn's Post Inspector.
 - Icons (`favicon.ico`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`) are drawn from `public/assets/brand/nmesis-n.svg` by `node scripts/brand-icons.mjs`; rerun it after changing the mark.
 - `npm run check` requires one `<h1>`, a title, a 50–165 character description, an existing share image and structured data on every page.
 
