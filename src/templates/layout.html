@@ -15,6 +15,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/brand/nmesis-n.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
+  <script>/* If image optimization is unavailable, fall back to the original file. */document.addEventListener('error',event=>{const image=event.target;if(image.tagName==='IMG'&&image.currentSrc.includes('/_vercel/image')){const source=new URL(image.currentSrc).searchParams.get('url');if(source){image.removeAttribute('srcset');image.src=source;}}},true);</script>
   <script src="/scripts/color-theme.js"></script>
   <link rel="stylesheet" href="/styles/shared.css">
   {{{meta.pageStylesheets}}}

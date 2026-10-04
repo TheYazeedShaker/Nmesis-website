@@ -44,6 +44,8 @@ for(const route of routes){
   const graph=JSON.parse(meta(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)||'{}')['@graph']||[];
   assert.ok(graph.some(node=>node['@type']==='Organization')&&graph.some(node=>node['@id']?.endsWith('#webpage')),`${route} needs organization and page structured data`);
 }
+const homeHTML=await fs.readFile(path.join(output,'index.html'),'utf8');
+if(homeHTML.includes('/_vercel/image'))assert.ok(homeHTML.includes("image.removeAttribute('srcset')"),'Optimized images need the fallback to their original files');
 assert.match(await fs.readFile(path.join(output,'robots.txt'),'utf8'),/^Sitemap: https:\/\/.+\/sitemap\.xml$/m,'robots.txt must point to the sitemap');
 const llms=await fs.readFile(path.join(output,'llms.txt'),'utf8');
 for(const route of routes.filter(route=>route.startsWith('/projects/')))assert.ok(llms.includes(route),`llms.txt must list ${route}`);
