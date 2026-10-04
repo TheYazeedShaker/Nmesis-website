@@ -83,6 +83,13 @@ html[data-theme="light"] { color-scheme:light; }
 [data-theme="dark"] .svc-panel li::before { color:var(--color-accent); }
 [data-theme="dark"] .svc-page .case-capsule-toolbar :is(button,a) { --svc-hover-fill:#3a4830; }
 
+/* Legal pages keep long-form text comfortably above the dark canvas. */
+[data-theme="dark"] :is(.legal-toc ol,.legal-toc a,.legal-toc-mobile,.legal-toc-mobile a,.legal-section,.legal-summary li) { border-color:var(--color-border); }
+[data-theme="dark"] :is(.legal-summary li,.legal-toc-mobile) { background:var(--surface-card); }
+[data-theme="dark"] :is(.legal-toc a,.legal-toc-mobile a,.legal-section :is(p,li),.legal-summary li p) { color:#c3cbc0; }
+[data-theme="dark"] :is(.legal-toc a span,.legal-toc-mobile a span,.legal-toc-mobile summary span,.legal-number) { color:var(--color-muted); }
+[data-theme="dark"] :is(.legal-toc a:is(:hover,:focus-visible,[aria-current="true"]),.legal-toc a[aria-current="true"] span,.legal-section strong) { color:var(--color-ink); }
+
 /* Inquiry fields: browser-native controls follow the same dark color scheme. */
 [data-theme="dark"] .contact-brief { background:var(--surface-card);border-color:var(--color-border); }
 [data-theme="dark"] .contact-brief :is(input,select,textarea) { background:#131713;border-color:#465044;color:var(--color-ink); }

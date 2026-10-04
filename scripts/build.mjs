@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import {themeSurfaces} from './theme-surfaces.mjs';
 import {socialLinks as renderSocialLinks} from './social-links.mjs';
 import {aboutPage} from './about-page.mjs';
+import {legalPage} from './legal-page.mjs';
 import {projectMedia} from './project-media.mjs';
 import {serviceShowcase} from './service-showcase.mjs';
 import {serviceDetail} from './service-detail.mjs';
@@ -134,6 +135,7 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
     const pageData = await json(`content/pages/${templateName}.json`);
     const ctx = {...base, page:pageData, ...extra};
     if (templateName === 'about') ctx.aboutContent = aboutPage(pageData,escapeHTML);
+    if (templateName === 'privacy-policy' || templateName === 'terms') ctx.legalContent = legalPage(pageData,escapeHTML,site);
     if (templateName === 'services') {
       const showcase=serviceShowcase(pageData,escapeHTML,projects);
       ctx.serviceNavigation=showcase.navigation;ctx.serviceSections=showcase.sections;ctx.serviceProcess=showcase.process;

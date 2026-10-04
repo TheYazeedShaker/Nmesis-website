@@ -59,7 +59,7 @@ A new project automatically receives a page and appears in the project listing. 
 
 `content/pages/` contains home, about, contact, projects, legal, and fallback page content. Each file is grouped by page section (for example `home.json` has `stats`, `clients`, `featured`, `services`, `process`, `testimonials`, `pricing` and `faq`). Change the values, keeping the keys intact; repeated items such as testimonials and FAQ entries are arrays in page order. `_images` stores editable image paths and alt text.
 
-The Privacy policy and Terms pages currently contain placeholder text. Replace their `intro` and `sections` in `content/pages/privacy-policy.json` and `content/pages/terms.json` once the approved wording is available.
+The Privacy policy and Terms pages share one layout (`scripts/legal-page.mjs`). Their wording is in `content/pages/privacy-policy.json` and `content/pages/terms.json`: `headline`, `intro`, `updated`, the three `summary` cards, and `sections`, where each section has an `id` (its link anchor), a `title`, and optional `paragraphs`, `items` (plain strings, or `{"term", "text"}` pairs) and `after` paragraphs. The contents list is generated from the sections. Update `updated` whenever the wording changes, and have the final text reviewed by your legal adviser, in particular the company details and governing law, which project agreements currently define.
 
 `content/shared.json` contains shared footer and call-to-action copy. `content/pages.json` defines static page routes and browser titles.
 
@@ -109,7 +109,7 @@ Hosting, the domain and deployment are described in DEPLOYMENT.md.
 4. If changing motion, run `npm run check:motion` and compare the affected interaction in the preview.
 5. Run `npm run build` before publishing.
 
-If the preview displays a build error, correct the named JSON/template field and refresh. The preview builds pages into `.preview/` and serves `public/` directly, so new media appears without a restart.
+If the preview displays a build error, correct the named JSON/template field and refresh. Changes to files in `scripts/` need a restart of `npm run dev`. The preview builds pages into `.preview/` and serves `public/` directly, so new media appears without a restart.
 
 ## Current navigation and showreel
 

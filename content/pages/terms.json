@@ -1,34 +1,120 @@
 {
+  "metaDescription": "The terms that apply when you use nmesis.io, view NMESIS work and explore our interactive automotive experiences.",
+  "breadcrumb": "Terms of service",
   "title": "Terms of service.",
-  "statusLabel": "Document status",
-  "status": "Draft placeholder",
-  "backHome": "Back home",
-  "intro": "This page is reserved for the approved NMESIS website terms. It is a content placeholder and does not set project, purchase or licensing terms.",
-  "sections": [
+  "headline": "The ground rules for using our website.",
+  "intro": "These terms apply when you visit nmesis.io, view our work or explore the interactive experiences we showcase. They are written to be read: if anything is unclear, ask us and we’ll explain.",
+  "updated": "4 October 2026",
+  "appliesTo": "www.nmesis.io",
+  "summaryTitle": "At a glance",
+  "summary": [
     {
-      "title": "Website use",
-      "text": "The final wording will describe use of the NMESIS portfolio, automotive project previews and interactive demonstrations."
+      "title": "Explore freely.",
+      "text": "Browse our work, watch the films and try the experiences for personal or internal business use."
     },
     {
-      "title": "Project assets & permissions",
-      "text": "Approved terms will explain ownership and permitted use of vehicle models, imagery, films and interactive assets. Client and third-party materials will be addressed explicitly."
+      "title": "The work stays ours and our clients’.",
+      "text": "Imagery, films, digital twins and brand marks can’t be reused without written permission."
     },
     {
-      "title": "Project agreements",
-      "text": "Production scope, deliverables, fees, review stages and usage permissions will be recorded in each project agreement. Commercial terms are not published in this preview."
-    },
-    {
-      "title": "Interactive services",
-      "text": "Any future account-based platform or hosted service will need terms specific to its functionality. Autoverse remains in development."
-    },
-    {
-      "title": "Service details",
-      "text": "Final service descriptions and support arrangements will be confirmed before this page is published."
-    },
-    {
-      "title": "Company details",
-      "text": "The contracting entity, governing law and contact details will be added to the approved terms. For project enquiries, write to info@nmesis.io."
+      "title": "Projects have their own agreement.",
+      "text": "Scope, fees, timelines and usage rights for any project are set out in a separate written agreement."
     }
   ],
-  "_images": {}
+  "sections": [
+    {
+      "id": "about-these-terms",
+      "title": "About these terms",
+      "paragraphs": [
+        "This website is operated by NMESIS (NMESIS Motion Lab), an automotive studio based in Cairo, Egypt and Dubai, UAE. By using the website, you agree to these terms. If you don’t agree, please don’t use it.",
+        "Our privacy policy explains how we handle personal information and forms part of these terms."
+      ]
+    },
+    {
+      "id": "using-the-website",
+      "title": "Using the website",
+      "paragraphs": [
+        "You’re welcome to browse, view and share links to our pages for personal use or to evaluate working with us. When you use the website, please don’t:"
+      ],
+      "items": [
+        "Copy, download, scrape or republish our content, except where your browser does so to display a page.",
+        "Try to access areas, systems or data that aren’t intended for public use.",
+        "Interfere with the security, availability or performance of the website or our interactive experiences.",
+        "Use the website, or anything on it, for an unlawful, misleading or harmful purpose."
+      ]
+    },
+    {
+      "id": "intellectual-property",
+      "title": "Our work and intellectual property",
+      "paragraphs": [
+        "The website’s design, text, CGI imagery, films, animations, digital twins, software and interactive experiences are owned by NMESIS or used under licence from our clients and partners.",
+        "Vehicle names, logos and trademarks belong to their respective manufacturers and distributors. They appear because they relate to work we created for or with those brands, and don’t imply any endorsement beyond that work.",
+        "You may not reproduce, adapt, distribute or use any of this material, including to train software or AI models, without our prior written permission."
+      ]
+    },
+    {
+      "id": "client-work",
+      "title": "Client work shown on this website",
+      "paragraphs": [
+        "The projects on this website are presented with the permission of the clients involved where it is required. Some details may be simplified, combined or omitted to protect confidential information.",
+        "If you believe something on this website should not be shown, please contact us and we will review it promptly."
+      ]
+    },
+    {
+      "id": "interactive-experiences",
+      "title": "Interactive experiences and links",
+      "paragraphs": [
+        "Configurators, pixel-streamed experiences and interactive brochures may be hosted on separate NMESIS or partner websites and open only when you choose to launch them. They are provided as demonstrations of our work: features, performance and availability can vary with your device, browser and connection, and some experiences may be updated or retired over time.",
+        "Links to other websites, such as Instagram and LinkedIn, are provided for convenience. Those websites have their own terms and privacy policies, and we aren’t responsible for their content."
+      ]
+    },
+    {
+      "id": "vehicle-information",
+      "title": "Vehicle information",
+      "paragraphs": [
+        "Our imagery and experiences are created for specific campaigns and markets. Specifications, trims, colours, features and prices shown in our work may differ from the vehicles available in your country and may change over time. Always confirm vehicle details with an authorised distributor before making a decision."
+      ]
+    },
+    {
+      "id": "enquiries-and-projects",
+      "title": "Enquiries and project agreements",
+      "paragraphs": [
+        "Information on this website about our services, process and timelines is general and is not an offer. Sending us an enquiry doesn’t create an agreement.",
+        "Every project is governed by a separate written proposal or agreement covering its scope, deliverables, fees, schedule, review stages, usage rights and confidentiality. If that agreement and these terms differ, the agreement applies."
+      ]
+    },
+    {
+      "id": "availability-and-liability",
+      "title": "Availability and liability",
+      "paragraphs": [
+        "We work to keep the website accurate, secure and available, but it is provided “as is”, and we can’t guarantee that it will always be uninterrupted or error-free.",
+        "To the extent the law allows, NMESIS is not liable for any indirect or consequential loss arising from your use of the website, its content or linked websites. Nothing in these terms limits any liability that cannot be limited by law."
+      ]
+    },
+    {
+      "id": "changes",
+      "title": "Changes to these terms",
+      "paragraphs": [
+        "We may update these terms as our website and services change. The date at the top of this page shows when they were last revised, and continuing to use the website means you accept the current version."
+      ]
+    },
+    {
+      "id": "questions-and-disputes",
+      "title": "Questions and disputes",
+      "paragraphs": [
+        "If you have a concern about the website, please contact us first at info@nmesis.io so we can try to resolve it informally. Project agreements set out their own governing law and the place where any dispute will be resolved."
+      ]
+    }
+  ],
+  "contact": {
+    "eyebrow": "Questions about these terms?",
+    "title": "Talk to our team.",
+    "text": "If something here is unclear, or you’d like permission to use our work, email us and we’ll get back to you.",
+    "action": "Email NMESIS",
+    "subject": "Terms of service question"
+  },
+  "related": {
+    "label": "Read our privacy policy",
+    "href": "/privacy-policy"
+  }
 }
