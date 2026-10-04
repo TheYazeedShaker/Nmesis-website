@@ -1,0 +1,16 @@
+# Keep LF everywhere so Windows, macOS and the Linux build produce identical output.
+* text=auto eol=lf
+
+# Media and fonts are never line-ending converted.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.gif binary
+*.ico binary
+*.mp4 binary
+*.webm binary
+*.woff binary
+*.woff2 binary
+*.pdf binary

@@ -106,30 +106,30 @@ body {
 /* Approved client roster; supplied marks displayed from the unmodified screenshot. */
 .design-c6og6u .design-1e07pkp,.design-c6og6u .design-y7tdk { width:124px;height:60px;aspect-ratio:auto; }
 .client-logo { display:flex;width:100%;height:100%;align-items:center;justify-content:center; }
-.client-logo::before { content:"";display:block;flex:none;background:#141414;mask-image:url('/assets/clients/supplied-client-sheet.png');mask-mode:luminance;mask-repeat:no-repeat; }
-.client-logo--toyota::before{width:73.7561px;height:54.0000px;mask-size:1343.4146px 339.8049px;mask-position:-428.0488px -102.7317px;}
-.client-logo--lexus::before{width:118.0000px;height:21.6450px;mask-size:1068.2840px 270.2130px;mask-position:-313.5030px -25.4852px;}
-.client-logo--ford::before{width:118.0000px;height:46.1384px;mask-size:1249.4118px 316.0277px;mask-position:-850.0900px -26.1315px;}
-.client-logo--byd::before{width:118.0000px;height:25.0303px;mask-size:1367.7273px 345.9545px;mask-position:-607.4318px -124.2576px;}
-.client-logo--cadillac::before{width:118.0000px;height:46.7083px;mask-size:1880.6250px 475.6875px;mask-position:-1022.0521px -161.6354px;}
-.client-logo--mg::before{width:54.0000px;height:54.0000px;mask-size:1116.4865px 282.4054px;mask-position:-565.1757px -149.5946px;}
-.client-logo--soueast::before{width:118.0000px;height:9.4985px;mask-size:1117.8947px 282.7616px;mask-position:-573.9257px -41.2817px;}
-.client-logo--avatr::before{width:118.0000px;height:14.1087px;mask-size:1308.2609px 330.9130px;mask-position:-21.3768px -40.1884px;}
-.client-logo--gac::before{width:49px;height:40px;mask-size:1101.6px 278.64px;mask-position:-195.84px -25.56px;}
-.client-logo--chevrolet::before{width:90px;height:43px;mask-size:1028.16px 260.064px;mask-position:-902.496px -20.496px;}
+.client-logo::before { content:"";display:block;flex:none;background:#141414;-webkit-mask-image:url('/assets/clients/client-logos-mask.png');mask-image:url('/assets/clients/client-logos-mask.png');-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat; }
+.client-logo--toyota::before{width:73.7561px;height:54.0000px;-webkit-mask-size:1343.4146px 339.8049px;mask-size:1343.4146px 339.8049px;-webkit-mask-position:-428.0488px -102.7317px;mask-position:-428.0488px -102.7317px;}
+.client-logo--lexus::before{width:118.0000px;height:21.6450px;-webkit-mask-size:1068.2840px 270.2130px;mask-size:1068.2840px 270.2130px;-webkit-mask-position:-313.5030px -25.4852px;mask-position:-313.5030px -25.4852px;}
+.client-logo--ford::before{width:118.0000px;height:46.1384px;-webkit-mask-size:1249.4118px 316.0277px;mask-size:1249.4118px 316.0277px;-webkit-mask-position:-850.0900px -26.1315px;mask-position:-850.0900px -26.1315px;}
+.client-logo--byd::before{width:118.0000px;height:25.0303px;-webkit-mask-size:1367.7273px 345.9545px;mask-size:1367.7273px 345.9545px;-webkit-mask-position:-607.4318px -124.2576px;mask-position:-607.4318px -124.2576px;}
+.client-logo--cadillac::before{width:118.0000px;height:46.7083px;-webkit-mask-size:1880.6250px 475.6875px;mask-size:1880.6250px 475.6875px;-webkit-mask-position:-1022.0521px -161.6354px;mask-position:-1022.0521px -161.6354px;}
+.client-logo--mg::before{width:54.0000px;height:54.0000px;-webkit-mask-size:1116.4865px 282.4054px;mask-size:1116.4865px 282.4054px;-webkit-mask-position:-565.1757px -149.5946px;mask-position:-565.1757px -149.5946px;}
+.client-logo--soueast::before{width:118.0000px;height:9.4985px;-webkit-mask-size:1117.8947px 282.7616px;mask-size:1117.8947px 282.7616px;-webkit-mask-position:-573.9257px -41.2817px;mask-position:-573.9257px -41.2817px;}
+.client-logo--avatr::before{width:118.0000px;height:14.1087px;-webkit-mask-size:1308.2609px 330.9130px;mask-size:1308.2609px 330.9130px;-webkit-mask-position:-21.3768px -40.1884px;mask-position:-21.3768px -40.1884px;}
+.client-logo--gac::before{width:49px;height:40px;-webkit-mask-size:1101.6px 278.64px;mask-size:1101.6px 278.64px;-webkit-mask-position:-195.84px -25.56px;mask-position:-195.84px -25.56px;}
+.client-logo--chevrolet::before{width:90px;height:43px;-webkit-mask-size:1028.16px 260.064px;mask-size:1028.16px 260.064px;-webkit-mask-position:-902.496px -20.496px;mask-position:-902.496px -20.496px;}
 /* The featured SOUEAST mark was wider than its clipping frame. */
 .client-logo--soueast:not(.project-brand)::before { zoom:.7; }
 .project-brand.client-logo { width:140px;height:40px;justify-content:flex-start; }
 .project-brand.client-logo--im-motors::before { transform:scale(.7);transform-origin:left center; }
-.client-logo--mansour::before{width:46.8px;height:54px;background-color:transparent;background-image:url('/assets/clients/mansour-automotive.png');background-position:center;background-repeat:no-repeat;background-size:contain;mask-image:none;}
-.client-logo--im-motors::before{width:86.9143px;height:54.0000px;mask-size:1573.7143px 398.0571px;mask-position:-700.9714px -37.0286px;}
+.client-logo--mansour::before{width:46.8px;height:54px;background-color:transparent;background-image:url('/assets/clients/mansour-automotive.png');background-position:center;background-repeat:no-repeat;background-size:contain;-webkit-mask-image:none;mask-image:none;}
+.client-logo--im-motors::before{width:86.9143px;height:54.0000px;-webkit-mask-size:1573.7143px 398.0571px;mask-size:1573.7143px 398.0571px;-webkit-mask-position:-700.9714px -37.0286px;mask-position:-700.9714px -37.0286px;}
 /* Three columns on desktop; the original responsive column rules remain in home.css. */
 .design-c6og6u .design-y7tdk { height:32px; }
 .design-c6og6u .design-y7tdk .client-logo::before { transform:scale(.5328); }
 
-.client-logo--abdul-latif-jameel::before{mask-image:url('/assets/clients/supplied-full-client-sheet.png');width:96.8049px;height:54.0000px;mask-size:1044.4390px 358.2439px;mask-position:-169.9024px -41.8171px;}
+.client-logo--abdul-latif-jameel::before{-webkit-mask-image:url('/assets/clients/client-logos-full-mask.png');mask-image:url('/assets/clients/client-logos-full-mask.png');width:96.8049px;height:54.0000px;-webkit-mask-size:1044.4390px 358.2439px;mask-size:1044.4390px 358.2439px;-webkit-mask-position:-169.9024px -41.8171px;mask-position:-169.9024px -41.8171px;}
 
-.client-logo--al-futtaim::before{mask-image:url('/assets/clients/supplied-full-client-sheet.png');width:118.0000px;height:26.4387px;mask-size:882.7736px 302.7925px;mask-position:-247.9670px -40.0755px;}
+.client-logo--al-futtaim::before{-webkit-mask-image:url('/assets/clients/client-logos-full-mask.png');mask-image:url('/assets/clients/client-logos-full-mask.png');width:118.0000px;height:26.4387px;-webkit-mask-size:882.7736px 302.7925px;mask-size:882.7736px 302.7925px;-webkit-mask-position:-247.9670px -40.0755px;mask-position:-247.9670px -40.0755px;}
 
 /* Four compact rows occupy the original three-row height: 4 × 148 + 3 × 8 = 616px. */
 .design-bAUIT .design-c6og6u { grid-template-rows:none;grid-auto-rows:148px; }
@@ -206,7 +206,7 @@ img[src="/assets/team/moaaz-yasser.png"] { transform:scaleX(-1);object-position:
 .showreel-scroll { left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;padding:10px 18px;border-radius:22px; }
 .showreel-scroll svg { transition:transform .3s ease; }
 .showreel-scroll:hover svg { transform:translateY(4px); }
-.showreel-sound { right:26px;display:flex;align-items:center;gap:6px;min-height:44px;padding:10px 14px;border:1px solid #ffffff40;border-radius:24px;background:#14141459;backdrop-filter:blur(8px);cursor:pointer;transition:background .25s ease,color .25s ease; }
+.showreel-sound { right:26px;display:flex;align-items:center;gap:6px;min-height:44px;padding:10px 14px;border:1px solid #ffffff40;border-radius:24px;background:#14141459;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);cursor:pointer;transition:background .25s ease,color .25s ease; }
 .showreel-sound:hover { background:var(--color-accent);color:#141414;text-shadow:none; }
 .showreel-sound-dot { width:5px;height:5px;margin-right:3px;background:currentColor;border-radius:50%; }
 .showreel-sound[aria-pressed=true] .showreel-sound-dot { background:var(--color-accent); }
@@ -912,7 +912,7 @@ body:has(.contact-page) .design-1tssoce-container { transform:none!important;wil
 .brochure-preview-toggle[aria-pressed="true"] .brochure-resume-icon { display:block; }
 .brochure-dialog { position:fixed;inset:0;width:calc(100vw - 40px);height:calc(100dvh - 40px);max-width:1600px;max-height:none;margin:auto;padding:0;overflow:hidden;border:1px solid #d8ddd5;border-radius:20px;background:#f6f8f3;color:var(--color-ink);font-family:var(--font-body); }
 .brochure-dialog[open] { display:flex;flex-direction:column;animation:brochure-reader-enter .35s cubic-bezier(.44,0,.56,1); }
-.brochure-dialog::backdrop { background:#090d09b8;backdrop-filter:blur(8px); }
+.brochure-dialog::backdrop { background:#090d09b8;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px); }
 .brochure-dialog-bar { display:flex;align-items:center;justify-content:space-between;gap:20px;flex:none;padding:14px 20px;border-bottom:1px solid #d8ddd5;background:#f6f8f3; }
 .brochure-dialog-title { margin:0;font:500 15px/1.4 var(--font-body);letter-spacing:-.015em; }
 .brochure-dialog-title::before { content:"";display:inline-block;width:7px;height:7px;margin-right:10px;border-radius:50%;background:var(--color-accent);box-shadow:0 0 0 1px #91a34e; }

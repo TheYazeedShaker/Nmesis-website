@@ -11,7 +11,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-export const read = async name => fs.readFile(path.join(root, name), 'utf8');
+// Windows checkouts may use CRLF; normalize so local and production output match.
+export const read = async name => (await fs.readFile(path.join(root, name), 'utf8')).replace(/\r\n?/g, '\n');
 const json = async name => JSON.parse(await read(name));
 export const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const lookup = (context, key) => key.split('.').reduce((value, part) => value?.[part], context);
