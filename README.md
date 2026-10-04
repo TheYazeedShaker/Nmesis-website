@@ -36,7 +36,7 @@ npm run verify      # Run all checks and produce the deployment build
 
 The source currently builds 18 routes, including Home, Projects, Services, About, Contact, nine project pages, the Automotive CGI service detail, legal pages and the 404 page.
 
-The website does not require Framer, React, Codex, Claude or runtime API keys. Contact enquiries open the visitor’s email application addressed to info@nmesis.io. The local project-authoring screen is intentionally not published.
+The website does not require Framer, React, Codex or Claude. Contact enquiries are emailed to info@nmesis.io by the `api/contact.js` Vercel Function through Resend; its `RESEND_API_KEY` lives only in Vercel environment variables (see DEPLOYMENT.md). The local project-authoring screen is intentionally not published.
 
 ## Deployment
 

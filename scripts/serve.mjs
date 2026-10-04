@@ -4,6 +4,7 @@ import {createReadStream} from 'node:fs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {build,root} from './build.mjs';
+import {handleContact} from '../api/contact.js';
 const projectBuilder = createProjectBuilderHandler(root);
 const port = Number(process.env.PORT || 4175);
 // The preview builds pages into .preview/ and serves public/ in place, so a rebuild
@@ -33,6 +34,14 @@ http.createServer(async(req,res)=>{
   try {
     let url=new URL(req.url,'http://localhost');
     if(await projectBuilder(req,res,url))return;
+    // The contact function runs here as it does on Vercel. Without RESEND_API_KEY it answers 503
+    // and the page opens the email app; CONTACT_DRY_RUN=1 logs the email instead of sending it.
+    if(url.pathname==='/api/contact'){
+      if(req.method!=='POST'){res.writeHead(405,{Allow:'POST'});return res.end();}
+      const chunks=[];for await(const chunk of req)chunks.push(chunk);
+      const response=await handleContact(new Request(new URL(req.url,`http://${req.headers.host}`),{method:'POST',headers:req.headers,body:Buffer.concat(chunks)}));
+      res.writeHead(response.status,Object.fromEntries(response.headers));return res.end(Buffer.from(await response.arrayBuffer()));
+    }
     if (!path.extname(url.pathname) || url.pathname.endsWith('.html')) {
       const changed=Math.max(await latest(path.join(root,'content')),await latest(path.join(root,'src')));
       if (changed>lastBuild) {

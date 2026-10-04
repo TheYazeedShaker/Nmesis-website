@@ -13,8 +13,8 @@
       "text": "We don’t run advertising pixels, analytics cookies or session recordings on this website."
     },
     {
-      "title": "Your enquiry goes by email.",
-      "text": "Our contact form prepares a message in your own email app. Nothing you type is stored on our website."
+      "title": "Your enquiry goes straight to our inbox.",
+      "text": "The contact form emails your message to our team. We don’t keep it on the website or use it for marketing."
     },
     {
       "title": "You stay in control.",
@@ -39,7 +39,7 @@
       "items": [
         {
           "term": "When you contact us.",
-          "text": "Your name, email address, the service you are interested in, how you heard about us and your message. If you email us directly, we also receive anything you choose to include, such as your company, phone number or attachments."
+          "text": "Your name, email address, the service you are interested in, how you heard about us and your message, which the contact form emails to our team. If you email us directly, we also receive anything you choose to include, such as your company, phone number or attachments."
         },
         {
           "term": "When you browse.",
@@ -105,7 +105,11 @@
       "items": [
         {
           "term": "Vercel.",
-          "text": "Hosts and delivers this website."
+          "text": "Hosts and delivers this website, including the function that sends contact-form messages."
+        },
+        {
+          "term": "Resend.",
+          "text": "Delivers contact-form messages to our inbox."
         },
         {
           "term": "PostHog (EU).",

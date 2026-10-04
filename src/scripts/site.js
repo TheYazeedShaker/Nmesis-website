@@ -209,20 +209,33 @@
     });
     select(selected);
   });
-  // Without an inbox endpoint, prepare a reviewable email instead of claiming delivery.
+  // The contact form sends through the site's endpoint. When that is unavailable it prepares a
+  // reviewable email in the visitor's own app instead, never claiming a delivery that did not happen.
   const contactForm=document.querySelector('.contact-brief');
+  const prepareEmail=(form,open)=>{
+    const data=new FormData(form);
+    const labels={Name:'Name',Email:'Email',Service:'Service',Referral:'How you heard about us',message:'Message'};
+    const body=Object.entries(labels).map(([key,label])=>label+': '+(String(data.get(key)||'').trim()||'Not specified')).join('\n\n');
+    const subject='NMESIS enquiry: '+String(data.get('Service'));
+    form.querySelector('[data-contact-mail]').href='mailto:'+form.dataset.email+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    form.querySelector('[data-contact-preview]').value=body;
+    form.querySelector('[data-contact-status]').textContent=open?'Email app didn’t open? Use the link below or copy your message.':'We couldn’t send your message just now. Open it in your email app or copy it below.';
+    form.querySelector('[data-contact-ready]').hidden=false;
+    if(open)window.location.href=form.querySelector('[data-contact-mail]').href;
+  };
   if(contactForm){
-    const ready=contactForm.querySelector('[data-contact-ready]');
-    contactForm.addEventListener('input',()=>{ready.hidden=true;});
+    const ready=contactForm.querySelector('[data-contact-ready]'),sent=contactForm.querySelector('[data-contact-sent]');
+    contactForm.addEventListener('input',()=>{ready.hidden=true;sent.hidden=true;});
+    // Submissions within seconds of the page loading are almost always automated.
+    contactForm.elements.started.value=String(Date.now());
+    if(!config.forms?.contactEndpoint)contactForm.querySelector('[data-contact-help]').textContent='Opens your email app to send your message to '+contactForm.dataset.email+'.';
+    contactForm.querySelector('[data-contact-another]').addEventListener('click',()=>{sent.hidden=true;contactForm.elements.Name.focus();});
     contactForm.querySelector('[data-contact-copy]').addEventListener('click',async()=>{
       const preview=contactForm.querySelector('[data-contact-preview]');
       const status=contactForm.querySelector('[data-contact-status]');
       try{await navigator.clipboard.writeText(preview.value);status.textContent='Enquiry copied. Paste it into your email and send it to '+contactForm.dataset.email+'.';}
       catch{preview.hidden=false;preview.focus();preview.select();status.textContent='Select and copy your message below, then paste it into your email.';}
     });
-    if(config.forms?.contactEndpoint){
-      contactForm.querySelector('[data-contact-help]').textContent='Your enquiry will be sent to the NMESIS team.';
-    }
   }
   const notice=document.querySelector('.form-notice');
   function notify(text){notice.textContent=text;notice.hidden=false;clearTimeout(notice.dismissTimer);notice.dismissTimer=setTimeout(()=>notice.hidden=true,9000);}
@@ -230,21 +243,32 @@
     const form=event.target;if(!(form instanceof HTMLFormElement))return;
     event.preventDefault();
     const endpoint=config.forms?.[form.dataset.form==='contact'?'contactEndpoint':'newsletterEndpoint'];
-    if(!endpoint){
-      if(form.matches('.contact-brief')){
-        if(!form.reportValidity())return;
-        const data=new FormData(form);
-        const labels={Name:'Name',Email:'Email',Service:'Service',Referral:'How you heard about us',message:'Message'};
-        const body=Object.entries(labels).map(([key,label])=>label+': '+(String(data.get(key)||'').trim()||'Not specified')).join('\n\n');
-        const subject='NMESIS enquiry: '+String(data.get('Service'));
-        form.querySelector('[data-contact-mail]').href='mailto:'+form.dataset.email+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
-        form.querySelector('[data-contact-preview]').value=body;
-        form.querySelector('[data-contact-status]').textContent='Email app didn’t open? Use the link below or copy your message.';
-        form.querySelector('[data-contact-ready]').hidden=false;
-        window.location.href=form.querySelector('[data-contact-mail]').href;
-      }else notify('This form is not connected. Please contact us by email.');
+    if(form.matches('.contact-brief')){
+      if(!form.reportValidity())return;
+      if(!endpoint){prepareEmail(form,true);return;}
+      const button=form.querySelector('[type=submit]'),help=form.querySelector('[data-contact-help]'),helpText=help.textContent;
+      const sent=form.querySelector('[data-contact-sent]'),data=new FormData(form);
+      button.disabled=true;form.setAttribute('aria-busy','true');help.textContent='Sending your message…';
+      form.querySelector('[data-contact-ready]').hidden=true;sent.hidden=true;
+      try{
+        const response=await fetch(endpoint,{method:'POST',body:data,headers:{Accept:'application/json'}});
+        const result=await response.json().catch(()=>({}));
+        if(response.ok&&result.ok){
+          const name=String(data.get('Name')||'').trim().split(/\s+/)[0];
+          form.querySelector('[data-contact-sent-text]').textContent=`Thank you${name?', '+name:''}. Your message is with the NMESIS team, and we’ll reply to ${String(data.get('Email')).trim()}.`;
+          form.reset();form.elements.started.value=String(Date.now());
+          help.textContent=helpText;sent.hidden=false;sent.focus();
+        }else if(response.status===400&&result.message){
+          help.textContent=result.message;form.elements[result.field]?.focus();
+        }else{
+          // Not configured yet: the email app opens as before. Any other failure offers it without claiming delivery.
+          help.textContent=helpText;prepareEmail(form,response.status===503);
+        }
+      }catch{help.textContent=helpText;prepareEmail(form,false);}
+      finally{button.disabled=false;form.removeAttribute('aria-busy');}
       return;
     }
+    if(!endpoint){notify('This form is not connected. Please contact us by email.');return;}
     const button=form.querySelector('[type=submit]');if(button)button.disabled=true;
     try {const response=await fetch(endpoint,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});if(!response.ok)throw new Error();notify('Thank you. Your message has been sent.');form.reset();}
     catch{notify('Your message could not be sent. Please try again or use the email link.');}

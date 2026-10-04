@@ -58,6 +58,21 @@ For preview work, create a feature branch and open a pull request into `main`. V
 
 `vercel.json` enables Vercel Image Optimization for `/assets/`: images are converted to AVIF or WebP at widths 320–2560 (quality 75) on first request and cached for 31 days. On the Hobby plan this is free within 5,000 transformations, 300,000 cache reads and 100,000 cache writes a month; beyond that, new images fail to optimize (no charge). On Pro, usage is billed per use (about $0.05–0.08 per 1,000 transformations). Note that Vercel's Hobby plan is for non-commercial use, so a business site should run on Pro. Check usage under Vercel → Usage → Image Optimization.
 
+## Contact form email
+
+`api/contact.js` emails each enquiry to info@nmesis.io through [Resend](https://resend.com), with Reply going straight to the visitor. Until it is configured it answers 503 and the form opens the visitor's email app instead, so it is safe to deploy first.
+
+1. Create a Resend account (free: 3,000 emails a month, 100 a day).
+2. In Resend → Domains, add `nmesis.io` and create the DNS records it lists at GoDaddy (a DKIM TXT record and the records for its sending subdomain). They do not replace the existing mail (MX) records for `nmesis.io`, so the current inbox keeps working.
+3. In Resend → API Keys, create a key with sending access.
+4. In Vercel → nmesis-website → Settings → Environment Variables, add for Production (and Preview if wanted):
+   - `RESEND_API_KEY`: the key
+   - `CONTACT_FROM`: `NMESIS Website <website@nmesis.io>` (any address on the verified domain)
+   - `CONTACT_TO` (optional): defaults to `info@nmesis.io`
+5. Redeploy (Deployments → … → Redeploy) so the function receives the variables, then send a test enquiry from /contact.
+
+Before the domain is verified, leaving `CONTACT_FROM` unset uses Resend's test sender, which only delivers to the email address that owns the Resend account. `npm run check:contact` covers delivery, validation, bot filtering and the fallbacks. For extra protection against abuse, add a Vercel Firewall rate-limit rule for `/api/contact`.
+
 ## Search engines
 
 After a production deployment, verify the domain in Google Search Console (DNS TXT record at GoDaddy) and Bing Webmaster Tools, and submit `https://www.nmesis.io/sitemap.xml` in both. Bing also feeds ChatGPT search and Microsoft Copilot. In Vercel → Firewall, make sure bot protection does not block the AI crawlers that `robots.txt` welcomes.
@@ -70,7 +85,7 @@ The confirmed production origin is configured as `baseUrl` in `content/site.json
 
 All website media is included in the repository; no Git LFS setup is required for the current files. The deployment check rejects assets at or above 100 MiB and LFS pointer files. Large future media should be optimized or moved to suitable media storage before committing.
 
-The local `/project-builder` writes source files on your computer. It is not a production editor; create projects locally and commit their generated content and media. Contact currently uses email links rather than a server email endpoint.
+The local `/project-builder` writes source files on your computer. It is not a production editor; create projects locally and commit their generated content and media. The contact form is the only server-side code: the `api/contact.js` Vercel Function.
 
 `dist/`, local archives, reference material, exports, working notes, credentials and asset provenance manifests stay outside Git. The build also removes provenance manifests and OS metadata from public output. Source originals are preserved locally.
 

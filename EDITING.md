@@ -113,7 +113,7 @@ node scripts/logo-mask.mjs src/logos/supplied-client-sheet.png public/assets/cli
 
 ## 9. Forms, hosting, and domain
 
-`forms.contactEndpoint` and `forms.newsletterEndpoint` are blank, so the contact form opens the visitor's email app with the enquiry filled in. These fields expect a form service that accepts POSTed form data and supports browser requests; test the chosen service when configuring it. Do not put private API keys in this file.
+The contact form posts to `forms.contactEndpoint` (`/api/contact`), a Vercel Function in `api/contact.js` that emails each enquiry to info@nmesis.io through Resend, with replies going to the visitor. Until `RESEND_API_KEY` is set in Vercel, or if sending fails, the form falls back to opening the visitor's email app with the enquiry filled in, so no message is lost. The endpoint never emails visitors and filters bots with a hidden field and a minimum completion time. Setup steps are in DEPLOYMENT.md. To try the form locally without sending, run `CONTACT_DRY_RUN=1 npm run dev`; the email is printed in the terminal. `forms.newsletterEndpoint` remains blank. Do not put API keys in `content/` files.
 
 Hosting, the domain and deployment are described in DEPLOYMENT.md.
 
