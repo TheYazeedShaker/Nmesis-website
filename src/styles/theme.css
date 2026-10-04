@@ -529,6 +529,8 @@ body:has(.showreel-hero) .design-8v54va-container .design-gzg5v { --color-ink:#1
 body:has(.svc-page) .design-8v54va-container { --color-ink:#fff; }
 body:has(.svc-page) .design-8v54va-container .brand-image { filter:brightness(0) invert(1); }
 body:has(.svc-page) .design-8v54va-container .design-gzg5v { --color-ink:#141414; }
+/* Menu lines are background fills (surface tokens), so they need the light ink explicitly. */
+body:has(.svc-page) .design-8v54va-container nav [data-part="Line"] { background-color:var(--color-ink)!important; }
 @media (min-width:810px) and (max-width:1023px) {
  .svc-panel { grid-template-columns:1fr;gap:28px; }
  .svc-panel-copy { padding:4px 0;max-width:640px; }
