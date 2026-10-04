@@ -1,5 +1,6 @@
 {
-  "metaDescription": "Meet NMESIS Motion Lab, the studio behind automotive digital twins, cinematic CGI, configurators and interactive brochures that change how people experience cars online.",
+  "shareImage": "/assets/share/about.jpg",
+  "metaDescription": "Meet NMESIS Motion Lab, the Cairo and Dubai studio behind automotive digital twins, cinematic CGI, car configurators and interactive brochures.",
   "hero": {
     "eyebrow": "NMESIS Motion Lab",
     "title": "We bring cars to life. Online.",
@@ -140,7 +141,7 @@
         "bio": "Moaaz leads strategy, client relationships and the vision for how people experience cars online.",
         "portrait": "/assets/team/moaaz-yasser.png",
         "portraitAlt": "Moaaz Yasser, Co-Founder and CEO of NMESIS",
-        "portraitPosition": "50% 38%",
+        "portraitPosition": "50% 30%",
         "portraitScale": "1"
       },
       {

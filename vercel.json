@@ -6,6 +6,13 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
+  "images": {
+    "sizes": [320, 480, 640, 768, 1080, 1280, 1600, 1920, 2560],
+    "qualities": [75],
+    "formats": ["image/avif", "image/webp"],
+    "minimumCacheTTL": 2678400,
+    "localPatterns": [{ "pathname": "^/assets/.*$", "search": "" }]
+  },
   "headers": [
     {
       "source": "/(.*)",

@@ -15,6 +15,44 @@
   "creditsLabel": "NMESIS",
   "creditsUrl": "/about",
   "baseUrl": "https://www.nmesis.io/",
+  "seo": {
+    "siteName": "NMESIS Motion Lab",
+    "alternateNames": [
+      "NMESIS Motion Lab",
+      "Nmesis"
+    ],
+    "shareImage": "/assets/share/home.jpg",
+    "shareImageAlt": "Vehicle visualization by NMESIS Motion Lab",
+    "published": "2026-10-01",
+    "locations": [
+      {
+        "city": "Cairo",
+        "country": "EG",
+        "countryName": "Egypt"
+      },
+      {
+        "city": "Dubai",
+        "country": "AE",
+        "countryName": "United Arab Emirates"
+      }
+    ],
+    "areaServed": [
+      "Egypt",
+      "Saudi Arabia",
+      "United Arab Emirates"
+    ],
+    "knowsAbout": [
+      "Automotive CGI",
+      "Vehicle digital twins",
+      "Car configurators",
+      "3D vehicle configurators",
+      "Pixel streaming",
+      "Interactive brochures",
+      "Automotive key visuals",
+      "Infographic animation",
+      "Automotive launch films"
+    ]
+  },
   "social": [
     {
       "label": "Instagram",

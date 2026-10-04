@@ -145,8 +145,6 @@ body {
 .design-c6og6u .design-Cyg5M > .design-1fh6q82,
 .design-c6og6u .design-Cyg5M > .design-gm3354 { border-radius:inherit; }
 
-/* Mirror the founder portrait in the layout while preserving the source asset. */
-img[src="/assets/team/moaaz-yasser.png"] { transform:scaleX(-1);object-position:center 30%!important; }
 
 /* Client portraits and clearly marked draft testimonials. */
 #testimonials .design-9425ek::before,#testimonials .testimonial-photo-quote::before { content:"Draft testimonial";display:block;margin-bottom:12px;font:500 11px/1.4 var(--font-body);letter-spacing:.06em;text-transform:uppercase;color:#606760; }

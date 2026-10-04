@@ -54,6 +54,14 @@ For preview work, create a feature branch and open a pull request into `main`. V
 
 `vercel.json` adds `nosniff`, `strict-origin-when-cross-origin` referrers and same-origin framing protection to every response. Files under `/assets/` are cached by browsers for a day (and revalidated in the background for a week); `/vendor/` for a week, and the content-named `/scripts/motion/` files for a year (a change produces a new filename). Pages, `/styles/` and `/scripts/` are not fingerprinted, so they keep Vercel's default revalidation and edits appear immediately. When replacing media that must update for returning visitors at once, use a new filename.
 
+## Image Optimization
+
+`vercel.json` enables Vercel Image Optimization for `/assets/`: images are converted to AVIF or WebP at widths 320–2560 (quality 75) on first request and cached for 31 days. On the Hobby plan this is free within 5,000 transformations, 300,000 cache reads and 100,000 cache writes a month; beyond that, new images fail to optimize (no charge). On Pro, usage is billed per use (about $0.05–0.08 per 1,000 transformations). Note that Vercel's Hobby plan is for non-commercial use, so a business site should run on Pro. Check usage under Vercel → Usage → Image Optimization.
+
+## Search engines
+
+After a production deployment, verify the domain in Google Search Console (DNS TXT record at GoDaddy) and Bing Webmaster Tools, and submit `https://www.nmesis.io/sitemap.xml` in both. Bing also feeds ChatGPT search and Microsoft Copilot. In Vercel → Firewall, make sure bot protection does not block the AI crawlers that `robots.txt` welcomes.
+
 ## Canonical domain
 
 The confirmed production origin is configured as `baseUrl` in `content/site.json`. This enables canonical URLs and the sitemap. If you later connect a custom domain, update that value and push, or set `SITE_URL` in Vercel to the confirmed HTTPS origin and redeploy. `SITE_URL` overrides the source setting. Do not use a changing preview deployment hostname as the production canonical.

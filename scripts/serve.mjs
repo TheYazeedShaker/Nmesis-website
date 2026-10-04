@@ -41,7 +41,8 @@ http.createServer(async(req,res)=>{
       }
     }
     let status=200;
-    let file=await resolve(decodeURIComponent(url.pathname));
+    // Vercel resizes /_vercel/image requests in production; the preview serves the source image.
+    let file=await resolve(url.pathname==='/_vercel/image'?url.searchParams.get('url')||'':decodeURIComponent(url.pathname));
     if (!file) {file=path.join(result.output,'404/index.html');status=404;}
     if(['.mp4','.webm'].includes(path.extname(file))){
       const {size}=await fs.stat(file);

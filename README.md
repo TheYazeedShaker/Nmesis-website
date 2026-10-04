@@ -27,7 +27,7 @@ npm run verify      # Run all checks and produce the deployment build
 - `src/motion/`: recovered reference animation settings.
 - `public/assets/`: all local images, client logos, fonts and videos in their corresponding folders.
 - `public/vendor/`: local Motion and Lenis runtimes, with licenses.
-- `scripts/`: standalone builder, preview server and checks.
+- `scripts/`: standalone builder, preview server and checks. `seo.mjs` builds search/share metadata, the sitemap, `robots.txt` and `llms.txt`; `image-optimization.mjs` routes images through Vercel Image Optimization; `brand-icons.mjs` draws the favicon and app icons.
 - `dist/`: generated static website, published by Vercel after verification. Do not edit it directly.
 - `.preview/`: pages built by `npm run dev`; the preview serves `public/` in place, so rebuilds are fast.
 - `.github/workflows/ci.yml`: checks for pushes to main and pull requests.

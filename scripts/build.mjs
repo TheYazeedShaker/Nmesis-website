@@ -4,6 +4,8 @@ import {splitSharedCss} from './shared-css.mjs';
 import {socialLinks as renderSocialLinks} from './social-links.mjs';
 import {aboutPage} from './about-page.mjs';
 import {legalPage} from './legal-page.mjs';
+import {socialMeta,structuredData,projectVideos,lastModified,sitemap,robots,llmsText} from './seo.mjs';
+import {optimizeImages} from './image-optimization.mjs';
 import {projectMedia} from './project-media.mjs';
 import {serviceShowcase} from './service-showcase.mjs';
 import {serviceDetail} from './service-detail.mjs';
@@ -180,7 +182,8 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
   const footer = await partial('footer', base);
   const icons = await read('src/templates/partials/icons.html');
   const mobileLinks = site.navigation.map(link => `<a class="design-SmDrJ design-ovk8g8 design-v-1sujeta" data-part="Default" href="${escapeHTML(link.url)}"><div class="design-q9bf4u"><div class="design-1g3dvz0"><h3>${escapeHTML(link.label)}</h3></div><div class="design-12n0ytl" aria-hidden="true"><h3>${escapeHTML(link.label)}</h3></div></div><div class="design-fhY6R design-h3njfy" aria-hidden="true"></div></a>`).join('\n');
-  const allRoutes = [];
+  const allRoutes = [], sitemapEntries = [];
+  const aboutData = await json('content/pages/about.json');
   const builtElements = new Map();
   async function page(route, templateName, extra, title, withCTA) {
     const pageData = await json(`content/pages/${templateName}.json`);
@@ -220,8 +223,19 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
     const backdrop = extra.project?.ctaBackground || pageData.ctaBackground;
     const ctaBackground = backdrop ? `<div class="nmesis-cta-background" aria-hidden="true" style="--cta-position:${escapeHTML(backdrop.position || 'center')};--cta-mobile-position:${escapeHTML(backdrop.mobilePosition || backdrop.position || 'center')}"><img src="${escapeHTML(backdrop.src)}" alt="" width="${Number(backdrop.width)}" height="${Number(backdrop.height)}" loading="lazy" decoding="async"></div>` : '';
     const cta = withCTA ? await partial('cta', {...ctx,ctaBackground}) : '';
-    let html = themeSurfaces(render(shell, {...ctx,header,footer,cta,icons,mobileLinks,socialLinks,content,meta:{title:`${title} — ${site.brandName}`,description:extra.project?.subtitle || extra.article?.excerpt || pageData.metaDescription || site.description,pageStylesheets,canonical,motion:'__MOTION_DATA__'}}));
+    // Search, social and AI metadata: each page's own title, description, share image and structured data.
+    const pageTitle = extra.seoTitle || extra.project?.seoTitle || `${title} — ${site.brandName}`;
+    const description = extra.project?.metaDescription || extra.project?.subtitle || extra.article?.excerpt || pageData.metaDescription || site.description;
+    const shareImage = extra.project?.shareImage || pageData.shareImage || site.seo.shareImage;
+    const seo = site.baseUrl ? [
+      templateName === '404' ? '<meta name="robots" content="noindex">' : '',
+      await socialMeta({site,root,url:new URL(route,site.baseUrl).href,title:pageTitle,description,image:shareImage,imageAlt:extra.project ? `${extra.project.title.replace(/\.$/,'')} by ${site.seo.siteName}` : site.seo.shareImageAlt,escape:escapeHTML}),
+      structuredData({site,about:aboutData,route,title:pageTitle,description,image:shareImage,template:templateName,page:pageData,project:extra.project,projects:projectList}),
+    ].filter(Boolean).join('\n  ') : '';
+    let html = themeSurfaces(render(shell, {...ctx,header,footer,cta,icons,mobileLinks,socialLinks,content,meta:{title:pageTitle,description,seo,pageStylesheets,canonical,motion:'__MOTION_DATA__'}}));
     html = html.replace('__MOTION_DATA__', await motionScript(route, html));
+    // IMAGE_OPTIMIZATION=off keeps original image URLs, for static hosts without /_vercel/image.
+    if (process.env.IMAGE_OPTIMIZATION !== 'off') html = await optimizeImages(html, root);
     // Keep contact/form configuration public and separate from the layout.
     html = html.replace('</head>', `<script type="application/json" id="site-config">${JSON.stringify({brandName:site.brandName,logo:site.logo,forms:site.forms,timezone:site.timezone}).replace(/</g,'\\u003c')}</script>\n</head>`);
     // Article HTML is intentionally editable; all JSON strings remain HTML-escaped.
@@ -232,9 +246,18 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
       const tag = name.toLowerCase(), id = (attributes.match(/\sid="([^"]*)"/) || [])[1] || '', classes = (attributes.match(/\sclass="([^"]*)"/) || [])[1] || '';
       builtElements.set(`${tag}#${id}.${classes}`, {tag, id, classes:new Set(classes.split(/\s+/).filter(Boolean))});
     }
+    if (templateName !== '404') {
+      const project = extra.project;
+      sitemapEntries.push({
+        route, description,
+        lastmod: lastModified(root, [`src/templates/pages/${templateName}.html`, `content/pages/${templateName}.json`, ...(project ? [`content/projects/${project.slug}.json`] : [])]),
+        images: project ? [...new Set([project.heroCover, project.cover, ...(project.galleries || []).flatMap(group => group.images.map(image => image.src))].filter(Boolean))] : [],
+        videos: project ? projectVideos(project).filter(video => video.poster) : [],
+      });
+    }
     allRoutes.push(route);
   }
-  for (const spec of routes) await page(spec.route, spec.template, {}, spec.title, spec.cta);
+  for (const spec of routes) await page(spec.route, spec.template, {seoTitle:spec.seoTitle}, spec.title, spec.cta);
   for (const project of projectList) {
     const related = projectList.filter(item => item.slug !== project.slug).slice(0,4);
     await page(`/projects/${project.slug}`,'project',{project,related},project.title,true);
@@ -251,8 +274,14 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
   // Vercel's static hosting uses a root 404.html for unmatched routes.
   await fs.copyFile(path.join(output,'404/index.html'), path.join(output,'404.html'));
   await fs.writeFile(path.join(output,'routes.json'), JSON.stringify(allRoutes,null,2));
-  await fs.writeFile(path.join(output,'robots.txt'), 'User-agent: *\nAllow: /\n');
-  if (site.baseUrl) await fs.writeFile(path.join(output,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${allRoutes.filter(r=>r!='/404').map(route=>`<url><loc>${escapeHTML(new URL(route,site.baseUrl).href)}</loc></url>`).join('')}</urlset>`);
+  await fs.writeFile(path.join(output,'robots.txt'), robots(site));
+  await fs.writeFile(path.join(output,'site.webmanifest'), JSON.stringify({name:site.seo.siteName,short_name:site.brandName,description:site.description,start_url:'/',display:'browser',background_color:'#101211',theme_color:'#101211',icons:[192,512].map(size=>({src:`/icon-${size}.png`,sizes:`${size}x${size}`,type:'image/png'}))},null,2));
+  if (site.baseUrl) {
+    await fs.writeFile(path.join(output,'sitemap.xml'), sitemap(site, sitemapEntries, escapeHTML));
+    const llms = {site,home:await json('content/pages/home.json'),about:aboutData,services:await json('content/pages/services.json'),detail:await json('content/pages/service-detail.json'),projects:projectList};
+    await fs.writeFile(path.join(output,'llms.txt'), llmsText(llms));
+    await fs.writeFile(path.join(output,'llms-full.txt'), llmsText({...llms,full:true}));
+  }
   return {routes:allRoutes,output};
 }
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

@@ -1,4 +1,5 @@
 {
+  "shareImage": "/assets/share/services.jpg",
   "eyebrow": "Digital vehicles. Films. Interactive experiences.",
   "title": "Built to move.",
   "intro": "One digital twin. Every way to experience it.",
@@ -174,7 +175,7 @@
       "text": "Prepare the final formats, connect the experiences and support the handover."
     }
   ],
-  "metaDescription": "Digital twins, automotive CGI, light and pixel-streaming configurators, and interactive brochures by NMESIS. Explore real work and choose the right service for your next launch.",
+  "metaDescription": "Digital twins, automotive CGI, light and pixel-streaming configurators and interactive brochures by NMESIS. Explore real work for your next launch.",
   "ctaBackground": {
     "src": "/assets/projects/cadillac/key-visuals/visual-06.webp",
     "width": 1672,

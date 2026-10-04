@@ -19,6 +19,7 @@ Open `content/site.json` in a text editor. Preserve JSON double quotes, commas, 
 | `navigation` | Four navigation labels and destination paths |
 | `colors` | Shared background, text, white, border, muted, and accent colors, in hex |
 | `baseUrl` | Your final HTTPS domain, once chosen; enables canonical URLs and a sitemap |
+| `seo` | Search and AI facts: site name, alternate names, default share image, locations, markets served and areas of expertise (used in structured data and `llms.txt`) |
 
 The current header/footer layouts expect four navigation entries. Social links can be added or removed freely; a new icon needs an entry in `scripts/social-links.mjs`. `title` and `contactName` are reserved informational fields; browser titles use each page's title and `brandName`, and the contact introduction is edited in `content/pages/contact.json`.
 
@@ -48,6 +49,8 @@ This creates a clean project from `templates/project.json` with empty image and 
 | `heroCover`, `heroCoverAlt` | Optional larger image for the top of the project page |
 | `films`, `galleries`, `experiences` | Repeatable media sections; see PROJECT-TEMPLATE.md |
 | `ctaBackground` | Optional image behind the closing call to action |
+| `seoTitle`, `metaDescription` | Search result title (up to ~65 characters) and description (50–165 characters) |
+| `shareImage` | 1200×630 JPG in `public/assets/share/` shown when the page is shared on LinkedIn, WhatsApp or X |
 
 Put project media in `public/assets/projects/<slug>/`, and reference it as `/assets/projects/<slug>/filename.webp`. The `mediaLayout: "collection"` option used by most current projects adds film pickers, carousels, brochures and configurator tabs; PROJECT-TEMPLATE.md describes the fields.
 
@@ -63,13 +66,26 @@ The Privacy policy and Terms pages share one layout (`scripts/legal-page.mjs`). 
 
 `content/shared.json` contains shared footer and call-to-action copy. `content/pages.json` defines static page routes and browser titles.
 
-## 4. Articles
+## 4. Search, sharing and AI assistants
+
+Every page is built with its own title, description, canonical link, Open Graph/Twitter share tags and schema.org structured data (organization, website, page, breadcrumbs, services, FAQs and project case studies with their films). The build also writes `sitemap.xml` (with images, videos and last-modified dates from Git), `robots.txt` (which welcomes search and AI crawlers), `llms.txt` and `llms-full.txt` (plain summaries for AI assistants), and `site.webmanifest`.
+
+- Page titles are set by `seoTitle` in `content/pages.json`; project titles and descriptions by `seoTitle` and `metaDescription` in each project file. Page descriptions use `metaDescription` in `content/pages/*.json`.
+- Share images are 1200×630 JPGs in `public/assets/share/`, referenced by `shareImage`; pages without one use `seo.shareImage` from `site.json`.
+- Icons (`favicon.ico`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`) are drawn from `public/assets/brand/nmesis-n.svg` by `node scripts/brand-icons.mjs`; rerun it after changing the mark.
+- `npm run check` requires one `<h1>`, a title, a 50–165 character description, an existing share image and structured data on every page.
+
+## 5. Images
+
+On Vercel, every local PNG, JPEG, WebP or AVIF image is requested through Vercel Image Optimization (`/_vercel/image`), which serves AVIF or WebP at the width each screen needs; video posters are optimized too. Add images as usual; no extra sizes are needed. The allowed widths and quality live in both `vercel.json` (`images`) and `scripts/image-optimization.mjs`, and `npm run check` fails if they disagree. The local preview serves the original files at the same addresses. To publish `dist/` on a host without Vercel's optimizer, build with `IMAGE_OPTIMIZATION=off`.
+
+## 6. Articles
 
 Each article has a `.json` metadata file in `content/articles/` and an editable `.html` body referenced by `bodyFile`. Copy both files to create an article, then update its slug, title, image, author details, and body path. Use ordinary HTML paragraphs, headings, lists, and links in the body.
 
 Articles are not currently published: `/blog` and article routes are not in `content/pages.json`. When the journal returns, the Blog page and related article cards update automatically. `articleOrder` selects order, with the first article featured on the Blog page. Homepage selections are controlled separately by `featuredArticles`.
 
-## 5. Layout and motion
+## 7. Layout and motion
 
 - `src/templates/layout.html`: document shell.
 - `src/templates/partials/`: shared header, footer, cards, and call-to-action sections.
@@ -83,7 +99,7 @@ Articles are not currently published: `/blog` and article routes are not in `con
 
 Template fields use `{{field.name}}` for escaped text and `{{{field.name}}}` for intentionally inserted HTML. Missing fields produce a build error identifying the key.
 
-## 6. Client logos
+## 8. Client logos
 
 Client and brand marks (home client grid, project cards, About) are drawn with CSS masks from `public/assets/clients/client-logos-mask.png` and `client-logos-full-mask.png`. Each `.client-logo--<name>` rule in `src/styles/theme.css` sets the crop with `mask-size`/`mask-position` and their `-webkit-` twins.
 
@@ -95,7 +111,7 @@ node scripts/logo-mask.mjs src/logos/supplied-client-sheet.png public/assets/cli
 
 `npm run check` rejects luminance masks, opaque mask images and missing `-webkit-mask-image` declarations.
 
-## 7. Forms, hosting, and domain
+## 9. Forms, hosting, and domain
 
 `forms.contactEndpoint` and `forms.newsletterEndpoint` are blank, so the contact form opens the visitor's email app with the enquiry filled in. These fields expect a form service that accepts POSTed form data and supports browser requests; test the chosen service when configuring it. Do not put private API keys in this file.
 
