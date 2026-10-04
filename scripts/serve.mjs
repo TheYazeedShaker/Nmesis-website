@@ -6,7 +6,11 @@ import path from 'node:path';
 import {build,root} from './build.mjs';
 const projectBuilder = createProjectBuilderHandler(root);
 const port = Number(process.env.PORT || 4175);
-let result = await build();
+// The preview builds pages into .preview/ and serves public/ in place, so a rebuild
+// never copies the media library and dist/ remains the complete deployment build.
+const options = {outDir:'.preview', copyPublic:false};
+const publicRoot = path.join(root,'public');
+let result = await build(options);
 let lastBuild = Date.now();
 let building;
 const mime={'.mp4':'video/mp4','.webm':'video/webm','.avif':'image/avif','.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.json':'application/json','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.woff2':'font/woff2','.woff':'font/woff','.xml':'application/xml','.txt':'text/plain'};
@@ -18,6 +22,13 @@ async function latest(dir) {
   }
   return modified;
 }
+async function resolve(requested) {
+  for (const base of [result.output,publicRoot]) {
+    let file=path.resolve(base,'.'+requested);
+    if (!file.startsWith(base+path.sep)&&file!==base) continue;
+    try {if ((await fs.stat(file)).isDirectory()) file=path.join(file,'index.html');await fs.access(file);return file;} catch {}
+  }
+}
 http.createServer(async(req,res)=>{
   try {
     let url=new URL(req.url,'http://localhost');
@@ -25,16 +36,13 @@ http.createServer(async(req,res)=>{
     if (!path.extname(url.pathname) || url.pathname.endsWith('.html')) {
       const changed=Math.max(await latest(path.join(root,'content')),await latest(path.join(root,'src')));
       if (changed>lastBuild) {
-        building ??= build().then(value=>{result=value;lastBuild=Date.now();}).finally(()=>building=undefined);
+        building ??= build(options).then(value=>{result=value;lastBuild=Date.now();}).finally(()=>building=undefined);
         await building;
       }
     }
-    let requested=decodeURIComponent(url.pathname);
-    let file=path.resolve(result.output,'.'+requested);
-    if (!file.startsWith(result.output+path.sep)&&file!==result.output) {res.writeHead(403);return res.end();}
     let status=200;
-    try {if ((await fs.stat(file)).isDirectory()) file=path.join(file,'index.html');await fs.access(file);}
-    catch {file=path.join(result.output,'404/index.html');status=404;}
+    let file=await resolve(decodeURIComponent(url.pathname));
+    if (!file) {file=path.join(result.output,'404/index.html');status=404;}
     if(['.mp4','.webm'].includes(path.extname(file))){
       const {size}=await fs.stat(file);
       const headers={'Content-Type':mime[path.extname(file)],'Accept-Ranges':'bytes','Cache-Control':'no-store'};

@@ -46,7 +46,7 @@ export function deploymentBaseURL(value) {
   }
   return url.href;
 }
-export async function build({outDir = 'dist', overrides = {}, projectOverrides = {}} = {}) {
+export async function build({outDir = 'dist', overrides = {}, projectOverrides = {}, copyPublic = true} = {}) {
   const site = {...await json('content/site.json'), ...overrides};
   if (process.env.SITE_URL) site.baseUrl = deploymentBaseURL(process.env.SITE_URL);
   const shared = await json('content/shared.json');
@@ -55,6 +55,7 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
   const blog = await collection('content/articles');
   const projectList = ordered(projects, site.projectOrder);
   const articleList = ordered(blog, site.articleOrder);
+  const style = 'display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover';
   for (const item of projectList) {
     const brand = {'soueast-egypt':'soueast',byd:'byd',avatr:'avatr',cadillac:'cadillac',chevrolet:'chevrolet',gac:'gac','im-motors':'im-motors'}[item.slug];
     item.cardTitle = item.brandLogo
@@ -63,15 +64,16 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
       ? `<span class="project-brand client-logo client-logo--${brand}" role="img" aria-label="${escapeHTML(item.title.replace(/\.$/, ''))}"></span>`
       : item.slug==='nmesis-lab' ? `<span class="project-lab-mark" role="img" aria-label="NMESIS Lab"><img src="/assets/brand/nmesis-wordmark.png" alt=""><span>LAB</span></span>` : escapeHTML(item.title);
     if (!Array.isArray(item.tags) || item.tags.length !== 3) throw new Error(`${item.slug}: provide three project tags`);
-    const style = 'display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover';
     item.coverMedia = item.video
       ? `<video data-project-loop autoplay muted loop playsinline preload="metadata" poster="${escapeHTML(item.cover)}" src="${escapeHTML(item.video)}" aria-label="${escapeHTML(item.coverAlt)}" style="${style};pointer-events:none"></video>`
       : `<img alt="${escapeHTML(item.coverAlt)}" decoding="async" loading="lazy" src="${escapeHTML(item.cover)}"${item.coverSrcset ? ` srcset="${escapeHTML(item.coverSrcset)}" sizes="(max-width:809px) 100vw, 66vw"` : ''} style="${style}"/>`;
   }
   for (const item of projectList) {
     item.heroClass = item.heroLayout === 'landscape' ? 'case-hero-landscape' : '';
-    item.heroMedia = item.heroCover
-      ? `<img alt="${escapeHTML(item.heroCoverAlt || item.coverAlt)}" decoding="async" src="${escapeHTML(item.heroCover)}" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover"/>`
+    // The hero is the first large image on the page, so it must not wait for lazy loading.
+    const hero = item.heroCover ? {src:item.heroCover, alt:item.heroCoverAlt || item.coverAlt} : item.video ? null : {src:item.cover, alt:item.coverAlt, srcset:item.coverSrcset};
+    item.heroMedia = hero
+      ? `<img alt="${escapeHTML(hero.alt)}" decoding="async" fetchpriority="high" src="${escapeHTML(hero.src)}"${hero.srcset ? ` srcset="${escapeHTML(hero.srcset)}" sizes="100vw"` : ''} style="${style}"/>`
       : item.coverMedia;
   }
   const routes = await json('content/pages.json');
@@ -80,7 +82,8 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
   await fs.rm(output, {recursive:true, force:true});
   await fs.mkdir(output, {recursive:true});
   // Provenance stays in the source tree; only website assets are published.
-  await fs.cp(path.join(root,'public'), output, {recursive:true, filter: source => {
+  // The local preview serves public/ in place rather than copying the media library on every rebuild.
+  if (copyPublic) await fs.cp(path.join(root,'public'), output, {recursive:true, filter: source => {
     const name = path.basename(source);
     return name !== '.DS_Store' && !/(?:^|-)sources\.json$/i.test(name);
   }});

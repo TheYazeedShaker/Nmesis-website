@@ -1,5 +1,6 @@
 # Generated output and machine-local dependencies
 /dist/
+/.preview/
 /node_modules/
 /.vercel/
 *.log
