@@ -15,7 +15,8 @@
     "check:flags": "node scripts/check-feature-flags.mjs",
     "check:media": "node scripts/check-media-controls.mjs",
     "check:theme": "node scripts/check-color-theme.mjs",
-    "check:contact": "node scripts/check-contact.mjs"
+    "check:contact": "node scripts/check-contact.mjs",
+    "share-images": "node scripts/share-images.mjs"
   },
   "engines": {
     "node": "24.x"
