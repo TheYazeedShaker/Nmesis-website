@@ -52,7 +52,7 @@ For preview work, create a feature branch and open a pull request into `main`. V
 
 ## Caching and headers
 
-`vercel.json` adds `nosniff`, `strict-origin-when-cross-origin` referrers and same-origin framing protection to every response. Files under `/assets/` are cached by browsers for a day (and revalidated in the background for a week); `/vendor/` for a week. Pages, `/styles/` and `/scripts/` are not fingerprinted, so they keep Vercel's default revalidation and edits appear immediately. When replacing media that must update for returning visitors at once, use a new filename.
+`vercel.json` adds `nosniff`, `strict-origin-when-cross-origin` referrers and same-origin framing protection to every response. Files under `/assets/` are cached by browsers for a day (and revalidated in the background for a week); `/vendor/` for a week, and the content-named `/scripts/motion/` files for a year (a change produces a new filename). Pages, `/styles/` and `/scripts/` are not fingerprinted, so they keep Vercel's default revalidation and edits appear immediately. When replacing media that must update for returning visitors at once, use a new filename.
 
 ## Canonical domain
 

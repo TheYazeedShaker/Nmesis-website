@@ -75,9 +75,9 @@ Articles are not currently published: `/blog` and article routes are not in `con
 - `src/templates/partials/`: shared header, footer, cards, and call-to-action sections.
 - `src/templates/pages/`: page layouts, including one project and one article template.
 - `src/styles/theme.css`: shared typography and custom component styling.
-- `src/styles/pages/`: migrated detailed page styles.
+- `src/styles/pages/`: migrated detailed page styles. At build time, rules repeated in every published page stylesheet move into the cached `styles/shared.css` (`scripts/shared-css.mjs`); a rule moves only when no earlier page-specific rule sets the same properties, so the cascade is unchanged.
 - `src/styles/interactions.css` and `src/scripts/site.js`: accessible menu/FAQ state and form behavior.
-- `src/motion/appear.json` and `src/motion/effects.json`: recovered animation settings.
+- `src/motion/appear.json` and `src/motion/effects.json`: recovered animation settings. The build gives each page its own `scripts/motion/<hash>.js` containing only the animations whose elements exist on that page; identical pages share one file.
 - `src/scripts/motion.js` and `src/styles/motion.css`: animation playback and page transitions.
 - `MOTION.md` (kept locally, not in Git): provenance, timing details, and motion verification.
 

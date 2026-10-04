@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import {themeSurfaces} from './theme-surfaces.mjs';
+import {splitSharedCss} from './shared-css.mjs';
 import {socialLinks as renderSocialLinks} from './social-links.mjs';
 import {aboutPage} from './about-page.mjs';
 import {legalPage} from './legal-page.mjs';
@@ -9,6 +10,7 @@ import {serviceDetail} from './service-detail.mjs';
 import {serviceActionContent,serviceLabel,serviceArrow} from './service-actions.mjs';
 import referenceAppear from './reference-appear.cjs';
 import path from 'node:path';
+import {createHash} from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -22,6 +24,24 @@ export function render(template, context) {
     const value = lookup(context, raw || escaped);
     if (value === undefined) throw new Error(`Missing template field: ${raw || escaped}`);
     return raw ? String(value ?? '') : escapeHTML(value);
+  });
+}
+// Whether a selector could match a page using these classes. Classes inside :not() or attribute
+// values are not required, and selectors using :is/:where/:has are always kept.
+export function selectorCanMatch(selector, classes) {
+  const branches = [];
+  let depth = 0, start = 0;
+  for (let i = 0; i < selector.length; i++) {
+    const c = selector[i];
+    if (c === '(' || c === '[') depth++;
+    else if (c === ')' || c === ']') depth--;
+    else if (c === ',' && depth === 0) { branches.push(selector.slice(start, i)); start = i + 1; }
+  }
+  branches.push(selector.slice(start));
+  return branches.some(branch => {
+    if (/:(is|where|has)\(/.test(branch)) return true;
+    const required = branch.replace(/\[[^\]]*\]/g, '').replace(/:not\([^()]*\)/g, '').match(/\.-?[_a-zA-Z][\w-]*/g) || [];
+    return required.every(token => classes.has(token.slice(1)));
   });
 }
 async function collection(folder) {
@@ -90,10 +110,12 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
     return name !== '.DS_Store' && !/(?:^|-)sources\.json$/i.test(name);
   }});
   await fs.cp(path.join(root,'src/styles'), path.join(output,'styles'), {recursive:true});
+  const pageStyles = {};
   for (const entry of await fs.readdir(path.join(output,'styles/pages'))) {
     if(entry.endsWith('.css')) {
       const file=path.join(output,'styles/pages',entry);
-      await fs.writeFile(file,themeSurfaces(await fs.readFile(file,'utf8')));
+      pageStyles[entry]=themeSurfaces(await fs.readFile(file,'utf8'));
+      await fs.writeFile(file,pageStyles[entry]);
     }
   }
   await fs.cp(path.join(root,'src/scripts'), path.join(output,'scripts'), {recursive:true});
@@ -108,7 +130,34 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
     const count=Math.max(2,Math.round(duration/10));
     t.nativeEase='linear('+Array.from({length:count},(_,i)=>Math.round(generator.next(i/(count-1)*duration).value*10000)/10000).join(',')+')';
   }
-  await fs.writeFile(path.join(output,'scripts/motion-data.js'),'window.MORO_MOTION='+JSON.stringify(motion).replace(/</g,'\\u003c')+';');
+  // Each page receives only its own entrance animations and the effects whose selectors can exist
+  // on it, in a content-named file that identical pages share and browsers can cache indefinitely.
+  await fs.mkdir(path.join(output,'scripts/motion'),{recursive:true});
+  const scriptSources = (await Promise.all(['site.js','motion.js'].map(name=>read(`src/scripts/${name}`)))).join('\n');
+  const scriptClasses = [...scriptSources.matchAll(/classList\.(?:add|toggle)\('([\w-]+)'|className\s*=\s*'([^']+)'|(design-v-[a-z0-9]+)/g)].flatMap(m=>(m[1]||m[2]||m[3]).split(/\s+/));
+  const appearKey = route => {
+    const key = decodeURI(route).replace(/\/$/,'') || '/';
+    if (key === '/services') return '/';
+    if (motion.appear[key]) return key;
+    return key.startsWith('/projects/') ? '/projects/tenfold-s-first-sneaker-release' : key.startsWith('/blog/') ? '/blog/the-anatomy-of-a-strong-brand-launch' : '/404';
+  };
+  const motionScript = async (route, html) => {
+    const classes = new Set(scriptClasses);
+    for (const [, list] of html.matchAll(/class="([^"]*)"/g)) for (const name of list.split(/\s+/)) classes.add(name);
+    const present = selector => selectorCanMatch(selector, classes);
+    const key = appearKey(route);
+    const data = {
+      effects: motion.effects.filter(effect=>present(effect.selector)),
+      hovers: motion.hovers.filter(hover=>present(hover.selector)&&present(hover.root)),
+      components: motion.components.filter(component=>present(component.selector)),
+      mouse: motion.mouse.filter(spec=>present(spec.selector)),
+      appear: motion.appear[key] ? {[key]:{...motion.appear[key],entries:motion.appear[key].entries.filter(entry=>present(entry.selector))}} : {},
+    };
+    const body = 'window.MORO_MOTION='+JSON.stringify(data).replace(/</g,'\\u003c')+';';
+    const url = `/scripts/motion/${createHash('sha256').update(body).digest('hex').slice(0,12)}.js`;
+    await fs.writeFile(path.join(output,url), body);
+    return url;
+  };
   const initialSelectors = [...new Set([...Object.values(motion.appear).flatMap(page=>page.entries.map(e=>e.selector)),...motion.effects.filter(e=>e.kind==='reveal'||e.kind==='text').map(e=>e.selector)])];
   await fs.writeFile(path.join(output,'styles/motion-initial.css'), initialSelectors.map(selector=>'html.motion-ready '+selector+':not([data-motion-ready])').join(',\n')+'{visibility:hidden}');
   const colors = Object.entries(site.colors).map(([key,value]) => {
@@ -132,6 +181,7 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
   const icons = await read('src/templates/partials/icons.html');
   const mobileLinks = site.navigation.map(link => `<a class="design-SmDrJ design-ovk8g8 design-v-1sujeta" data-part="Default" href="${escapeHTML(link.url)}"><div class="design-q9bf4u"><div class="design-1g3dvz0"><h3>${escapeHTML(link.label)}</h3></div><div class="design-12n0ytl" aria-hidden="true"><h3>${escapeHTML(link.label)}</h3></div></div><div class="design-fhY6R design-h3njfy" aria-hidden="true"></div></a>`).join('\n');
   const allRoutes = [];
+  const builtElements = new Map();
   async function page(route, templateName, extra, title, withCTA) {
     const pageData = await json(`content/pages/${templateName}.json`);
     const ctx = {...base, page:pageData, ...extra};
@@ -163,16 +213,25 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
     if (templateName === 'article') ctx.relatedArticles = (await Promise.all(articleList.filter(a=>a.slug!==extra.article.slug).slice(0,3).map(article=>partial('related-article-card',{...ctx,article})))).join('\n');
     const content = render(await read(`src/templates/pages/${templateName}.html`), ctx);
     const canonical = site.baseUrl ? `<link rel="canonical" href="${escapeHTML(new URL(route,site.baseUrl).href)}">` : '';
+    // A page stylesheet's @import becomes an earlier <link>: same cascade order, but the files
+    // download in parallel and stay individually cached.
+    const stylesheets = name => [...(pageStyles[`${name}.css`] || '').matchAll(/@import\s+url\(["']?\.\/([\w-]+)\.css["']?\)\s*;?/g)].flatMap(match=>stylesheets(match[1])).concat(name);
+    const pageStylesheets = stylesheets(templateName).map(name=>`<link rel="stylesheet" href="/styles/pages/${name}.css">`).join('\n  ');
     const backdrop = extra.project?.ctaBackground || pageData.ctaBackground;
     const ctaBackground = backdrop ? `<div class="nmesis-cta-background" aria-hidden="true" style="--cta-position:${escapeHTML(backdrop.position || 'center')};--cta-mobile-position:${escapeHTML(backdrop.mobilePosition || backdrop.position || 'center')}"><img src="${escapeHTML(backdrop.src)}" alt="" width="${Number(backdrop.width)}" height="${Number(backdrop.height)}" loading="lazy" decoding="async"></div>` : '';
     const cta = withCTA ? await partial('cta', {...ctx,ctaBackground}) : '';
-    let html = themeSurfaces(render(shell, {...ctx,header,footer,cta,icons,mobileLinks,socialLinks,content,meta:{title:`${title} — ${site.brandName}`,description:extra.project?.subtitle || extra.article?.excerpt || pageData.metaDescription || site.description,style:templateName,canonical}}));
+    let html = themeSurfaces(render(shell, {...ctx,header,footer,cta,icons,mobileLinks,socialLinks,content,meta:{title:`${title} — ${site.brandName}`,description:extra.project?.subtitle || extra.article?.excerpt || pageData.metaDescription || site.description,pageStylesheets,canonical,motion:'__MOTION_DATA__'}}));
+    html = html.replace('__MOTION_DATA__', await motionScript(route, html));
     // Keep contact/form configuration public and separate from the layout.
     html = html.replace('</head>', `<script type="application/json" id="site-config">${JSON.stringify({brandName:site.brandName,logo:site.logo,forms:site.forms,timezone:site.timezone}).replace(/</g,'\\u003c')}</script>\n</head>`);
     // Article HTML is intentionally editable; all JSON strings remain HTML-escaped.
     const target = path.join(output, decodeURIComponent(route), 'index.html');
     await fs.mkdir(path.dirname(target),{recursive:true});
     await fs.writeFile(target, html);
+    for (const [, name, attributes] of html.matchAll(/<([a-zA-Z][\w-]*)\b([^>]*)>/g)) {
+      const tag = name.toLowerCase(), id = (attributes.match(/\sid="([^"]*)"/) || [])[1] || '', classes = (attributes.match(/\sclass="([^"]*)"/) || [])[1] || '';
+      builtElements.set(`${tag}#${id}.${classes}`, {tag, id, classes:new Set(classes.split(/\s+/).filter(Boolean))});
+    }
     allRoutes.push(route);
   }
   for (const spec of routes) await page(spec.route, spec.template, {}, spec.title, spec.cta);
@@ -180,6 +239,15 @@ export async function build({outDir = 'dist', overrides = {}, projectOverrides =
     const related = projectList.filter(item => item.slug !== project.slug).slice(0,4);
     await page(`/projects/${project.slug}`,'project',{project,related},project.title,true);
   }
+  // Rules repeated in every published page stylesheet move into the cached shared.css. The built
+  // pages tell the split which classes can share an element, so it only moves rules that cannot
+  // change the cascade.
+  const templates = new Set([...routes.map(spec=>spec.template),'project']);
+  const split = splitSharedCss(Object.fromEntries(Object.entries(pageStyles).filter(([entry,css])=>templates.has(entry.replace(/\.css$/,''))&&!/@import\b/.test(css))),{elements:[...builtElements.values()],dynamic:scriptClasses});
+  for (const [entry,css] of Object.entries(split.pages)) await fs.writeFile(path.join(output,'styles/pages',entry),css+'\n');
+  // Imports are already <link>ed by each page, ahead of the importing stylesheet.
+  for (const [entry,css] of Object.entries(pageStyles)) if (/@import\b/.test(css)) await fs.writeFile(path.join(output,'styles/pages',entry),css.replace(/@import\s+url\([^)]*\)\s*;?\s*/g,''));
+  await fs.appendFile(path.join(output,'styles/shared.css'),'\n/* Rules shared by every page stylesheet (scripts/shared-css.mjs). */\n'+split.common+'\n');
   // Vercel's static hosting uses a root 404.html for unmatched routes.
   await fs.copyFile(path.join(output,'404/index.html'), path.join(output,'404.html'));
   await fs.writeFile(path.join(output,'routes.json'), JSON.stringify(allRoutes,null,2));

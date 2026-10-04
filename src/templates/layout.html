@@ -13,7 +13,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/brand/nmesis-n.svg">
   <script src="/scripts/color-theme.js"></script>
   <link rel="stylesheet" href="/styles/shared.css">
-  <link rel="stylesheet" href="/styles/pages/{{meta.style}}.css">
+  {{{meta.pageStylesheets}}}
   <link rel="stylesheet" href="/styles/theme.css">
   <link rel="stylesheet" href="/styles/interactions.css">
   <link rel="stylesheet" href="/styles/motion.css">
@@ -22,7 +22,7 @@
   <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('motion-ready');setTimeout(()=>document.documentElement.classList.remove('motion-ready'),5000);}</script>
   <script src="/vendor/motion.js" defer></script>
   <script src="/vendor/lenis.js" defer></script>
-  <script src="/scripts/motion-data.js" defer></script>
+  <script src="{{meta.motion}}" defer></script>
   <script src="/scripts/feature-flags.js" defer></script>
   <script src="/scripts/site.js" defer></script>
   <script src="/scripts/motion.js" defer></script>
