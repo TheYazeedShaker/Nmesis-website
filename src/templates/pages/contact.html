@@ -12,7 +12,7 @@
         <p class="contact-location">{{site.location}} · Working with automotive teams across markets.</p>
       </div>
     </aside>
-    <form class="contact-brief" data-form="contact" data-email="{{site.email}}" method="post" aria-labelledby="brief-title">
+    <form class="contact-brief" data-form="contact" data-email="{{site.email}}" method="post" action="{{site.forms.contactEndpoint}}" aria-labelledby="brief-title">
       <header><h2 id="brief-title">{{page.formTitle}}</h2><p>{{page.formIntroduction}}</p></header>
       <div class="contact-fields">
         <label>Your name <span>*</span><input name="Name" autocomplete="name" required maxlength="120" placeholder="Full name"></label>
@@ -20,9 +20,12 @@
         <label class="contact-wide">Which service are you interested in? <span>*</span><select name="Service" required><option value="" selected disabled>Select a service</option><option value="Automotive CGI content">Automotive CGI content</option><option value="Digital twins">Digital twins</option><option value="Vehicle configurators">Vehicle configurators</option><option value="Interactive brochures">Interactive brochures</option><option value="Multiple services / a complete launch">Multiple services / a complete launch</option><option value="Not sure yet, help me choose">Not sure yet, help me choose</option></select></label>
         <label class="contact-wide">How did you hear about us? <span>*</span><select name="Referral" required><option value="" selected disabled>Select an option</option><option value="Recommendation / referral">Recommendation / referral</option><option value="LinkedIn">LinkedIn</option><option value="Instagram">Instagram</option><option value="Behance">Behance</option><option value="Google / online search">Google / online search</option><option value="Industry event">Industry event</option><option value="We’ve worked together before">We’ve worked together before</option><option value="Other">Other</option></select></label>
         <label class="contact-wide">Your message <span>*</span><textarea name="message" rows="4" required maxlength="4000" placeholder="How can we help?"></textarea></label>
+        <div class="contact-trap" aria-hidden="true"><label>Leave this field empty <input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <input type="hidden" name="started">
       </div>
-      <div class="contact-submit"><button class="contact-animated-button" type="submit" aria-label="Send email"><span class="contact-button-label" aria-hidden="true"><span>Send email</span><span>Send email</span></span><span class="contact-button-arrow" aria-hidden="true"><span>↗</span><span>↗</span></span></button><p data-contact-help>Opens your email app to send your message to {{site.email}}.</p></div>
+      <div class="contact-submit"><button class="contact-animated-button" type="submit" aria-label="Send message"><span class="contact-button-label" aria-hidden="true"><span>Send message</span><span>Send message</span></span><span class="contact-button-arrow" aria-hidden="true"><span>↗</span><span>↗</span></span></button><p data-contact-help role="status" aria-live="polite">Your message goes straight to the NMESIS team.</p></div>
       <p class="contact-privacy">Please only share information relevant to your enquiry. <a href="/privacy-policy">Privacy policy</a>.</p>
+      <div class="contact-sent" data-contact-sent tabindex="-1" hidden><h3>Message sent.</h3><p data-contact-sent-text>Thank you. Your message is with the NMESIS team, and we’ll reply by email.</p><button type="button" data-contact-another>Send another message</button></div>
       <div class="contact-ready" data-contact-ready hidden>
         <p data-contact-status role="status" aria-live="polite">Email app didn’t open? Use the link below or copy your message.</p>
         <div><a data-contact-mail>Open email app ↗</a><button type="button" data-contact-copy>Copy message</button></div>

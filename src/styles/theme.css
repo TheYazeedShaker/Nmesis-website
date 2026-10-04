@@ -846,6 +846,14 @@ body:has(.svc-page) .design-8v54va-container nav [data-part="Line"] { background
 .contact-submit button:hover { background:#caef00; }
 .contact-submit>p,.contact-privacy { font-size:12px;line-height:1.6;color:var(--color-muted);margin:12px 0 0; }
 .contact-privacy a { color:inherit;text-underline-offset:3px; }
+/* The honeypot stays out of view and out of the tab order; people never see or fill it. */
+.contact-trap { position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden; }
+.contact-brief[aria-busy="true"] .contact-animated-button { opacity:.6;cursor:progress; }
+.contact-sent { margin-top:24px;padding:20px;border-radius:12px;background:#eef8c2;outline:none; }
+.contact-sent[hidden] { display:none; }
+.contact-sent h3 { margin:0 0 8px;font:500 23px var(--font-display); }
+.contact-sent p { font-size:14px;line-height:1.6;margin:0; }
+.contact-sent button { margin-top:16px;background:var(--color-ink);color:white;padding:12px;border:0;border-radius:8px;font:500 13px var(--font-body);cursor:pointer; }
 .contact-ready { margin-top:24px;padding:20px;border-radius:12px;background:#f0f4e8; }
 .contact-ready[hidden] { display:none; }
 .contact-ready h3 { margin:0 0 8px;font:500 23px var(--font-display); }

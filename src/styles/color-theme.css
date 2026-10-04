@@ -98,6 +98,8 @@ html[data-theme="light"] { color-scheme:light; }
 [data-theme="dark"] .contact-submit button { color:#141414; }
 [data-theme="dark"] .contact-submit .contact-animated-button:is(:hover,:focus-visible) { color:#fff; }
 [data-theme="dark"] .contact-ready { background:#293225; }
+[data-theme="dark"] .contact-sent { background:#2c3a1c; }
+[data-theme="dark"] .contact-sent button { background:var(--color-accent);color:#141414; }
 [data-theme="dark"] .contact-ready :is(a,button) { background:var(--color-accent);color:#141414; }
 [data-theme="dark"] .contact-brief :is(input,select,textarea):focus-visible { outline-color:var(--color-accent); }
 

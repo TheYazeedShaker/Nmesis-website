@@ -6,7 +6,7 @@ import {imageSource} from './image-optimization.mjs';
 
 // Run after a build. Inspect actual output rather than publishing a second copy.
 const output = path.join(root, 'dist');
-const requiredDirectories = ['content', 'src', 'public', 'scripts', 'templates', 'tools'];
+const requiredDirectories = ['api', 'content', 'src', 'public', 'scripts', 'templates', 'tools'];
 const requiredFiles = ['package.json', 'content/site.json', 'content/shared.json', 'content/pages.json', 'src/templates/layout.html', 'scripts/build.mjs', 'scripts/reference-appear.cjs', 'templates/project.json', 'public/vendor/lenis.js', 'public/vendor/motion.js'];
 const excludedMetadata = name => name === '.DS_Store' || /(?:^|-)sources\.json$/i.test(name);
 const errors = [];

@@ -96,7 +96,7 @@
     "graphite": "#303530"
   },
   "forms": {
-    "contactEndpoint": "",
+    "contactEndpoint": "/api/contact",
     "newsletterEndpoint": ""
   },
   "projectOrder": [
