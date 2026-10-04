@@ -50,6 +50,10 @@ git push origin main
 
 For preview work, create a feature branch and open a pull request into `main`. Vercel’s Git integration can provide a preview URL. Merging the pull request then triggers production.
 
+## Caching and headers
+
+`vercel.json` adds `nosniff`, `strict-origin-when-cross-origin` referrers and same-origin framing protection to every response. Files under `/assets/` are cached by browsers for a day (and revalidated in the background for a week); `/vendor/` for a week. Pages, `/styles/` and `/scripts/` are not fingerprinted, so they keep Vercel's default revalidation and edits appear immediately. When replacing media that must update for returning visitors at once, use a new filename.
+
 ## Canonical domain
 
 The confirmed production origin is configured as `baseUrl` in `content/site.json`. This enables canonical URLs and the sitemap. If you later connect a custom domain, update that value and push, or set `SITE_URL` in Vercel to the confirmed HTTPS origin and redeploy. `SITE_URL` overrides the source setting. Do not use a changing preview deployment hostname as the production canonical.
