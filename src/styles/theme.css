@@ -248,6 +248,16 @@ body:has(.showreel-hero) .design-8v54va-container .design-gzg5v { --color-ink:#1
 .design-c6og6u [role="button"]:focus-visible { outline:2px solid #606760;outline-offset:3px; }
 .design-c6og6u .client-details-open > [data-part="Default"] { opacity:0!important; }
 .design-c6og6u .client-details-open > [data-part="Hover"] { opacity:1!important; }
+/* Client details: a centred mark above a short description, contained by the tile at every size. */
+.design-c6og6u .design-gm3354 { justify-content:center;align-items:center; }
+.design-c6og6u .design-rgvvyl { justify-content:center;align-items:center;gap:10px;height:100%;padding:16px 18px;text-align:center; }
+.design-c6og6u .design-rgvvyl .design-y7tdk { width:100%;height:28px;overflow:visible; }
+/* Zoom resizes the mark's box (no clipping); wide wordmarks need more size than compact badges. */
+.design-c6og6u .design-rgvvyl .design-y7tdk .client-logo::before { transform:none;zoom:.5; }
+.design-c6og6u .design-rgvvyl :is(.client-logo--lexus,.client-logo--byd,.client-logo--avatr,.client-logo--al-futtaim)::before { zoom:.75; }
+.design-c6og6u .design-rgvvyl .client-logo--soueast::before { zoom:.85; }
+.design-c6og6u .design-rgvvyl .design-1tlz8qv { width:100%;max-width:240px; }
+.design-c6og6u .design-rgvvyl .design-1tlz8qv p { --design-text-alignment:center;text-align:center;font-size:13px;line-height:1.45;letter-spacing:-.01em;text-wrap:balance; }
 .mobile-menu .menu-close { width:44px;right:calc(4px + var(--menu-gutter,0px)); }
 .mobile-menu .menu-close span { left:14px;right:14px; }
 .mobile-menu .mobile-social a { display:inline-flex;align-items:center;min-height:44px; }
