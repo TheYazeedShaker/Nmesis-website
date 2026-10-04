@@ -145,9 +145,6 @@ body {
 .design-c6og6u .design-Cyg5M > .design-1fh6q82,
 .design-c6og6u .design-Cyg5M > .design-gm3354 { border-radius:inherit; }
 
-/* Keep the founder story and team profiles on the dedicated About page. */
-.design-bAUIT .design-1yf02wr { display:none!important; }
-
 /* Mirror the founder portrait in the layout while preserving the source asset. */
 img[src="/assets/team/moaaz-yasser.png"] { transform:scaleX(-1);object-position:center 30%!important; }
 

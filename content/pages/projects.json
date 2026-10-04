@@ -1,6 +1,6 @@
 {
-  "our_projects": "our\nwork.",
-  "case_studies": "Selected projects.",
+  "title": "our\nwork.",
+  "listTitle": "Selected projects.",
   "services": {
     "eyebrow": "The craft behind the work.",
     "title": "What can we create for you?",

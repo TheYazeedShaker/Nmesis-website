@@ -102,7 +102,7 @@ form.addEventListener('submit',async event=>{
   const data=await response.json();if(!response.ok)throw Error(data.error);
   dirty=false;status('Project created. Your content and assets are saved in the website folder.');
   const link=el('a','','Open project ↗');link.href=data.url;$('#status').append(el('br'),link);
-  const download=el('a','','Download project JSON');download.href=URL.createObjectURL(new Blob([JSON.stringify({...project,liveLabel:'Discuss a similar project',liveUrl:'/contact'},null,2)],{type:'application/json'}));download.download=slug+'.json';$('#status').append(el('br'),download);
+  const download=el('a','','Download project JSON');download.href=URL.createObjectURL(new Blob([JSON.stringify(project,null,2)],{type:'application/json'}));download.download=slug+'.json';$('#status').append(el('br'),download);
   $('#status').scrollIntoView({behavior:'smooth',block:'center'});
  }catch(error){status(error.message,true);}finally{busy=false;controls.forEach(c=>c.disabled=false);}
 });

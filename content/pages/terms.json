@@ -1,20 +1,34 @@
 {
-  "term_of_service": "Terms of service.",
-  "effective_date": "Document status",
-  "01_02_2025": "Draft placeholder",
-  "back_home": "Back home",
-  "by_using_this_website_you_agree_to_these_terms_if_you_don_t_agree": "This page is reserved for the approved NMESIS website terms. It is a content placeholder and does not set project, purchase or licensing terms.",
-  "use_of_the_site": "Website use",
-  "you_re_allowed_to_browse_view_and_interact_with_our_content_for_p": "The final wording will describe use of the NMESIS portfolio, automotive project previews and interactive demonstrations.",
-  "intellectual_property": "Project assets & permissions",
-  "all_content_on_this_site_including_text_images_templates_and_code": "Approved terms will explain ownership and permitted use of vehicle models, imagery, films and interactive assets. Client and third-party materials will be addressed explicitly.",
-  "payments_and_purchases": "Project agreements",
-  "all_sales_are_final_unless_stated_otherwise_if_there_s_an_issue_w": "Production scope, deliverables, fees, review stages and usage permissions will be recorded in each project agreement. Commercial terms are not published in this preview.",
-  "account_access": "Interactive services",
-  "if_you_create_an_account_you_re_responsible_for_keeping_your_logi": "Any future account-based platform or hosted service will need terms specific to its functionality. Autoverse remains in development.",
-  "limitations": "Service details",
-  "we_don_t_guarantee_the_site_will_always_be_online_bug_free_or_per": "Final service descriptions and support arrangements will be confirmed before this page is published.",
-  "governing_law": "Company details",
-  "these_terms_are_governed_by_the_laws_of_our_home_jurisdiction_any": "The contracting entity, governing law and contact details will be added to the approved terms. For project enquiries, write to info@nmesis.io.",
+  "title": "Terms of service.",
+  "statusLabel": "Document status",
+  "status": "Draft placeholder",
+  "backHome": "Back home",
+  "intro": "This page is reserved for the approved NMESIS website terms. It is a content placeholder and does not set project, purchase or licensing terms.",
+  "sections": [
+    {
+      "title": "Website use",
+      "text": "The final wording will describe use of the NMESIS portfolio, automotive project previews and interactive demonstrations."
+    },
+    {
+      "title": "Project assets & permissions",
+      "text": "Approved terms will explain ownership and permitted use of vehicle models, imagery, films and interactive assets. Client and third-party materials will be addressed explicitly."
+    },
+    {
+      "title": "Project agreements",
+      "text": "Production scope, deliverables, fees, review stages and usage permissions will be recorded in each project agreement. Commercial terms are not published in this preview."
+    },
+    {
+      "title": "Interactive services",
+      "text": "Any future account-based platform or hosted service will need terms specific to its functionality. Autoverse remains in development."
+    },
+    {
+      "title": "Service details",
+      "text": "Final service descriptions and support arrangements will be confirmed before this page is published."
+    },
+    {
+      "title": "Company details",
+      "text": "The contracting entity, governing law and contact details will be added to the approved terms. For project enquiries, write to info@nmesis.io."
+    }
+  ],
   "_images": {}
 }
