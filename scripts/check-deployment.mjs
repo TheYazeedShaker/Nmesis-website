@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {root, deploymentBaseURL} from './build.mjs';
+import {imageSource} from './image-optimization.mjs';
 
 // Run after a build. Inspect actual output rather than publishing a second copy.
 const output = path.join(root, 'dist');
@@ -59,7 +60,8 @@ for (const route of routes) {
   assert.ok(html.includes('<html'), `Empty or invalid HTML route: ${route}`);
   for (const [, value] of html.matchAll(/(?:src|href)="([^"]*)"/g)) {
     if (!value.startsWith('/') || value.startsWith('//')) continue;
-    const local = decodeURIComponent(new URL(value, 'https://deployment-check.invalid').pathname).replace(/^\//, '');
+    // Optimized images are served from their published source file.
+    const local = decodeURIComponent(imageSource(value)).replace(/^\//, '');
     if (local && !publishedPaths.has(local) && !publishedPaths.has(path.posix.join(local, 'index.html'))) errors.push(`${route}: missing local path or filename case mismatch: ${value}`);
   }
 }

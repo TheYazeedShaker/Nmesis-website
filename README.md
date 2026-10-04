@@ -21,15 +21,18 @@ npm run verify      # Run all checks and produce the deployment build
 
 - `content/`: editable site settings, navigation, page copy and project details. Journal drafts are archived here but not published.
 - `src/templates/`: page layouts and shared header/footer components.
+- `src/logos/`: supplied client-logo sheets; `scripts/logo-mask.mjs` turns them into the published alpha masks.
 - `src/styles/`: original component styling plus NMESIS adjustments in theme.css.
 - `src/scripts/`: interactions and animation logic.
 - `src/motion/`: recovered reference animation settings.
 - `public/assets/`: all local images, client logos, fonts and videos in their corresponding folders.
 - `public/vendor/`: local Motion and Lenis runtimes, with licenses.
-- `scripts/`: standalone builder, preview server and checks.
+- `scripts/`: standalone builder, preview server and checks. `seo.mjs` builds search/share metadata, the sitemap, `robots.txt` and `llms.txt`; `image-optimization.mjs` routes images through Vercel Image Optimization; `brand-icons.mjs` draws the favicon and app icons.
 - `dist/`: generated static website, published by Vercel after verification. Do not edit it directly.
+- `.preview/`: pages built by `npm run dev`; the preview serves `public/` in place, so rebuilds are fast.
 - `.github/workflows/ci.yml`: checks for pushes to main and pull requests.
-- `vercel.json`: Vercel build command and static output configuration.
+- `vercel.json`: Vercel build command, static output, browser caching and security headers.
+- `.gitattributes`: keeps LF line endings so Windows, macOS and Vercel build identical HTML.
 
 The source currently builds 18 routes, including Home, Projects, Services, About, Contact, nine project pages, the Automotive CGI service detail, legal pages and the 404 page.
 

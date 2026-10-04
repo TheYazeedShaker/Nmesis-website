@@ -35,4 +35,22 @@ a.clicks.click();
 await new Promise(resolve=>setImmediate(resolve));
 assert.equal(a.film.controls,false);
 assert.equal(a.start.hidden,false,'Failed playback leaves an accessible retry control');
-console.log('Media controls passed: one initial play control, native playback/pause controls, independent players and failure recovery.');
+
+// Project card loops: nothing downloads until a card is visible, and reduced motion keeps the poster.
+const loopSetup=source.slice(source.indexOf('  // Project previews loop'),source.indexOf('  // Brand project details'));
+const html=await fs.readFile(new URL('../dist/projects/index.html',import.meta.url),'utf8').catch(()=>'');
+for(const tag of html.match(/<video data-project-loop[^>]*>/g)||[])assert.ok(!/\sautoplay\b/.test(tag)&&/preload="none"/.test(tag),'Card loops must not autoplay or preload before they are visible');
+function loops(reduced){
+  let observe;const listeners={};
+  const make=()=>({muted:false,paused:true,plays:0,addEventListener(){},play(){this.plays++;this.paused=false;return Promise.resolve();},pause(){this.paused=true;}});
+  const shown=make(),hidden=make();
+  vm.runInNewContext(loopSetup,{document:{hidden:false,querySelectorAll:()=>[shown,hidden],addEventListener(){}},window:{addEventListener(){}},reducedMotion:{matches:reduced,addEventListener:(k,fn)=>listeners[k]=fn},IntersectionObserver:class {constructor(fn){observe=fn;}observe(){}}});
+  observe([{target:shown,isIntersecting:true,intersectionRect:{width:300,height:200}},{target:hidden,isIntersecting:false,intersectionRect:{width:0,height:0}}]);
+  return {shown,hidden};
+}
+const motion=loops(false);
+assert.equal(motion.shown.plays,1,'A visible card loop starts playing');
+assert.equal(motion.hidden.plays,0,'A hidden responsive copy never starts (and never downloads)');
+assert.ok(motion.shown.muted,'Card loops are muted');
+assert.equal(loops(true).shown.plays,0,'Reduced motion keeps the card poster still');
+console.log('Media controls passed: one initial play control, native playback/pause controls, independent players, failure recovery, and visible-only card loops.');

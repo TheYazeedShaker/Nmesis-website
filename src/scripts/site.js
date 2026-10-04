@@ -116,12 +116,14 @@
     window.addEventListener('pagehide',()=>{leaving=true;showreel.pause();});
     window.addEventListener('pageshow',()=>{leaving=false;syncPlayback();});
   }
-  // Project previews loop as soon as their card is visible, independent of hover.
+  // Project previews loop as soon as their card is visible, independent of hover. They have no
+  // autoplay attribute, so hidden responsive copies never download, and reduced motion keeps the poster.
   const projectLoops=[...document.querySelectorAll('[data-project-loop]')];
   if(projectLoops.length){
     const visible=new Set();
     let leaving=false;
-    const shouldPlay=video=>visible.has(video)&&!document.hidden&&!leaving;
+    const shouldPlay=video=>visible.has(video)&&!document.hidden&&!leaving&&!reducedMotion.matches;
+    reducedMotion.addEventListener('change',()=>projectLoops.forEach(sync));
     const sync=video=>{
       if(shouldPlay(video))video.play()?.then(()=>{if(!shouldPlay(video))video.pause();}).catch(()=>{});
       else video.pause();
@@ -531,4 +533,21 @@
   });
   document.addEventListener('visibilitychange',updatePreviews);
   reducedMotion.addEventListener('change',updatePreviews);
+})();
+
+// Legal pages: mark the section being read in the contents list.
+(() => {
+  const links=[...document.querySelectorAll('.legal-toc a,.legal-toc-mobile a')];
+  if(!links.length)return;
+  const sections=[...new Set(links.map(link=>document.getElementById(decodeURIComponent(link.hash.slice(1)))))].filter(Boolean);
+  const visible=new Set();
+  const observer=new IntersectionObserver(entries=>{
+    for(const entry of entries)entry.isIntersecting?visible.add(entry.target):visible.delete(entry.target);
+    const current=sections.find(section=>visible.has(section));
+    if(!current)return;
+    for(const link of links)link.hash==='#'+current.id?link.setAttribute('aria-current','true'):link.removeAttribute('aria-current');
+  },{rootMargin:'-15% 0px -65% 0px'});
+  sections.forEach(section=>observer.observe(section));
+  // The compact list closes after a choice so the section is immediately visible.
+  document.querySelector('.legal-toc-mobile')?.addEventListener('click',event=>{if(event.target.closest('a'))event.currentTarget.open=false;});
 })();

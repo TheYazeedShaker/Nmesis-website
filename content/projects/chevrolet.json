@@ -3,6 +3,9 @@
   "title": "Chevrolet.",
   "subtitle": "From the first layer to the final frame.",
   "description": "Chevrolet Silverado automotive CGI by NMESIS, from desert motion to urban compositions. Explore three finished key visuals alongside a short production breakdown showing how one scene comes together.",
+  "seoTitle": "Chevrolet Silverado Automotive CGI Key Visuals — NMESIS",
+  "metaDescription": "Chevrolet Silverado automotive CGI by NMESIS: three finished key visuals, from desert motion to urban scenes, plus a short production breakdown.",
+  "shareImage": "/assets/share/project-chevrolet.jpg",
   "cover": "/assets/projects/chevrolet/gallery/key-visual-2.webp",
   "coverAlt": "Chevrolet Silverado driving through desert sand",
   "tags": [
@@ -10,8 +13,6 @@
     "Vehicle visualization",
     "Visual content"
   ],
-  "liveLabel": "Discuss a similar project",
-  "liveUrl": "/contact",
   "heroCover": "/assets/projects/chevrolet/gallery/key-visual-2.webp",
   "heroCoverAlt": "Chevrolet Silverado driving through desert sand",
   "heroLayout": "landscape",

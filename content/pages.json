@@ -3,54 +3,63 @@
     "route": "/",
     "template": "home",
     "title": "Home",
-    "cta": true
+    "cta": true,
+    "seoTitle": "NMESIS Motion Lab — Automotive CGI, Digital Twins & Configurators"
   },
   {
     "route": "/projects",
     "template": "projects",
     "title": "Projects",
-    "cta": false
+    "cta": false,
+    "seoTitle": "Automotive CGI & Configurator Projects — NMESIS Motion Lab"
   },
   {
     "route": "/services",
     "template": "services",
     "title": "Services",
-    "cta": true
+    "cta": true,
+    "seoTitle": "Automotive CGI, Digital Twins & Car Configurators — NMESIS"
   },
   {
     "route": "/services/automotive-cgi",
     "template": "service-detail",
     "title": "Automotive CGI",
-    "cta": false
+    "cta": false,
+    "seoTitle": "Automotive CGI: Launch Films & Key Visuals — NMESIS"
   },
   {
     "route": "/about",
     "template": "about",
     "title": "About",
-    "cta": false
+    "cta": false,
+    "seoTitle": "About NMESIS Motion Lab — Automotive Studio in Cairo & Dubai"
   },
   {
     "route": "/contact",
     "template": "contact",
     "title": "Contact",
-    "cta": false
+    "cta": false,
+    "seoTitle": "Contact NMESIS — Start an Automotive CGI or Configurator Project"
   },
   {
     "route": "/terms",
     "template": "terms",
     "title": "Terms of service",
-    "cta": false
+    "cta": false,
+    "seoTitle": "Terms of Service — NMESIS"
   },
   {
     "route": "/privacy-policy",
     "template": "privacy-policy",
     "title": "Privacy policy",
-    "cta": false
+    "cta": false,
+    "seoTitle": "Privacy Policy — NMESIS"
   },
   {
     "route": "/404",
     "template": "404",
     "title": "Page not found",
-    "cta": false
+    "cta": false,
+    "seoTitle": "Page Not Found — NMESIS"
   }
 ]

@@ -1,9 +1,10 @@
 {
-  "volt_supply": "NMESIS",
-  "more_projects": "More project previews.",
-  "go_to_lobby": "Back to projects",
-  "_images": {},
-  "client": "Client",
-  "scope": "Scope",
-  "market": "Market"
+  "moreProjects": "More project previews.",
+  "backToProjects": "Back to projects",
+  "labels": {
+    "client": "Client",
+    "scope": "Scope",
+    "market": "Market"
+  },
+  "_images": {}
 }

@@ -3,6 +3,9 @@
   "title": "AVATR.",
   "subtitle": "Two ways to explore AVATR.",
   "description": "From digital twins to interactive exploration, NMESIS brings AVATR 11 and 12 into focus. Discover the vehicles through light configurators built with pre-rendered imagery, or explore AVATR 12 through pixel streaming with real-time materials, lighting and environments.",
+  "seoTitle": "AVATR 11 & 12: Configurators & Digital Twins — NMESIS",
+  "metaDescription": "AVATR 11 and 12 brought to life with digital twins, key visuals, light configurators and a pixel-streamed AVATR 12 experience by NMESIS.",
+  "shareImage": "/assets/share/project-avatr.jpg",
   "cover": "/assets/projects/avatr/poster.jpg",
   "coverAlt": "AVATR 12 interactive vehicle visualizer",
   "tags": [
@@ -10,8 +13,6 @@
     "Light configurators",
     "Pixel streaming"
   ],
-  "liveLabel": "Discuss a similar project",
-  "liveUrl": "/contact",
   "video": "/assets/projects/avatr/preview.mp4",
   "client": "AVATR",
   "scope": "Digital twins, key visuals, pre-rendered configurators and pixel streaming",

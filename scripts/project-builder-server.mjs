@@ -30,7 +30,7 @@ export async function validateProject(input,root) {
   const list=(value,label)=>{if(!Array.isArray(value)||value.length>200)fail(`Invalid ${label}.`);return value;};
   const tags=list(input.tags,'capabilities').map(t=>text(t,'capability',true));
   if(tags.length!==3)fail('Please provide three capabilities.');
-  const project={slug,title:text(input.title,'project title',true),subtitle:text(input.subtitle,'subtitle',true),description:text(input.description,'description',true),cover:await asset(input.cover,'cover image','image'),coverAlt:text(input.coverAlt,'cover description',true),tags,client:text(input.client,'client',true),scope:text(input.scope,'scope',true),market:text(input.market,'market',true),liveLabel:'Discuss a similar project',liveUrl:'/contact',films:[],galleries:[],experiences:[]};
+  const project={slug,title:text(input.title,'project title',true),subtitle:text(input.subtitle,'subtitle',true),description:text(input.description,'description',true),cover:await asset(input.cover,'cover image','image'),coverAlt:text(input.coverAlt,'cover description',true),tags,client:text(input.client,'client',true),scope:text(input.scope,'scope',true),market:text(input.market,'market',true),films:[],galleries:[],experiences:[]};
   for(const film of list(input.films || [],'films'))project.films.push({title:text(film.title,'film title',true),description:text(film.description || '','film description'),src:await asset(film.src,'film','video'),...(film.poster?{poster:await asset(film.poster,'film poster','image')}:{})});
   for(const group of list(input.galleries || [],'galleries')){
     const gallery={title:text(group.title,'gallery title',true),description:text(group.description || '','gallery description'),images:[]};
