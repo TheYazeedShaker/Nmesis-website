@@ -854,13 +854,6 @@ body:has(.svc-page) .design-8v54va-container nav [data-part="Line"] { background
 .contact-sent h3 { margin:0 0 8px;font:500 23px var(--font-display); }
 .contact-sent p { font-size:14px;line-height:1.6;margin:0; }
 .contact-sent button { margin-top:16px;background:var(--color-ink);color:white;padding:12px;border:0;border-radius:8px;font:500 13px var(--font-body);cursor:pointer; }
-.contact-ready { margin-top:24px;padding:20px;border-radius:12px;background:#f0f4e8; }
-.contact-ready[hidden] { display:none; }
-.contact-ready h3 { margin:0 0 8px;font:500 23px var(--font-display); }
-.contact-ready p { font-size:13px;line-height:1.6; }
-.contact-ready>div { display:flex;gap:10px;flex-wrap:wrap;margin:18px 0; }
-.contact-ready :is(a,button) { background:var(--color-ink);color:white;padding:12px;border:0;border-radius:8px;font:500 13px var(--font-body);text-decoration:none;cursor:pointer; }
-.contact-ready textarea { min-height:190px;font-size:13px; }
 @media(max-width:1000px) { .contact-page { padding:140px 24px 80px; }.contact-layout { gap:24px; }.contact-brief { padding:24px; }.contact-fields { grid-template-columns:1fr; }.contact-intro { margin-bottom:40px; } }
 @media(max-width:699px) { .contact-page { padding:120px 16px 64px; }.contact-layout { grid-template-columns:1fr;gap:28px; }.contact-intro>p:last-child { font-size:16px; }.contact-art img { aspect-ratio:16/10; }.contact-story-copy { padding:24px 0 0; }.contact-story h2 { font-size:28px; }.contact-brief { padding:24px 18px; }.contact-brief h2 { font-size:27px; }.contact-brief :is(input,select,textarea) { font-size:16px; }.contact-story-copy .contact-location { margin-bottom:0; } }
 
@@ -868,7 +861,6 @@ body:has(.svc-page) .design-8v54va-container nav [data-part="Line"] { background
 .contact-page { flex:none;position:relative;z-index:1; }
 .contact-brief { height:auto;max-height:none;overflow:visible; }
 .contact-brief textarea { min-height:112px; }
-.contact-ready textarea[hidden] { display:none; }
 /* The footer parallax must not cover the contact form or its send action. */
 body:has(.contact-page) .design-1tssoce-container { transform:none!important;will-change:auto!important; }
 
