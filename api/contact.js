@@ -3,8 +3,8 @@
 // from this endpoint, so it cannot be used to send messages to anyone else.
 //
 // Environment variables (Vercel → Settings → Environment Variables):
-//   RESEND_API_KEY  required to send; without it the endpoint answers 503 and the page falls
-//                   back to opening the visitor's email app
+//   RESEND_API_KEY  required to send; without it the endpoint answers 503 and the contact page
+//                   tells the visitor the message could not be sent
 //   CONTACT_TO      recipient (default info@nmesis.io)
 //   CONTACT_FROM    sender on a domain verified in Resend, e.g. "NMESIS Website <website@nmesis.io>"
 //                   (default Resend's test sender, which only delivers to the Resend account's own address)

@@ -53,7 +53,7 @@ result = await submit(valid, {origin: 'https://evil.example'});
 assert.equal(result.status, 403);assert.equal(result.sent.length, 0);
 assert.equal((await submit(valid, {origin: null})).status, 200);
 
-// Not configured: 503 so the page falls back to the visitor's email app.
+// Not configured: 503 so the page reports the failure instead of claiming a delivery.
 result = await submit(valid, {env: {}});
 assert.equal(result.status, 503);assert.equal(result.body.error, 'not-configured');assert.equal(result.sent.length, 0);
 
@@ -74,4 +74,4 @@ assert.equal((await submit(valid, {headers: {'content-length': String(64 * 1024)
 result = await submit(valid, {accept: 'text/html'});
 assert.equal(result.status, 200);assert.match(result.body, /message has been sent/);
 
-console.log('Contact passed: delivery to the studio with visitor reply-to, escaping and header safety, field validation, honeypot and timing filters, same-origin posts, not-configured and provider-failure fallbacks, dry run and no-JavaScript replies.');
+console.log('Contact passed: delivery to the studio with visitor reply-to, escaping and header safety, field validation, honeypot and timing filters, same-origin posts, not-configured and provider-failure replies, dry run and no-JavaScript replies.');

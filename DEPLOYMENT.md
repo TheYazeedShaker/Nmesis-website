@@ -60,7 +60,7 @@ For preview work, create a feature branch and open a pull request into `main`. V
 
 ## Contact form email
 
-`api/contact.js` emails each enquiry to info@nmesis.io through [Resend](https://resend.com), with Reply going straight to the visitor. Until it is configured it answers 503 and the form opens the visitor's email app instead, so it is safe to deploy first.
+`api/contact.js` emails each enquiry to info@nmesis.io through [Resend](https://resend.com), with Reply going straight to the visitor. Until it is configured it answers 503 and the form tells the visitor the message could not be sent, so configure it before relying on the form.
 
 1. Create a Resend account (free: 3,000 emails a month, 100 a day).
 2. In Resend → Domains, add `nmesis.io` and create the DNS records it lists at GoDaddy (a DKIM TXT record and the records for its sending subdomain). They do not replace the existing mail (MX) records for `nmesis.io`, so the current inbox keeps working.
@@ -71,7 +71,7 @@ For preview work, create a feature branch and open a pull request into `main`. V
    - `CONTACT_TO` (optional): defaults to `info@nmesis.io`
 5. Redeploy (Deployments → … → Redeploy) so the function receives the variables, then send a test enquiry from /contact.
 
-Before the domain is verified, leaving `CONTACT_FROM` unset uses Resend's test sender, which only delivers to the email address that owns the Resend account. `npm run check:contact` covers delivery, validation, bot filtering and the fallbacks. For extra protection against abuse, add a Vercel Firewall rate-limit rule for `/api/contact`.
+Before the domain is verified, leaving `CONTACT_FROM` unset uses Resend's test sender, which only delivers to the email address that owns the Resend account. `npm run check:contact` covers delivery, validation, bot filtering and the failure replies. For extra protection against abuse, add a Vercel Firewall rate-limit rule for `/api/contact`.
 
 ## Search engines
 
